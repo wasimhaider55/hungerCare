@@ -1,11 +1,12 @@
 import './App.css';
+import Header from './components/header/Header';
+import NavBar from './components/header/Nabar';
 
 function App() {
   return (
-    <div className="App">
-       <h1 className="text-5xl font-bold underline">
-      Hello world!
-    </h1>
+    <div>
+      <NavBar/>
+      <Header/>
     </div>
   );
 }
