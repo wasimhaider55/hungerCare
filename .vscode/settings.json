@@ -1,0 +1,5 @@
+{
+  "debug.javascript.terminalOptions": {},
+  "debug.javascript.debugByLinkOptions": "on",
+  "terminal.integrated.defaultProfile.windows": "Git Bash"
+}
