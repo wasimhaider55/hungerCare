@@ -8,12 +8,12 @@ const NavBar = () => {
   // navigations
 
   return (
-    <div className="flex justify-between items-center px-4 w-full h-20 text-white bg-gradient-to-t from-gray-900 bg-blue-500 fixed">
+    <div className="flex justify-between items-center px-4 w-full h-20 text-white bg-gradient-to-t from-gray-900 bg-black fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2">HungerCare</h1>
       </div>
       <ul className="hidden md:flex">
-        {navLinks.map(({ id, name, href }) => (
+        {navBar.map(({ id, name, href }) => (
           <li
             className="px-4 cursor-pointer capitalize font-medium
                         hover:scale-125  duration-200 hover:text-rose-600 hover:underline"
