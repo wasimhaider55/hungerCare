@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import Getintouch from "./Getintouch";
-{
-  /* // Problem in Ifram */
-}
 
 const ContactUs = () => {
   const [name, setName] = useState("");
