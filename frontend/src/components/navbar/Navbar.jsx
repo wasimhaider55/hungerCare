@@ -8,11 +8,11 @@ const NavBar = () => {
   // navigations
 
   return (
-    <div className="flex justify-between items-center px-4 w-full h-20 text-white bg-gradient-to-t from-blue-900 bg-black fixed">
+    <div className="flex justify-between items-center px-4 w-full h-20 text-white bg-gradient-to-t from-blue-900 bg-black  z-10 fixed">
       <div>
         <h1 className="text-5xl font-signature ml-2">HungerCare</h1>
       </div>
-      <ul className="hidden md:flex">
+      <ul className="hidden lg:flex">
         {navLinks.map(({ id, name, href }) => (
           <li
             className="px-4 cursor-pointer capitalize font-medium
@@ -37,7 +37,7 @@ const NavBar = () => {
       {/* for mobile devices  */}
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-300 md:hidden "
+        className="cursor-pointer pr-4 z-10 text-gray-300 lg:hidden "
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
