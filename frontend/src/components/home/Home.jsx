@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
 import Card from './Card';
+import Charity from './Charity';
+import Causes from './Causes';
+// import AboutUs from '../about/AboutUs';
 
 const Home = () => {
   const slides = [
@@ -53,6 +56,9 @@ const Home = () => {
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
       <Card/>
+      <Charity/>
+      <Causes/>
+      {/* <AboutUs/> */}
     </section>
     
   )
