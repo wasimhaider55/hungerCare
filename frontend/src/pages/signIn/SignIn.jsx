@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FcGoogle } from "react-icons/fc";
 import logo from "../../assets/logo.png";
 
 const SignIn = () => {

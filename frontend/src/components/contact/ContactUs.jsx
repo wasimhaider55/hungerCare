@@ -1,8 +1,5 @@
 import React, { useState } from "react";
 import Getintouch from "./Getintouch";
-{
-  /* // Problem in Ifram */
-}
 
 const ContactUs = () => {
   const [name, setName] = useState("");
@@ -28,7 +25,7 @@ const ContactUs = () => {
 
   return (
     <div className="bg-gray-100">
-      <div className=" w-full p-[4rem] text-center text-3xl font-extrabold text-gray-900">
+      <div className=" bg-red-500 w-full py-[8rem]  text-center text-3xl font-extrabold text-gray-900">
         <h1>Contact Us</h1>
       </div>
       <div className=" grid   md:grid-cols-2 p-[1rem]  ">
