@@ -8,6 +8,7 @@ import ContactUs from "./components/contact/ContactUs";
 import SignUp from "./pages/signUp/SignUp";
 
 import Navbar from "./components/navbar1/Navbar";
+import AboutUs from "./components/about/AboutUs"
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
-
+        <Route path="/AboutUs" exact element={<AboutUs/>} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
