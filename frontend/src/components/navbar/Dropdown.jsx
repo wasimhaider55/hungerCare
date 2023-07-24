@@ -10,7 +10,7 @@ function Dropdown() {
     <>
       <ul
         onClick={handleClick}
-        className={`dropdown-menu ${
+        className={` ${
           click ? "clicked" : ""
         } bg-red-500 w-200 absolute  list-none text-start`}
       >

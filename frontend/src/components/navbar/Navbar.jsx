@@ -16,26 +16,18 @@ function Navbar() {
   const [dropdown, setDropdown] = useState(false);
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown("true");
-    }
+    setDropdown("true");
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
-      setDropdown(false);
-    } else {
-      setDropdown(false);
-    }
+    setDropdown(false);
   };
 
   return (
     <>
       <nav className="flex justify-between items-center px-4 w-full h-20 text-white bg-gradient-to-t from-blue-900 bg-black  z-10 fixed">
         <div>
-          <img src={logo} alt="LogoImage" className="h-[4rem] md:ml-5 z-50" />
+          <img src={logo} alt="LogoImage" className="h-[4rem] md:ml-5 " />
         </div>
 
         <ul className="hidden  md:flex  justify-center  ">
@@ -114,20 +106,26 @@ function Navbar() {
           className={
             !nav
               ? "hidden"
-              : "flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-300 "
+              : "md:hidden   justify-center items-start absolute ml-[7rem] w-[90rem]  mt-[23rem] bg-gradient-to-b from-black to-blue-800 text-gray-300 "
           }
         >
           <li
+            onClick={() => {
+              setNav(!nav);
+            }}
             activeclass="active"
             spy={"true"}
             smooth={"true"}
             duration={400}
             offset={-80}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className=" px-4 cursor-pointer capitalize py-6 text-4xl"
           >
             <Link to="/">Home</Link>
           </li>
           <li
+            onClick={() => {
+              setNav(!nav);
+            }}
             activeclass="active"
             spy={"true"}
             smooth={"true"}
@@ -147,15 +145,16 @@ function Navbar() {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link to="./services">
-              <div className="flex gap-2">
-                {" "}
-                Our Causes <AiOutlineDown className="h-7" />
-              </div>
-            </Link>
+            <div className="flex gap-1">
+              Our Causes <AiOutlineDown className="h-5 mt-4" />
+            </div>
+
             {dropdown && <Dropdown />}
           </li>
           <li
+            onClick={() => {
+              setNav(!nav);
+            }}
             activeclass="active"
             spy={"true"}
             smooth={"true"}
@@ -166,6 +165,9 @@ function Navbar() {
             <Link to="./gallery">Gallery</Link>
           </li>
           <li
+            onClick={() => {
+              setNav(!nav);
+            }}
             activeclass="active"
             spy={"true"}
             smooth={"true"}
