@@ -1,4 +1,5 @@
 import React from 'react'
+import OurTeam from './OurTeam'
 
 
 const AboutUs = () => {
@@ -14,7 +15,7 @@ const AboutUs = () => {
 
 
             {/* who we are section */}
-            <div id='#link1' className=' lg:text-4xl text-3xl font-bold pt-24 lg:pl-24 md:pl-20 pl-4 uppercase'>
+            <div className=' lg:text-4xl text-3xl font-bold pt-24 lg:pl-24 md:pl-20 pl-4 uppercase'>
                 <h1>Who WE Are</h1>
                 <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
             </div>
@@ -37,7 +38,7 @@ const AboutUs = () => {
 
 
             {/* Our history section  */}
-            <section className=' bg-black text-white'>
+            <section className='bg-gradient-to-t from-blue-900 bg-black text-white'>
             <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4 uppercase'>
                 <h1>Our History</h1>
                 <div className=' w-16 h-1 bg-blue-600 rounded-full mt-3 '></div>
@@ -90,6 +91,7 @@ const AboutUs = () => {
             </section>
 
 
+            <OurTeam/>
         </main>
 
 
