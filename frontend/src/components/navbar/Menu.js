@@ -1,22 +1,22 @@
 export const MenuItems = [
   {
-    title: "Marketing",
-    path: "/marketing",
+    title: "Free Food Distribution",
+    path: "/freefooddistribution",
     cName: "dropdown-link",
   },
   {
-    title: "Consulting",
-    path: "/consulting",
+    title: "Orphan Family Support",
+    path: "/orphanfamilysupport",
     cName: "dropdown-link",
   },
   {
-    title: "Design",
-    path: "/design",
+    title: "Poor Family Support",
+    path: "/poorfamilysupport",
     cName: "dropdown-link",
   },
   {
-    title: "Development",
-    path: "/development",
+    title: "Disabled People Support",
+    path: "/disablepeoplesupport",
     cName: "dropdown-link",
   },
 ];

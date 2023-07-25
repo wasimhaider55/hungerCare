@@ -12,7 +12,7 @@ function Dropdown() {
         onClick={handleClick}
         className={` ${
           click ? "clicked" : ""
-        } bg-red-500 w-200 absolute  list-none text-start`}
+        } bg-black  w-200 absolute  list-none text-start`}
       >
         {MenuItems.map((item, index) => {
           return (

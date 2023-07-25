@@ -22,7 +22,7 @@ const SignUp = () => {
   };
 
   return (
-    <div id="signup" className=" grid   md:grid-cols-2 p-[1rem]  bg-gray-100">
+    <div id="signup" className=" grid   md:grid-cols-2  p-[1rem]  bg-gray-100">
       <div className="my-[1rem] mx-auto md:m-auto ">
         <img className="h-[12rem] md:h-[20rem]" src={logo} alt="Workflow" />
       </div>

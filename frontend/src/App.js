@@ -7,6 +7,7 @@ import SignUp from "./pages/signUp/SignUp";
 
 import Navbar from "./components/navbar/Navbar";
 import AboutUs from "./components/about/AboutUs";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
