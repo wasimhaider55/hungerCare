@@ -25,7 +25,7 @@ const Causes = () => {
         }
     };
     return (
-        <section>
+        <section id='#causes'>
 
             <h1 className='lg:text-4xl text-4xl font-bold  text-center'>
                 Our Causes
