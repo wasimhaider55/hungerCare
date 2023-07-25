@@ -14,7 +14,7 @@ const AboutUs = () => {
 
 
             {/* who we are section */}
-            <div className=' lg:text-4xl text-3xl font-bold pt-24 lg:pl-24 md:pl-20 pl-4 uppercase'>
+            <div className=' lg:text-4xl text-3xl font-bold pt-24 lg:pl-24 md:pl-20 pl-4 uppercase' id="whoWeAre">
                 <h1>Who WE Are</h1>
                 <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
             </div>
@@ -66,7 +66,7 @@ const AboutUs = () => {
 
             {/* what we Do section  */}
 
-            <section>
+            <section id="whatWeDo">
             <div className=' lg:text-4xl text-3xl font-bold pt-4 lg:pl-24 md:pl-20 pl-4 uppercase'>
                 <h1>What We Do</h1>
                 <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
