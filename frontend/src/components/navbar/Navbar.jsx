@@ -30,7 +30,7 @@ function Navbar() {
           <img src={logo} alt="LogoImage" className="h-[4rem] md:ml-5 " />
         </div>
 
-        <ul className="hidden  md:flex  justify-center  ">
+        <ul className="hidden  md:flex  justify-center text-gray-300  ">
           <li
             activeclass="active"
             spy={"true"}
@@ -43,7 +43,7 @@ function Navbar() {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                isActive ? "text-gray-400 underline" : ""
+                isActive ? "text-white underline" : ""
               }
             >
               Home
@@ -61,7 +61,7 @@ function Navbar() {
             <NavLink
               to="AboutUs"
               className={({ isActive }) =>
-                isActive ? "text-gray-400 underline" : ""
+                isActive ? "text-white underline" : ""
               }
             >
               About Us
@@ -81,7 +81,7 @@ function Navbar() {
             <NavLink
               to="/ourcauses"
               className={({ isActive }) =>
-                isActive ? "text-gray-400 underline" : ""
+                isActive ? "text-white underline" : ""
               }
             >
               <div className="flex gap-2">
@@ -103,7 +103,7 @@ function Navbar() {
             <NavLink
               to="./gallery"
               className={({ isActive }) =>
-                isActive ? "text-gray-400 underline" : ""
+                isActive ? "text-white underline" : ""
               }
             >
               Gallery
@@ -121,7 +121,7 @@ function Navbar() {
             <NavLink
               to="/ContactUs"
               className={({ isActive }) =>
-                isActive ? "text-gray-400 underline" : ""
+                isActive ? "text-white underline" : ""
               }
             >
               Contact Us
