@@ -4,7 +4,7 @@ const Charity = () => {
     return (
         <div>
             {/* Welcome to our charity section  */}
-            <section className=' bg-black text-white'>
+            <section className=' bg-gradient-to-b from-black to-blue-900 text-white'>
                 <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
                     <h1>Welcome to Our Charity</h1>
                     <div className=' w-16 h-1 bg-blue-600 rounded-full mt-3 '></div>
