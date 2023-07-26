@@ -23,12 +23,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className=" left-0 right-0 w-full bg-gradient-to-t from-blue-900 bg-black   p-20 bottom-0 ">
+    <footer className="  left-0 right-0 w-full bg-gradient-to-t from-blue-900 bg-black   p-10 bottom-0 ">
       <div className="container mx-auto">
-        <div className="grid grid-cols-4 gap-8 ">
+        <div className="grid grid-col-1 md:grid-cols-4 gap-8 content-center ">
           {/* Column 1 */}
           <div className="text-white">
-            <h3 className="font-bold text-lg">HungerCare</h3>
+            <h1 className="font-bold text-lg">HungerCare</h1>
             <div>
               <p className="p-10 text-gray-500">
                 HungerCare Foundation is a registered non-governmental,
@@ -41,7 +41,7 @@ const Footer = () => {
 
           {/* Column 2 */}
           <div className="text-white">
-            <h3 className="font-bold text-lg">Useful Links</h3>
+            <h1 className="font-bold text-lg">Useful Links</h1>
             <ul className="  p-10  justify-center text-gray-500 ">
               <li
                 activeclass="active"
@@ -111,22 +111,20 @@ const Footer = () => {
 
           {/* Column 3 */}
 
-          <div>
-            <h1 className="font-bold text-lg  text-white ">
-              Our Social Media Links
-            </h1>
+          <div className="text-white">
+            <h1 className="font-bold text-lg">Our Social Media Links</h1>
             <ul className="flex gap-4 text-2xl text-blue-500 p-10 ">
-              <li className="border border-blue-300 hover:border-blue-500 p-2">
+              <li className="cursor-pointer border border-blue-300  hover:border-blue-500 p-2">
                 <i>
                   <FaFacebookSquare />
                 </i>
               </li>
-              <li className="border border-blue-300 hover:border-blue-500 p-2">
+              <li className="cursor-pointer border border-blue-300  hover:border-blue-500 p-2">
                 <i>
                   <FaTwitterSquare />
                 </i>
               </li>
-              <li className="border border-blue-300 hover:border-blue-500 p-2">
+              <li className="cursor-pointer border border-blue-300 hover:border-blue-500 p-2">
                 <i>
                   <FaYoutubeSquare />
                 </i>
@@ -136,7 +134,7 @@ const Footer = () => {
 
           {/* Column 4 */}
           <div className="text-white">
-            <h3 className="font-bold text-lg">Contact Info</h3>
+            <h1 className="font-bold text-lg">Contact Info</h1>
             <div className="mt-[2rem]">
               <ul className="text-gray-500">
                 <li className="flex gap-3 my-[.5rem]">
@@ -144,8 +142,8 @@ const Footer = () => {
                     <FaMapMarkerAlt />
                   </i>
                   <span>
-                    Office # 1, First Floor, Janaan Plaza,
-                    <br /> Main Gulbahar Road, Peshawar,
+                    Office # 1, First Floor, STH Plaza,
+                    <br /> Forest Bazar, Peshawar,
                     <br /> PAKISTAN
                   </span>
                 </li>

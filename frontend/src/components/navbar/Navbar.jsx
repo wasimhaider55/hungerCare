@@ -64,7 +64,7 @@ function Navbar() {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link to="./services">
+            <Link to="/ourcauses">
               <div className="flex gap-2">
                 {" "}
                 Our Causes <AiOutlineDown className="h-7" />

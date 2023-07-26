@@ -25,8 +25,8 @@ const Getintouch = () => {
               <FaMapMarkerAlt />
             </i>
             <span>
-              Office # 1, First Floor, Janaan Plaza,
-              <br /> Main Gulbahar Road, Peshawar,
+              Office # 1, First Floor,STH Plaza,
+              <br /> Forest Bazar, Peshawar,
               <br /> PAKISTAN
             </span>
           </li>
