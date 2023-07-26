@@ -1,7 +1,23 @@
-import React from 'react'
-
+import React, { useEffect } from 'react'
+import { useLocation} from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
+import { Link as ScrollLink } from 'react-scroll';
 
 const AboutUs = () => {
+    const location = useLocation();
+    useEffect(() => {
+        console.log(location.hash)
+        // Scroll to the top when the component is mounted
+        window.scrollTo(0, 0);
+        // eslint-disable-next-line eqeqeq
+        if (location.hash == "#whoWeAre") {
+            window.scrollTo(50, 300);
+        }
+        // eslint-disable-next-line eqeqeq
+        if (location.hash == "#whatWeDo") {
+            window.scrollTo(50, 1400);
+        }
+    }, [location]);
     return (
         <main className='pt-20'>
 
@@ -66,12 +82,11 @@ const AboutUs = () => {
 
             {/* what we Do section  */}
 
-            <section id="whatWeDo">
-            <div className=' lg:text-4xl text-3xl font-bold pt-4 lg:pl-24 md:pl-20 pl-4 uppercase'>
+            <section >
+                <div id="whatWeDo" className=' lg:text-4xl text-3xl font-bold pt-4 lg:pl-24 md:pl-20 pl-4 uppercase'>
                 <h1>What We Do</h1>
                 <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
             </div>
-
                 <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-20  gap-6'>
                     <div className="lg:w-[50%]">
                         <p className=' pl-1 pb-4 lg:pr-24 md:pr-24 sm:pr-24 text-justify '>

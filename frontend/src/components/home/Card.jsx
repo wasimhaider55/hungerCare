@@ -3,6 +3,8 @@ import { FaRegHandshake } from "react-icons/fa";
 import { BiDonateHeart } from "react-icons/bi";
 import { RiTeamLine } from "react-icons/ri";
 import { Link } from 'react-router-dom';
+// eslint-disable-next-line no-unused-vars
+import { Link as ScrollLink } from 'react-scroll';
 
 const Card = () => {
     return (
