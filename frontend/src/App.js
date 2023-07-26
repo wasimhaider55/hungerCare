@@ -8,11 +8,13 @@ import SignUp from "./pages/signUp/SignUp";
 import Navbar from "./components/navbar/Navbar";
 import AboutUs from "./components/about/AboutUs";
 import Footer from "./components/footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/AboutUs" exact element={<AboutUs />} />
