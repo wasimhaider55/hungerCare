@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Card = () => {
     return (
-        <section>
+        <section >
 
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 mx-3 sm:mx-20 sm:px-0 py-24 text-white'>
                 <Link to="/AboutUs#whoWeAre">

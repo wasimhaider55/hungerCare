@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-between items-center px-4 w-full h-20 text-white bg-gradient-to-t from-blue-900 bg-black  z-10 fixed">
+      <nav className="flex justify-between items-center fixed top-0 px-4 w-full h-20 text-white bg-gradient-to-t from-blue-900 bg-black  z-10 fixed">
         <div>
           <img src={logo} alt="LogoImage" className="h-[4rem] md:ml-5 " />
         </div>
