@@ -12,11 +12,11 @@ const AboutUs = () => {
         // Scroll to the top when the component is mounted
         window.scrollTo(0, 0);
         // eslint-disable-next-line eqeqeq
-        if (location.hash == "#whoWeAre") {
+        if (location.hash == "#whoWeAre" ) {
             window.scrollTo(50, 300);
         }
         // eslint-disable-next-line eqeqeq
-        if (location.hash == "#whatWeDo") {
+        if (location.hash == "#whatWeDo" ) {
             window.scrollTo(50, 1450);
         }
         // eslint-disable-next-line eqeqeq
@@ -84,7 +84,7 @@ const AboutUs = () => {
                         </p>
                     </div>
 
-                    <div className='lg:w-[50%]'>
+                    <div className='lg:w-[50%] pb-5'>
                         <img src="https://love.lambeth.gov.uk/wp-content/uploads/2020/05/hubs-2-500-x-320.jpg" alt="who we are " />
                     </div>
 
