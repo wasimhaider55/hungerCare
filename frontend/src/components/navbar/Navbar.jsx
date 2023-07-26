@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineDown } from "react-icons/ai";
 import { FaTimes, FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { Button } from "./Button";
 import logo from "../../assets/logo.png";
@@ -40,7 +40,14 @@ function Navbar() {
             className="px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-gray-400 underline" : ""
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li
             activeclass="active"
@@ -51,7 +58,14 @@ function Navbar() {
             className=" px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
-            <Link to="AboutUs">About Us</Link>
+            <NavLink
+              to="AboutUs"
+              className={({ isActive }) =>
+                isActive ? "text-gray-400 underline" : ""
+              }
+            >
+              About Us
+            </NavLink>
           </li>
           <li
             activeclass="active"
@@ -64,12 +78,17 @@ function Navbar() {
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
-            <Link to="/ourcauses">
+            <NavLink
+              to="/ourcauses"
+              className={({ isActive }) =>
+                isActive ? "text-gray-400 underline" : ""
+              }
+            >
               <div className="flex gap-2">
                 {" "}
                 Our Causes <AiOutlineDown className="h-7" />
               </div>
-            </Link>
+            </NavLink>
             {dropdown && <Dropdown />}
           </li>
           <li
@@ -81,7 +100,14 @@ function Navbar() {
             className="px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
-            <Link to="./gallery">Gallery</Link>
+            <NavLink
+              to="./gallery"
+              className={({ isActive }) =>
+                isActive ? "text-gray-400 underline" : ""
+              }
+            >
+              Gallery
+            </NavLink>
           </li>
           <li
             activeclass="active"
@@ -92,7 +118,14 @@ function Navbar() {
             className="px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
-            <Link to="/ContactUs">Contact Us</Link>
+            <NavLink
+              to="/ContactUs"
+              className={({ isActive }) =>
+                isActive ? "text-gray-400 underline" : ""
+              }
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
         <Button />
