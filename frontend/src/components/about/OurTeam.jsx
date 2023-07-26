@@ -26,7 +26,7 @@ const OurTeam = () => {
         }
     };
     return (
-        <section className=' bg-blue-600'>
+        <section className=' bg-gradient-to-b from-black to-blue-900'>
 
             <h1 className='lg:text-4xl text-4xl font-bold  text-center text-white py-8'>
                 Our Core Team Members

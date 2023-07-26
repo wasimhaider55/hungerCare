@@ -13,11 +13,13 @@ import FreeFoodDis from "./components/navbar/pages/FreeFoodDis";
 import OrphanFamilySupport from "./components/navbar/pages/OrphanFamilySupport";
 import PoorFamilySupport from "./components/navbar/pages/PoorFamilySupport";
 import Footer from "./components/footer/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
       <Navbar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/AboutUs" exact element={<AboutUs />} />
