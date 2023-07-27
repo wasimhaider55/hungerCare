@@ -62,7 +62,7 @@ function Navbar() {
             hover:scale-101  duration-200 hover:underline"
           >
             <NavLink
-              to="AboutUs"
+              to="/aboutus"
               className={({ isActive }) =>
                 isActive ? "text-white underline" : ""
               }
@@ -105,7 +105,7 @@ function Navbar() {
             hover:scale-101  duration-200 hover:underline"
           >
             <NavLink
-              to="./gallery"
+              to="/gallery"
               className={({ isActive }) =>
                 isActive ? "text-white underline" : ""
               }
@@ -170,7 +170,7 @@ function Navbar() {
             offset={-80}
             className=" px-4 cursor-pointer capitalize py-6 text-4xl"
           >
-            <Link to="AboutUs">About Us</Link>
+            <Link to="/aboutus">About Us</Link>
           </li>
           <li
             activeclass="active"
@@ -199,7 +199,7 @@ function Navbar() {
             offset={-80}
             className="px-4 cursor-pointer capitalize py-6 text-4xl"
           >
-            <Link to="./gallery">Gallery</Link>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li
             onClick={() => {
@@ -212,7 +212,7 @@ function Navbar() {
             offset={-80}
             className="px-4 cursor-pointer capitalize py-6 text-4xl"
           >
-            <Link to="/ContactUs">Contact Us</Link>
+            <Link to="/contactus">Contact Us</Link>
           </li>
         </ul>
       </nav>

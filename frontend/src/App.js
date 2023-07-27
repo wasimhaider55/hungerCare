@@ -12,6 +12,7 @@ import DisabledPeopleSupport from "./components/navbar/pages/disabledpeoplesuppo
 import FreeFoodDis from "./components/navbar/pages/freefooddist/FreeFoodDis";
 import OrphanFamilySupport from "./components/navbar/pages/orphanfamilysupport/OrphanFamilySupport";
 import PoorFamilySupport from "./components/navbar/pages/poorfamilysupport/PoorFamilySupport";
+import Gallery from "./components/gallery/Gallery";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -22,8 +23,8 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/AboutUs" exact element={<AboutUs />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/aboutus" exact element={<AboutUs />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/ourcauses" exact element={<Causes />} />
         <Route
@@ -46,6 +47,7 @@ function App() {
           exact
           element={<DisabledPeopleSupport />}
         />
+        <Route path="/gallery" exact element={<Gallery />} />
       </Routes>
       <Footer />
     </Router>
