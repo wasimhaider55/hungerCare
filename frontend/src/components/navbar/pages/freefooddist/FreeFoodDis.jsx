@@ -1,4 +1,5 @@
 import React from "react";
+import DailyMealDis from "./DailyMealDis";
 
 const FreeFoodDis = () => {
   return (
@@ -27,8 +28,9 @@ const FreeFoodDis = () => {
       </div>
       {/* Overview section Closed */}
 
-      
 
+      {/* daily meal distribution components render here */}
+      <DailyMealDis />
     </main>
   );
 };
