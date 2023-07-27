@@ -29,6 +29,7 @@ const Card = () => {
                     </div>
                 </Link>
 
+                <Link to="/AboutUs#ourTeam">
                 <div className='bg-gradient-to-b from-blue-700 bg-black p-8 rounded-xl mix-blend-luminosity cursor-pointer shadow-lg shadow-slate-900 hover:bg-blue-700 hover:scale-105'>
                     <span className='grid grid-cols-1 place-items-center'> <RiTeamLine size={50} /> </span>
                     <h1 className=' capitalize text-xl font-bold text-center'>Our Team</h1>
@@ -36,6 +37,7 @@ const Card = () => {
                         aspernatur vitae, officia deserunt facilis suscipit
                     </p>
                 </div>
+                </Link>
 
 
             </div>

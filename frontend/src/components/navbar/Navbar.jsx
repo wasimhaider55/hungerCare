@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineDown } from "react-icons/ai";
 import { FaTimes, FaBars } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Dropdown from "./Dropdown";
 import { Button } from "./Button";
 import logo from "../../assets/logo.png";
@@ -22,6 +22,9 @@ function Navbar() {
   const onMouseLeave = () => {
     setDropdown(false);
   };
+  const click = () => {
+    setDropdown(false);
+  };
 
   return (
     <>
@@ -30,7 +33,7 @@ function Navbar() {
           <img src={logo} alt="LogoImage" className="h-[4rem] md:ml-5 " />
         </div>
 
-        <ul className="hidden  md:flex  justify-center  ">
+        <ul className="hidden  md:flex  justify-center text-gray-300  ">
           <li
             activeclass="active"
             spy={"true"}
@@ -40,7 +43,14 @@ function Navbar() {
             className="px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
-            <Link to="/">Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive ? "text-white underline" : ""
+              }
+            >
+              Home
+            </NavLink>
           </li>
           <li
             activeclass="active"
@@ -51,7 +61,14 @@ function Navbar() {
             className=" px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
-            <Link to="AboutUs">About Us</Link>
+            <NavLink
+              to="/aboutus"
+              className={({ isActive }) =>
+                isActive ? "text-white underline" : ""
+              }
+            >
+              About Us
+            </NavLink>
           </li>
           <li
             activeclass="active"
@@ -63,13 +80,19 @@ function Navbar() {
             hover:scale-101  duration-200 hover:underline"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={click}
           >
-            <Link to="/ourcauses">
+            <NavLink
+              to="/ourcauses"
+              className={({ isActive }) =>
+                isActive ? "text-white underline" : ""
+              }
+            >
               <div className="flex gap-2">
                 {" "}
                 Our Causes <AiOutlineDown className="h-7" />
               </div>
-            </Link>
+            </NavLink>
             {dropdown && <Dropdown />}
           </li>
           <li
@@ -81,7 +104,14 @@ function Navbar() {
             className="px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
-            <Link to="./gallery">Gallery</Link>
+            <NavLink
+              to="/gallery"
+              className={({ isActive }) =>
+                isActive ? "text-white underline" : ""
+              }
+            >
+              Gallery
+            </NavLink>
           </li>
           <li
             activeclass="active"
@@ -92,7 +122,14 @@ function Navbar() {
             className="px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
-            <Link to="/ContactUs">Contact Us</Link>
+            <NavLink
+              to="/ContactUs"
+              className={({ isActive }) =>
+                isActive ? "text-white underline" : ""
+              }
+            >
+              Contact Us
+            </NavLink>
           </li>
         </ul>
         <Button />
@@ -133,7 +170,7 @@ function Navbar() {
             offset={-80}
             className=" px-4 cursor-pointer capitalize py-6 text-4xl"
           >
-            <Link to="AboutUs">About Us</Link>
+            <Link to="/aboutus">About Us</Link>
           </li>
           <li
             activeclass="active"
@@ -162,7 +199,7 @@ function Navbar() {
             offset={-80}
             className="px-4 cursor-pointer capitalize py-6 text-4xl"
           >
-            <Link to="./gallery">Gallery</Link>
+            <Link to="/gallery">Gallery</Link>
           </li>
           <li
             onClick={() => {
@@ -175,7 +212,7 @@ function Navbar() {
             offset={-80}
             className="px-4 cursor-pointer capitalize py-6 text-4xl"
           >
-            <Link to="/ContactUs">Contact Us</Link>
+            <Link to="/contactus">Contact Us</Link>
           </li>
         </ul>
       </nav>

@@ -24,10 +24,15 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-gray-100">
-      <div className=" bg-red-500 w-full py-[8rem]  text-center text-3xl font-extrabold text-gray-900">
-        <h1>Contact Us</h1>
+    <div className="bg-gray-100 pt-20">
+      {/* Contact Us section open */}
+      <div className='w-full h-52 bg-cover bg-center bg-[url("https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675")]'>
+        <div className=" text-white text-4xl font-bold  pt-20 md:pl-20 pl-10 ">
+          <h1 className=""> Contact Us </h1>
+          <div className=" w-24 h-1 bg-red-500 rounded-full mt-3 "></div>
+        </div>
       </div>
+      {/* Contact Us section Closed */}
       <div className=" grid   md:grid-cols-2 p-[1rem]  ">
         <div className=" place-content-center  md:ml-[5rem] ">
           <Getintouch />

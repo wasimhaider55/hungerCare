@@ -3,15 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 
 import ContactUs from "./components/contact/ContactUs";
-import SignUp from "./pages/signUp/SignUp";
+import SignUp from "./screens/signUp/SignUp";
 
 import Navbar from "./components/navbar/Navbar";
 import AboutUs from "./components/about/AboutUs";
 import Causes from "./components/home/Causes";
-import DisabledPeopleSupport from "./components/navbar/pages/DisabledPeopleSupport";
-import FreeFoodDis from "./components/navbar/pages/FreeFoodDis";
-import OrphanFamilySupport from "./components/navbar/pages/OrphanFamilySupport";
-import PoorFamilySupport from "./components/navbar/pages/PoorFamilySupport";
+import DisabledPeopleSupport from "./components/navbar/pages/disabledpeoplesupport/DisabledPeopleSupport";
+import FreeFoodDis from "./components/navbar/pages/freefooddist/FreeFoodDis";
+import OrphanFamilySupport from "./components/navbar/pages/orphanfamilysupport/OrphanFamilySupport";
+import PoorFamilySupport from "./components/navbar/pages/poorfamilysupport/PoorFamilySupport";
+import Gallery from "./components/gallery/Gallery";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -19,11 +20,11 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <ScrollToTop/>
+      <ScrollToTop />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/AboutUs" exact element={<AboutUs />} />
-        <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/aboutus" exact element={<AboutUs />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/ourcauses" exact element={<Causes />} />
         <Route
@@ -46,6 +47,7 @@ function App() {
           exact
           element={<DisabledPeopleSupport />}
         />
+        <Route path="/gallery" exact element={<Gallery />} />
       </Routes>
       <Footer />
     </Router>
