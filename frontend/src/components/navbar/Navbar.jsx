@@ -22,6 +22,9 @@ function Navbar() {
   const onMouseLeave = () => {
     setDropdown(false);
   };
+  const click = () => {
+    setDropdown(false);
+  };
 
   return (
     <>
@@ -77,6 +80,7 @@ function Navbar() {
             hover:scale-101  duration-200 hover:underline"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={click}
           >
             <NavLink
               to="/ourcauses"
