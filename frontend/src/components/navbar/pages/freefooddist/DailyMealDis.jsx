@@ -273,7 +273,7 @@ const DailyMealDis = () => {
             <section className=' bg-white text-black'>
 
                 <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase'>
-                    <h1 className='sm:pl-8 uppercase'>4.Ramazan Iftaar dastarkhwan</h1>
+                    <h1 className='sm:pl-8 uppercase'>4. Ramazan Iftaar dastarkhwan</h1>
                 </div>
 
                 <div className='lg:flex lg:pl-24  mb-24 px-4 md:px-20'>
@@ -354,9 +354,6 @@ const DailyMealDis = () => {
                 <button className=' border-2 border-white rounded-2xl p-3 ml-24 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500'>Donate Now </button>
             </div>
             {/* Help us Section closed */}
-
-
-
 
         </main>
     )
