@@ -15,6 +15,7 @@ import PoorFamilySupport from "./components/navbar/pages/poorfamilysupport/PoorF
 import Gallery from "./components/gallery/Gallery";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import DonateNow from "./components/donate/DonateNow";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           element={<DisabledPeopleSupport />}
         />
         <Route path="/gallery" exact element={<Gallery />} />
+        <Route path="/DonateNow" exact element={<DonateNow />} />
       </Routes>
       <Footer />
     </Router>
