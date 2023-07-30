@@ -16,6 +16,8 @@ import Gallery from "./components/gallery/Gallery";
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import DonateNow from "./components/donate/DonateNow";
+import DonateFood from "./components/donate/DonateFood";
+import DonateMoney from "./components/donate/DonateMoney";
 
 function App() {
   return (
@@ -50,6 +52,8 @@ function App() {
         />
         <Route path="/gallery" exact element={<Gallery />} />
         <Route path="/DonateNow" exact element={<DonateNow />} />
+        <Route path="/DonateFood" exact element={<DonateFood />} />
+        <Route path="/DonateMoney" exact element={<DonateMoney />} />
       </Routes>
       <Footer />
     </Router>
