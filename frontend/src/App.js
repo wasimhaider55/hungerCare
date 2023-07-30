@@ -12,7 +12,10 @@ import DisabledPeopleSupport from "./components/navbar/pages/disabledpeoplesuppo
 import FreeFoodDis from "./components/navbar/pages/freefooddist/FreeFoodDis";
 import OrphanFamilySupport from "./components/navbar/pages/orphanfamilysupport/OrphanFamilySupport";
 import PoorFamilySupport from "./components/navbar/pages/poorfamilysupport/PoorFamilySupport";
+// Gallery Import
 import Gallery from "./components/gallery/Gallery";
+import ImageAlbum from "./components/gallery/imageAlbum/ImageAlbum";
+// End
 import Footer from "./components/footer/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import DonateNow from "./components/donate/DonateNow";
@@ -50,7 +53,10 @@ function App() {
           exact
           element={<DisabledPeopleSupport />}
         />
+        {/* Gallery Components Routing */}
         <Route path="/gallery" exact element={<Gallery />} />
+        <Route path="/gallery/galleryalbum" exact element={<ImageAlbum />} />
+        {/* Gallery components Rounting end */}
         <Route path="/DonateNow" exact element={<DonateNow />} />
         <Route path="/DonateFood" exact element={<DonateFood />} />
         <Route path="/DonateMoney" exact element={<DonateMoney />} />
