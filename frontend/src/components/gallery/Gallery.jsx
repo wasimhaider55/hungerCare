@@ -31,7 +31,7 @@ const Gallery = () => {
         {/* Introduction section closed */}
 
         {/* Picture Card Section Open */}
-        <div className="w-full grid md:grid-cols-3 gap-5 my-[5rem] ">
+        <div className="w-full grid md:grid-cols-3 gap-5 my-[5rem] bg-gradient-to-t from-blue-900 bg-black p-10 ">
           <div>
             <Card
               title="ImageAlbum"
