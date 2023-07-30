@@ -55,7 +55,7 @@ function App() {
         />
         {/* Gallery Components Routing */}
         <Route path="/gallery" exact element={<Gallery />} />
-        <Route path="/gallery/galleryalbum" exact element={<ImageAlbum />} />
+        <Route path="/gallery/imagealbum" exact element={<ImageAlbum />} />
         {/* Gallery components Rounting end */}
         <Route path="/DonateNow" exact element={<DonateNow />} />
         <Route path="/DonateFood" exact element={<DonateFood />} />
