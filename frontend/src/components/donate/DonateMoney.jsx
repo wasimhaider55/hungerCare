@@ -29,7 +29,7 @@ const DonateMoney = () => {
             <div className='pt-20 md:pl-20 pl-10'>
                 <h1 className=' text-black text-4xl font-bold'> How To Donate </h1>
                 <div className=' w-24 h-1 bg-red-500 rounded-full mt-3'></div>
-                <p className='text-2xl pt-5 text-black'>Donation can be made to HungerCare Foundation using one of the following methods:</p>
+                <p className='text-2xl pt-5 text-black'>Donation can be made to HungerCare Foundation using one of the following methods :</p>
             </div>
 
 
