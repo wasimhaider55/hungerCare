@@ -8,7 +8,7 @@ const Card = () => {
     return (
         <section >
 
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 mx-3 sm:mx-20 sm:px-0 py-24 text-white'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 mx-3 sm:mx-20 sm:px-0 sm:py-24 py-4 text-white'>
                 <Link to="/AboutUs#whoWeAre">
                     <div className='bg-gradient-to-b from-blue-700 bg-black p-8 rounded-xl mix-blend-luminosity cursor-pointer shadow-lg shadow-slate-900 hover:bg-blue-500 hover:scale-105'>
                         <span className='grid grid-cols-1 place-items-center'> <FaRegHandshake size={50} /> </span>
