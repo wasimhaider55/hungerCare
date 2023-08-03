@@ -54,17 +54,17 @@ function App() {
   };
 
   return (
-    <div className="max-w-[1400px] h-[550px] w-full m-auto py-16 px-4 relative group my-[8rem]  ">
+    <div className="max-w-[1400px] h-[550px] w-full m-auto py-16 md:px-4 relative group my-[8rem]  ">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-[50%] h-[100%] mx-auto  rounded-2xl bg-center bg-cover duration-500"
+        className="w-[70%] md:w-[40%] h-[80%] m-auto  rounded-2xl bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[42%] md:top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full md:p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
       {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div className="hidden group-hover:block absolute top-[42%] md:top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full md:p-2 bg-black/20 text-white cursor-pointer">
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
       <div className="flex top-4 justify-center py-6 w-[80%] mx-auto">

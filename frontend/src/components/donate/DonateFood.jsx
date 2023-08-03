@@ -84,110 +84,120 @@ const DonateFood = () => {
                 <span>Required</span>
               </div>
               <div>
-                <label htmlFor="organizationName" className="text-lg">
+                <h1 htmlFor="organizationName" className="text-lg">
                   1. Enter Organization Name
-                </label>
+                </h1>
 
                 <input
                   type="text"
                   id="organizationName"
                   name="organizationName"
                   placeholder="Enter your answer"
-                  className="w-full bg-white border border-gray-300 py-2 px-5 ml-[1rem] mt-[2rem] rounded rounded-lg"
+                  className="w-full bg-white  py-2 px-5 ml-[1rem] mt-[2rem] rounded rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 />
               </div>
               {/* Organization  */}
               <div>
-                <h1 className="text-lg">2. Organisation Type</h1>
+                <h1 className="text-lg" htmlFor="check">
+                  2. Organisation Type
+                </h1>
                 <div className="pl-[1rem] space-y-6 mt-6 text-sm">
                   <div className="flex gap-2">
-                    <input type="radio" name="events" id="events" />
-                    <label htmlFor="events">Events/Catering</label>
+                    <input type="radio" name="check" id="check" />
+                    <h1>Events/Catering</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="farm" id="farm" />
-                    <label htmlFor="farm">Farm</label>
+                    <input type="radio" name="check" id="check" />
+                    <h1>Farm</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="manufacture" id="manufacture" />
-                    <label htmlFor="manufacture">Manufacturer/Producer</label>
+                    <input type="radio" name="check" id="check" />
+                    <h1>Manufacturer/Producer</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="wholesaler" id="wholesaler" />
-                    <label htmlFor="wholesaler">Wholesaler</label>
+                    <input type="radio" name="check" id="check" />
+                    <h1>Wholesaler</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="distributor" id="distributor" />
-                    <label htmlFor="distributor">Distributor</label>
+                    <input type="radio" name="check" id="check" />
+                    <h1>Distributor</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="restaurant" id="restaurant" />
-                    <label htmlFor="restaurant">Restaurant</label>
+                    <input type="radio" name="check" id="check" />
+                    <h1>Restaurant</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="film" id="film" />
-                    <label htmlFor="film">Film</label>
+                    <input type="radio" name="check" id="check" />
+                    <h1>Film</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="other" id="other" />
-                    <label htmlFor="other">Other</label>
+                    <input type="radio" name="check" id="check" />
+                    <h1>Other</h1>
                   </div>
                 </div>
               </div>
               <div>
-                <label htmlFor="organizationName" className="text-lg">
+                <h1 htmlFor="name" className="text-lg">
                   3. Enter Name
-                </label>
+                </h1>
 
                 <input
                   type="text"
-                  id="organizationName"
-                  name="organizationName"
+                  id="name"
+                  name="name"
                   placeholder="Enter your answer"
-                  className="w-full bg-white border border-gray-300 py-2 px-5 ml-[1rem] mt-[2rem] rounded rounded-lg"
+                  className="w-full bg-white  py-2 px-5 ml-[1rem] mt-[2rem] rounded rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1  "
                 />
               </div>{" "}
               <div>
-                <label htmlFor="organizationName" className="text-lg">
+                <h1 htmlFor="organizationName" className="text-lg">
                   4. Please provide your phone number
-                </label>
+                </h1>
 
                 <input
                   type="text"
                   id="organizationName"
                   name="organizationName"
                   placeholder="Enter your answer"
-                  className="w-full bg-white border border-gray-300 py-2 px-5 ml-[1rem] mt-[2rem] rounded rounded-lg"
+                  className="w-full bg-white  py-2 px-5 ml-[1rem] mt-[2rem] rounded rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 />
               </div>{" "}
               <div>
-                <label htmlFor="organizationName" className="text-lg">
+                <h1 htmlFor="organizationName" className="text-lg">
                   5. Please provide your email
-                </label>
+                </h1>
 
                 <input
                   type="text"
                   id="organizationName"
                   name="organizationName"
                   placeholder="Enter your answer"
-                  className="w-full bg-white border border-gray-300 py-2 px-5 ml-[1rem] mt-[2rem] rounded rounded-lg"
+                  className="w-full bg-white  py-2 px-5 ml-[1rem] mt-[2rem] rounded rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 />
               </div>{" "}
               <div>
-                <label htmlFor="organizationName" className="text-lg">
+                <h1 htmlFor="collect/deliver" className="text-lg">
                   6. Do you need us to collect or can you deliver to us?
-                </label>
-                <div className="pl-[1rem] flex flex-col gap-6 mt-6 font-xs">
+                </h1>
+                <div className="pl-[1rem] flex flex-col gap-6 mt-6 text-sm">
                   <div className="flex gap-2">
-                    <input type="radio" name="collection" id="collection" />
-                    <label htmlFor="collection">Collection</label>
+                    <input
+                      type="radio"
+                      name="collect/deliver"
+                      id="collect/deliver"
+                    />
+                    <h1>Collection</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="delivery" id="delivery" />
-                    <label htmlFor="delivery">
+                    <input
+                      type="radio"
+                      name="collect/deliver"
+                      id="collect/deliver"
+                    />
+                    <h1>
                       Delivery: Unit 8, Acton Park Industrial Estate, Kahi, W3
                       7YG
-                    </label>
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -196,7 +206,7 @@ const DonateFood = () => {
               </h1>
               <button
                 type="submit"
-                className="bg-[#5bb132]  md:w-[12%] rounded px-4 py-3 text-white"
+                className="bg-[#5bb132] w-full  md:w-[12%] rounded px-4 py-3 text-white"
               >
                 Submit
               </button>

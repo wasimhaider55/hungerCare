@@ -13,7 +13,7 @@ const Gallery = () => {
       </div>
       {/* Gallery section Closed */}
       {/* Introduction section open */}
-      <section className="    pt-20 md:mx-[5rem] px-10 ">
+      <section className="    pt-20 px-5  md:px-20 ">
         <div>
           <h1 className="text-4xl font-bold"> INTRODUCTION </h1>
           <div className=" w-24 h-1 bg-blue-500 rounded-full mt-3 "></div>
@@ -27,51 +27,49 @@ const Gallery = () => {
             album.
           </p>
         </div>
-
-        {/* Introduction section closed */}
-
-        {/* Picture Card Section Open */}
-        <div className="w-full grid md:grid-cols-3 gap-5 my-[5rem] bg-gradient-to-t from-blue-900 bg-black p-10 ">
-          <div>
-            <Card
-              title="ImageAlbum"
-              image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
-              link="/gallery/imagealbum"
-            />
-          </div>
-          <div>
-            <Card
-              title="secondImage"
-              image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
-            />
-          </div>
-          <div>
-            <Card
-              title="thirdImage"
-              image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
-            />
-          </div>
-          <div>
-            <Card
-              title="fourthImage"
-              image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
-            />
-          </div>
-          <div>
-            <Card
-              title="fifthImage"
-              image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
-            />
-          </div>
-          <div>
-            <Card
-              title="sixthImage"
-              image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
-            />
-          </div>
-        </div>
-        {/* Picture Card Section closed */}
       </section>
+      {/* Introduction section closed */}
+      {/* Picture Card Section Open */}
+      <div className="w-full grid md:grid-cols-3 gap-8 my-[5rem] bg-gradient-to-t from-blue-900 bg-black py-10 md:py-20 px-1 md:px-20 ">
+        <div>
+          <Card
+            title="ImageAlbum"
+            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+            link="/gallery/imagealbum"
+          />
+        </div>
+        <div>
+          <Card
+            title="Daily lunch distribution in Hunger"
+            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+          />
+        </div>
+        <div>
+          <Card
+            title="thirdImage"
+            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+          />
+        </div>
+        <div>
+          <Card
+            title="fourthImage"
+            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+          />
+        </div>
+        <div>
+          <Card
+            title="fifthImage"
+            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+          />
+        </div>
+        <div>
+          <Card
+            title="sixthImage"
+            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+          />
+        </div>
+      </div>
+      {/* Picture Card Section closed */}
     </main>
   );
 };
