@@ -29,7 +29,7 @@ import ScrollToTop from "./components/ScrollToTop";
 //  Donate Now
 import DonateNow from "./components/donate/DonateNow";
 import DonateFood from "./components/donate/DonateFood";
-import DonateMoney from "./components/donate/DonateMoney";
+import DonateMoney from "./components/donate/donateMoney/DonateMoney";
 //  Donate Now End
 
 function App() {
