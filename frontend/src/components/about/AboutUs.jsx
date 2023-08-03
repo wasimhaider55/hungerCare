@@ -22,18 +22,33 @@ const AboutUs = () => {
             // const ScrollY = WINDOW_WIDTH >= 1390 ? 
             if (WINDOW_WIDTH >= 1390)
                 scroollY = 1390;
-            else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH >= 1080) {
+            else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH >= 800) {
                 // eslint-disable-next-line no-unused-vars
-                scroollY = 1200;
+                scroollY = 2070;
             }
-            else if (WINDOW_WIDTH < 1000 && WINDOW_WIDTH > 800) {
-                scroollY = 1600;
+            else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 100) {
+                scroollY = 2300;
             }
             else {
-                scroollY = 2200;
+                scroollY = 1470;
             }
+            window.scrollTo(50, scroollY);
+        }
 
-
+        if (location.hash === "#ourTeam") {
+            // const ScrollY = WINDOW_WIDTH >= 1390 ? 
+            if (WINDOW_WIDTH >= 1390)
+                scroollY = 1390;
+            else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH >= 800) {
+                // eslint-disable-next-line no-unused-vars
+                scroollY = 2900;
+            }
+            else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 100) {
+                scroollY = 3290;
+            }
+            else {
+                scroollY = 2100;
+            }
             window.scrollTo(50, scroollY);
         }
 
@@ -109,7 +124,7 @@ const AboutUs = () => {
             {/* Our history section Closed */}
 
 
-             {/* what we Do section  */}
+            {/* what we Do section  */}
 
             <section >
                 <div id="whatWeDo" className=' lg:text-4xl text-3xl font-bold pt-4 lg:pl-24 md:pl-20 pl-4 uppercase'>
