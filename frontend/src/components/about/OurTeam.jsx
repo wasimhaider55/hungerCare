@@ -1,7 +1,8 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import wasimhaider from "../../assets/teamPics/wasimhaider.png"
+import wasimhaider from "../../assets/teamPics/wasimhaider.png";
+import {Link} from "react-router-dom"
 
 
 const OurTeam = () => {
@@ -79,11 +80,12 @@ const OurTeam = () => {
 
 
             {/* Help us Section */}
+            <Link to="/donateNow">
             <div className='md:flex md:justify-around md:items-center  py-10 px-14 h-56 bg-blue-400 '>
                 <h1 className='text-white font-bold sm:text-3xl text-2xl'>Help Us So We Can Help Others</h1>
                 <button className=' border-2 border-white rounded-2xl p-3 ml-24 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500'>Donate Now </button>
-
             </div>
+            </Link>
         </section>
     )
 }
