@@ -76,12 +76,12 @@ function App() {
   // Slider left Right Start
   const slideLeft = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft - 500;
+    slider.scrollLeft = slider.scrollLeft - 120;
   };
 
   const slideRight = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 500;
+    slider.scrollLeft = slider.scrollLeft + 120;
   };
   // Slider left Right End
 
@@ -109,7 +109,7 @@ function App() {
         />
         <div
           id="slider"
-          className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth "
+          className="w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide"
         >
           {slides.map((slide, slideIndex) => (
             <span key={slideIndex} onClick={() => goToSlide(slideIndex)}>
