@@ -86,7 +86,7 @@ function App() {
   // Slider left Right End
 
   return (
-    <div className="max-w-[1400px] h-[550px] w-full m-auto py-16 md:px-4 relative group my-[8rem]    ">
+    <div className="max-full h-[550px] w-full m-auto py-16 md:px-4 relative group my-[8rem]    ">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].img})` }}
         className="w-[70%] md:w-[40%] h-[80%] m-auto  rounded-2xl bg-center bg-cover duration-500"

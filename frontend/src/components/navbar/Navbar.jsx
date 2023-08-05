@@ -125,7 +125,7 @@ const Navbar = () => {
             hover:scale-101  duration-200 hover:underline"
           >
             <NavLink
-              to="/ContactUs"
+              to="/contactus"
               className={({ isActive }) =>
                 isActive ? "text-white underline" : ""
               }
