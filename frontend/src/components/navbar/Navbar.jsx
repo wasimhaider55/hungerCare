@@ -7,7 +7,7 @@ import Dropdown from "./Dropdown";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
-  // React Hooks 
+  // React Hooks
   const [nav, setNav] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
@@ -157,7 +157,6 @@ const Navbar = () => {
         {/* button components is render here */}
         <Button />
 
-
         {/* For Mobile screen  navBar */}
 
         <div onClick={handleClick} className="md:hidden z-10">
@@ -225,7 +224,7 @@ const Navbar = () => {
           >
             <Link to="/gallery">Gallery</Link>
           </li>
-          
+
           <li
             onClick={() => {
               setNav(!nav);
@@ -252,10 +251,9 @@ const Navbar = () => {
             <Link to="/DonateNow">Donate Now</Link>
           </li>
         </ul>
-        
       </nav>
     </>
   );
-}
+};
 
 export default Navbar;
