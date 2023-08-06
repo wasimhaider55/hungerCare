@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "../Card";
+import Card from "./Card";
 
 const Gallery = () => {
   return (
-    <main className="pt-20">
+    <main className="pt-20" id="/gallery#picturegalllery">
       {/* Gallery section open */}
       <div className='w-full h-52 bg-cover bg-center bg-[url("https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675")]'>
         <div className=" text-white text-4xl font-bold  pt-20 md:pl-20 pl-10 ">
