@@ -178,7 +178,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className=" px-4 cursor-pointer capitalize py-6 text-4xl"
+            className=" px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/">Home</Link>
           </li>
@@ -191,7 +191,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className=" px-4 cursor-pointer capitalize py-6 text-4xl"
+            className=" px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/aboutus">About Us</Link>
           </li>
@@ -201,7 +201,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
@@ -220,7 +220,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/gallery">Gallery</Link>
           </li>
@@ -233,7 +233,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/contactus">Contact Us</Link>
           </li>
@@ -246,7 +246,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/DonateNow">Donate Now</Link>
           </li>
