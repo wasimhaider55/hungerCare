@@ -3,13 +3,14 @@ import { AiOutlineDown } from "react-icons/ai";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "./Button";
-import Dropdown from "./Dropdown";
+import { Dropdown, Drop } from "./Dropdown";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   // React Hooks
   const [nav, setNav] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [drop, setDrop] = useState(false);
 
   const handleClick = () => {
     setNav(!nav);
@@ -22,9 +23,19 @@ const Navbar = () => {
   const onMouseLeave = () => {
     setDropdown(false);
   };
+  const onMouseEnter1 = () => {
+    setDrop("true");
+  };
+
+  const onMouseLeave1 = () => {
+    setDrop(false);
+  };
 
   const click = () => {
     setDropdown(false);
+  };
+  const click1 = () => {
+    setDrop(false);
   };
 
   return (
@@ -103,6 +114,9 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
+            onMouseEnter={onMouseEnter1}
+            onMouseLeave={onMouseLeave1}
+            onClick={click1}
             className="px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
@@ -112,8 +126,12 @@ const Navbar = () => {
                 isActive ? "text-white underline" : ""
               }
             >
-              Gallery
+              <div className="flex gap-2">
+                {" "}
+                Gallery <AiOutlineDown className="h-7" />
+              </div>
             </NavLink>
+            {drop && <Drop />}
           </li>
 
           <li
@@ -204,6 +222,7 @@ const Navbar = () => {
             className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={click}
           >
             <div className="flex gap-1">
               Our Causes <AiOutlineDown className="h-5 mt-4" />

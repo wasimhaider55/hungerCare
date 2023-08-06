@@ -18,7 +18,8 @@ import PoorFamilySupport from "./components/navbar/pages/poorfamilysupport/PoorF
 
 // Gallery Import
 import Gallery from "./components/gallery/Gallery";
-import ImageAlbum from "./components/gallery/imageAlbum/ImageAlbum";
+import PictureGallery from "./components/gallery/pictureGallery/PictureGallery";
+import VideoGallery from "./components/gallery/videoGallery/VideoGallery";
 // End
 // Footer import
 import Footer from "./components/footer/Footer";
@@ -65,7 +66,12 @@ function App() {
         />
         {/* Gallery Components Routing */}
         <Route path="/gallery" exact element={<Gallery />} />
-        <Route path="/gallery/imagealbum" exact element={<ImageAlbum />} />
+        <Route
+          path="/gallery/imagegallery"
+          exact
+          element={<PictureGallery />}
+        />
+        <Route path="/gallery/videogallery" exact element={<VideoGallery />} />
         {/* Gallery components Rounting end */}
 
         {/* Donate Now  */}
