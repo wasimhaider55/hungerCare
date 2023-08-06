@@ -67,7 +67,7 @@ function App() {
         {/* Gallery Components Routing */}
         <Route path="/gallery" exact element={<Gallery />} />
         <Route
-          path="/gallery/imagegallery"
+          path="/gallery/picturegallery"
           exact
           element={<PictureGallery />}
         />

@@ -22,12 +22,12 @@ export const imageItems = [
 ];
 export const videoItems = [
   {
-    title: "Picture Gallery",
-    path: "/gallery/imagegallery",
+    title: "Pictures Gallery",
+    path: "/gallery/picturegallery",
     cName: "dropdown-link",
   },
   {
-    title: "Video Gallery",
+    title: "Videos Gallery",
     path: "/gallery/videogallery",
     cName: "dropdown-link",
   },
