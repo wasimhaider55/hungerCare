@@ -7,10 +7,11 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import BottomToTop from "../BottomToTop"
 
 const Footer = () => {
   return (
-    <footer className="  left-0 right-0 w-full bg-gradient-to-t from-blue-900 bg-black   p-10 bottom-0 ">
+    <footer className="  left-0 right-0 w-full bg-gradient-to-t from-blue-900 bg-black   pt-10 ">
       <div className="container mx-auto">
         <div className="grid grid-col-1 md:grid-cols-4 gap-8 content-center ">
           {/* Column 1 */}
@@ -152,6 +153,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="flex justify-end items-end bg-blue-900 p-6 ">
+        <p className="text-white xl:pr-96 lg:pr-72 md:pr-48 sm:pr-16 pr-2  opacity-50">
+         Copyright ©2015 All Rights Reserved by spogmai Foundation pakistan
+        </p>
+        {/* Bottom To Top components render */}
+        <BottomToTop />
+      </div>
+      
     </footer>
   );
 };
