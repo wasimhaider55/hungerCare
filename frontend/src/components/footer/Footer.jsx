@@ -1,7 +1,4 @@
-import { React, useState } from "react";
 import { Link } from "react-router-dom";
-import Dropdown from "../navbar/Dropdown";
-import { AiOutlineDown } from "react-icons/ai";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
@@ -12,16 +9,6 @@ import {
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
-  const [dropdown, setDropdown] = useState(false);
-
-  const onMouseEnter = () => {
-    setDropdown("true");
-  };
-
-  const onMouseLeave = () => {
-    setDropdown(false);
-  };
-
   return (
     <footer className="  left-0 right-0 w-full bg-gradient-to-t from-blue-900 bg-black   p-10 bottom-0 ">
       <div className="container mx-auto">
@@ -48,9 +35,8 @@ const Footer = () => {
                 spy={"true"}
                 smooth={"true"}
                 duration={400}
-                offset={-80}
                 className="py-1 cursor-pointer capitalize 
-            hover:scale-101  duration-200 hover:underline"
+                hover:scale-101  duration-200 hover:text-white"
               >
                 <Link to="/">Home</Link>
               </li>
@@ -59,9 +45,8 @@ const Footer = () => {
                 spy={"true"}
                 smooth={"true"}
                 duration={400}
-                offset={-80}
                 className=" py-1 cursor-pointer capitalize 
-            hover:scale-101  duration-200 hover:underline"
+                hover:scale-101  duration-200  hover:text-white"
               >
                 <Link to="AboutUs">About Us</Link>
               </li>
@@ -70,28 +55,22 @@ const Footer = () => {
                 spy={"true"}
                 smooth={"true"}
                 duration={400}
-                offset={-80}
                 className="py-1 cursor-pointer capitalize 
-            hover:scale-101  duration-200 hover:underline"
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
+                hover:scale-101  duration-200  hover:text-white"
               >
-                <Link to="./services">
+                <Link to="./causes">
                   <div className="flex gap-2">
-                    {" "}
-                    Our Causes <AiOutlineDown className="h-7" />
+                    Our Causes
                   </div>
                 </Link>
-                {dropdown && <Dropdown />}
               </li>
               <li
                 activeclass="active"
                 spy={"true"}
                 smooth={"true"}
                 duration={400}
-                offset={-80}
                 className="py-1 cursor-pointer capitalize 
-            hover:scale-101  duration-200 hover:underline"
+                hover:scale-101  duration-200  hover:text-white"
               >
                 <Link to="./gallery">Gallery</Link>
               </li>
@@ -100,11 +79,20 @@ const Footer = () => {
                 spy={"true"}
                 smooth={"true"}
                 duration={400}
-                offset={-80}
                 className="py-1 cursor-pointer capitalize 
-            hover:scale-101  duration-200 hover:underline"
+                hover:scale-101  duration-200  hover:text-white"
               >
                 <Link to="/ContactUs">Contact Us</Link>
+              </li>
+              <li
+                activeclass="active"
+                spy={"true"}
+                smooth={"true"}
+                duration={400}
+                className="py-1 cursor-pointer capitalize 
+                hover:scale-101  duration-200  hover:text-white"
+              >
+                <Link to="/DonateNow">Donate Now</Link>
               </li>
             </ul>
           </div>
