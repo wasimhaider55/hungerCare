@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import Card from "./Card";
 import Charity from "./Charity";
@@ -29,19 +29,31 @@ const Home = () => {
   // create hooks
   const [currentIndex, setCurrentIndex] = useState(0);
   // previous sliding function
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
-  };
+  }, [currentIndex, slides.length]);
+
   // next sliding function
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     const isLastSlide = currentIndex === slides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-  };
+  }, [currentIndex, slides.length]);
+
+  // Add useEffect hooks to handle automatic sliding of carosel
+  useEffect(() => {
+    const slideInterval = setInterval(() => {
+      nextSlide();
+    }, 5000);
+    // Clean up the interval when the component unmounts
+    return () => {
+      clearInterval(slideInterval);
+    };
+  }, [currentIndex, nextSlide]); // Include nextSlide in the dependency array
   return (
-    <div>
+    <main>
       <section className="max-w-[1400px] sm:h-[730px] h-[400px] w-full m-auto py-16  group pt-20 sm:mt-0 mt-2">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -57,12 +69,12 @@ const Home = () => {
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
 
-        {/* <AboutUs/> */}
       </section>
       <Card />
       <Charity />
       <Causes />
-    </div>
+
+    </main>
   );
 };
 
