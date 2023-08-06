@@ -96,7 +96,7 @@ const Navbar = () => {
             onClick={click}
           >
             <NavLink
-              to="/ourcauses"
+              to="/OurActivities"
               className={({ isActive }) =>
                 isActive ? "text-white underline" : ""
               }

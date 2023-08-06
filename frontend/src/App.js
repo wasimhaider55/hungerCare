@@ -9,7 +9,7 @@ import Navbar from "./components/navbar/Navbar";
 import AboutUs from "./components/about/AboutUs";
 
 // OurCauses import
-import Causes from "./components/home/Causes";
+import OurActivities from "./components/activities/OurActivities";
 import DisabledPeopleSupport from "./components/navbar/pages/disabledpeoplesupport/DisabledPeopleSupport";
 import FreeFoodDis from "./components/navbar/pages/freefooddist/FreeFoodDis";
 import OrphanFamilySupport from "./components/navbar/pages/orphanfamilysupport/OrphanFamilySupport";
@@ -43,7 +43,7 @@ function App() {
         <Route path="/aboutus" exact element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/ourcauses" exact element={<Causes />} />
+        <Route path="/OurActivities" exact element={<OurActivities/>} />
         <Route
           path="/ourcauses/orphanfamilysupport"
           exact
