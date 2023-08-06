@@ -8,6 +8,8 @@ import ffd2 from "../../assets/freeFoodDis/ffd2.jpg";
 import ffd3 from "../../assets/freeFoodDis/ffd3.png";
 import ffd4 from "../../assets/freeFoodDis/ffd4.jpg";
 import ffd5 from "../../assets/freeFoodDis/ffd5.png";
+import spbg1 from "../../assets/freeFoodDis/spbg1.jpg";
+import spbg2 from "../../assets/freeFoodDis/spbg2.jpg";
 
 const Home = () => {
   const slides = [
@@ -25,6 +27,12 @@ const Home = () => {
     },
     {
       url: ffd5,
+    },
+    {
+      url: spbg1,
+    },
+    {
+      url: spbg2,
     },
     
   ];
