@@ -1,34 +1,34 @@
 export const imageItems = [
   {
+    id: 1,
     title: "Free Food Distribution",
     path: "/ourcauses/freefooddistribution",
-    cName: "dropdown-link",
   },
   {
+    id: 2,
     title: "Orphan Family Support",
     path: "/ourcauses/orphanfamilysupport",
-    cName: "dropdown-link",
   },
   {
+    id: 3,
     title: "Poor Family Support",
     path: "/ourcauses/poorfamilysupport",
-    cName: "dropdown-link",
   },
   {
+    id: 4,
     title: "Disabled People Support",
     path: "/ourcauses/disablepeoplesupport",
-    cName: "dropdown-link",
   },
 ];
 export const videoItems = [
   {
+    id: 1,
     title: "Pictures Gallery",
     path: "/gallery/picturegallery",
-    cName: "dropdown-link",
   },
   {
+    id: 2,
     title: "Videos Gallery",
     path: "/gallery/videogallery",
-    cName: "dropdown-link",
   },
 ];

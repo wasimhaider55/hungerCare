@@ -15,11 +15,11 @@ export function Dropdown() {
           click ? "clicked" : ""
         } bg-black  w-200 absolute  list-none text-start`}
       >
-        {imageItems.map((item, index) => {
+        {imageItems.map((item) => {
           return (
             <Link to={item.path}>
               <li
-                key={index}
+                key={item.id}
                 className=" py-2 px-4 text-sm  bg-[#004d73] cursor-pointer hover:bg-blue-700"
               >
                 {item.title}
@@ -44,12 +44,12 @@ export function Drop() {
           click1 ? "clicked" : ""
         } bg-black  w-200 absolute  list-none text-start`}
       >
-        {videoItems.map((item, index) => {
+        {videoItems.map((item) => {
           return (
             <Link to={item.path}>
               {" "}
               <li
-                key={index}
+                key={item.id}
                 className=" py-2 px-4 text-sm  bg-[#004d73] cursor-pointer hover:bg-blue-700"
               >
                 {item.title}
