@@ -17,12 +17,14 @@ export function Dropdown() {
       >
         {imageItems.map((item, index) => {
           return (
-            <li
-              key={index}
-              className=" p-2 text-sm  bg-gradient-to-t from-blue-900 to-bg-black cursor-pointer hover:bg-blue-700"
-            >
-              <Link to={item.path}>{item.title}</Link>
-            </li>
+            <Link to={item.path}>
+              <li
+                key={index}
+                className=" py-2 px-4 text-sm  bg-[#004d73] cursor-pointer hover:bg-blue-700"
+              >
+                {item.title}
+              </li>
+            </Link>
           );
         })}
       </ul>
@@ -44,12 +46,15 @@ export function Drop() {
       >
         {videoItems.map((item, index) => {
           return (
-            <li
-              key={index}
-              className=" p-2 text-sm  bg-gradient-to-t from-blue-900 to-bg-black cursor-pointer hover:bg-blue-700"
-            >
-              <Link to={item.path}>{item.title}</Link>
-            </li>
+            <Link to={item.path}>
+              {" "}
+              <li
+                key={index}
+                className=" py-2 px-4 text-sm  bg-[#004d73] cursor-pointer hover:bg-blue-700"
+              >
+                {item.title}
+              </li>
+            </Link>
           );
         })}
       </ul>
