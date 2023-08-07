@@ -9,7 +9,7 @@ import Navbar from "./components/navbar/Navbar";
 import AboutUs from "./components/about/AboutUs";
 
 // OurCauses import
-import Causes from "./components/home/Causes";
+import OurActivities from "./components/activities/OurActivities";
 import DisabledPeopleSupport from "./components/navbar/pages/disabledpeoplesupport/DisabledPeopleSupport";
 import FreeFoodDis from "./components/navbar/pages/freefooddist/FreeFoodDis";
 import OrphanFamilySupport from "./components/navbar/pages/orphanfamilysupport/OrphanFamilySupport";
@@ -18,7 +18,8 @@ import PoorFamilySupport from "./components/navbar/pages/poorfamilysupport/PoorF
 
 // Gallery Import
 import Gallery from "./components/gallery/Gallery";
-import ImageAlbum from "./components/gallery/imageAlbum/ImageAlbum";
+import PictureGallery from "./components/gallery/pictureGallery/PictureGallery";
+import VideoGallery from "./components/gallery/videoGallery/VideoGallery";
 // End
 // Footer import
 import Footer from "./components/footer/Footer";
@@ -42,7 +43,7 @@ function App() {
         <Route path="/aboutus" exact element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/ourcauses" exact element={<Causes />} />
+        <Route path="/OurActivities" exact element={<OurActivities/>} />
         <Route
           path="/ourcauses/orphanfamilysupport"
           exact
@@ -65,7 +66,12 @@ function App() {
         />
         {/* Gallery Components Routing */}
         <Route path="/gallery" exact element={<Gallery />} />
-        <Route path="/gallery/imagealbum" exact element={<ImageAlbum />} />
+        <Route
+          path="/gallery/picturegallery"
+          exact
+          element={<PictureGallery />}
+        />
+        <Route path="/gallery/videogallery" exact element={<VideoGallery />} />
         {/* Gallery components Rounting end */}
 
         {/* Donate Now  */}

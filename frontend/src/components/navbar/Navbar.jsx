@@ -3,13 +3,14 @@ import { AiOutlineDown } from "react-icons/ai";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "./Button";
-import Dropdown from "./Dropdown";
+import { Dropdown, Drop } from "./Dropdown";
 import logo from "../../assets/logo.png";
 
 const Navbar = () => {
-  // React Hooks 
+  // React Hooks
   const [nav, setNav] = useState(false);
   const [dropdown, setDropdown] = useState(false);
+  const [drop, setDrop] = useState(false);
 
   const handleClick = () => {
     setNav(!nav);
@@ -22,9 +23,19 @@ const Navbar = () => {
   const onMouseLeave = () => {
     setDropdown(false);
   };
+  const onMouseEnter1 = () => {
+    setDrop("true");
+  };
+
+  const onMouseLeave1 = () => {
+    setDrop(false);
+  };
 
   const click = () => {
     setDropdown(false);
+  };
+  const click1 = () => {
+    setDrop(false);
   };
 
   return (
@@ -85,7 +96,7 @@ const Navbar = () => {
             onClick={click}
           >
             <NavLink
-              to="/ourcauses"
+              to="/OurActivities"
               className={({ isActive }) =>
                 isActive ? "text-white underline" : ""
               }
@@ -103,6 +114,9 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
+            onMouseEnter={onMouseEnter1}
+            onMouseLeave={onMouseLeave1}
+            onClick={click1}
             className="px-4 cursor-pointer capitalize 
             hover:scale-101  duration-200 hover:underline"
           >
@@ -112,8 +126,12 @@ const Navbar = () => {
                 isActive ? "text-white underline" : ""
               }
             >
-              Gallery
+              <div className="flex gap-2">
+                {" "}
+                Gallery <AiOutlineDown className="h-7" />
+              </div>
             </NavLink>
+            {drop && <Drop />}
           </li>
 
           <li
@@ -125,7 +143,7 @@ const Navbar = () => {
             hover:scale-101  duration-200 hover:underline"
           >
             <NavLink
-              to="/ContactUs"
+              to="/contactus"
               className={({ isActive }) =>
                 isActive ? "text-white underline" : ""
               }
@@ -157,7 +175,6 @@ const Navbar = () => {
         {/* button components is render here */}
         <Button />
 
-
         {/* For Mobile screen  navBar */}
 
         <div onClick={handleClick} className="md:hidden z-10">
@@ -179,7 +196,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className=" px-4 cursor-pointer capitalize py-6 text-4xl"
+            className=" px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/">Home</Link>
           </li>
@@ -192,7 +209,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className=" px-4 cursor-pointer capitalize py-6 text-4xl"
+            className=" px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/aboutus">About Us</Link>
           </li>
@@ -202,9 +219,10 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
+            onClick={click}
           >
             <div className="flex gap-1">
               Our Causes <AiOutlineDown className="h-5 mt-4" />
@@ -221,11 +239,11 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/gallery">Gallery</Link>
           </li>
-          
+
           <li
             onClick={() => {
               setNav(!nav);
@@ -234,7 +252,7 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/contactus">Contact Us</Link>
           </li>
@@ -247,15 +265,14 @@ const Navbar = () => {
             spy={"true"}
             smooth={"true"}
             duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
           >
             <Link to="/DonateNow">Donate Now</Link>
           </li>
         </ul>
-        
       </nav>
     </>
   );
-}
+};
 
 export default Navbar;
