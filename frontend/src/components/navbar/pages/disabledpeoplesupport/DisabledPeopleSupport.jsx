@@ -27,8 +27,9 @@ const DisabledPeopleSupport = () => {
   return (
     <main className=" pt-20">
       {/*Disabled people support section open */}
-      <div className='w-full h-52 bg-cover bg-center bg-[url("https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675")]'>
-        <div className=' text-white text-4xl font-bold  pt-20 md:pl-20 pl-10 '>
+      <div className='relative w-full h-52 bg-cover bg-center bg-[url("https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675")]'>
+        <div className=" absolute inset-0 bg-gray-900 opacity-60"></div>
+        <div className=' absolute text-white text-4xl font-bold  pt-20 md:pl-20 pl-10 '>
           <h1 className=''>Disabled People Support </h1>
           <div className=' w-24 h-1 bg-red-500 rounded-full mt-3 '></div>
         </div>
@@ -139,10 +140,10 @@ const DisabledPeopleSupport = () => {
 
       {/* Help us Section open */}
       <Link to="/donateNow">
-      <div className='md:flex md:justify-around md:items-center py-10 my-5 px-14 h-56 bg-blue-400 '>
-        <h1 className='text-white font-bold sm:text-3xl text-2xl'>Help Us So We Can help many more disabled people</h1>
-        <button className=' border-2 border-white rounded-2xl p-3 ml-24 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500'>Donate Now </button>
-      </div>
+        <div className='md:flex md:justify-around md:items-center py-10 my-5 px-14 h-56 bg-blue-400 '>
+          <h1 className='text-white font-bold sm:text-3xl text-2xl'>Help Us So We Can help many more disabled people</h1>
+          <button className=' border-2 border-white rounded-2xl p-3 ml-24 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500'>Donate Now </button>
+        </div>
       </Link>
       {/* Help us Section closed */}
     </main>
