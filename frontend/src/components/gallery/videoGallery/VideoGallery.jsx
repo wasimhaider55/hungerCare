@@ -52,7 +52,7 @@ const VideoGallery = () => {
       </section>
       {/* Introduction section closed */}
       {/*Ramazan Ration Packages section open*/}
-      <section className="bg-[#004d73] text-white my-10">
+      <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
           <h1 className="text-center ">DAILY MEAL DISTRIBUTION</h1>
         </div>
@@ -89,7 +89,7 @@ const VideoGallery = () => {
       </section>
       {/*Ramazan Ration Packages section closed*/}
       {/*Ramazan Ration Packages section open*/}
-      <section className="bg-[#004d73] text-white my-10">
+      <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
           <h1 className="text-center ">MONTHLY RATION PACKAGES DISTRIBUTION</h1>
         </div>
@@ -126,7 +126,7 @@ const VideoGallery = () => {
       </section>
       {/*Ramazan Ration Packages section closed*/}
       {/*Ramazan Ration Packages section open*/}
-      <section className="bg-[#004d73] text-white my-10">
+      <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
           <h1 className="text-center ">CASH DISTRIBUTION ON ROADS</h1>
         </div>
@@ -163,7 +163,7 @@ const VideoGallery = () => {
       </section>
       {/*Ramazan Ration Packages section closed*/}
       {/*Ramazan Ration Packages section open*/}
-      <section className="bg-[#004d73] text-white my-10">
+      <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
           <h1 className="text-center ">WINTER PACKAGES DISTRIBUTION</h1>
         </div>
@@ -200,7 +200,7 @@ const VideoGallery = () => {
       </section>
       {/*Ramazan Ration Packages section closed*/}
       {/*Ramazan Ration Packages section open*/}
-      <section className="bg-[#004d73] text-white my-10">
+      <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
           <h1 className="text-center ">LUNCH BOXES DISTRIBUTION ON ROADS</h1>
         </div>
@@ -237,7 +237,7 @@ const VideoGallery = () => {
       </section>
       {/*Ramazan Ration Packages section closed*/}
       {/*Ramazan Ration Packages section open*/}
-      <section className="bg-[#004d73] text-white my-10">
+      <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
           <h1 className="text-center ">WATER PROJECTS</h1>
         </div>
