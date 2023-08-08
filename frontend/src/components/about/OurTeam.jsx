@@ -27,9 +27,9 @@ const OurTeam = () => {
         }
     };
     return (
-        <section className=' bg-gradient-to-b from-black to-blue-900'>
+        <section className='bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9]'>
 
-            <h1 className='lg:text-4xl text-4xl font-bold  text-center text-white py-8'>
+            <h1 className='lg:text-4xl text-4xl font-bold  text-center text-black py-8'>
                 Our Core Team Members
             </h1>
 

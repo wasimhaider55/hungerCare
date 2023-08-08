@@ -100,7 +100,7 @@ const AboutUs = () => {
 
 
             {/* Our history section Open */}
-            <section className='bg-gradient-to-t from-blue-900 bg-black text-white'>
+            <section className='bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black'>
 
                 <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4 uppercase'>
                     <h1>Our History</h1>
