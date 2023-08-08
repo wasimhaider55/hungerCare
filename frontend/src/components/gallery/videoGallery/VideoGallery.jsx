@@ -1,6 +1,29 @@
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+import VideoCard from "./VideoCard";
 
 const VideoGallery = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <main className="pt-20">
       {/* Gallery section open */}
@@ -28,6 +51,228 @@ const VideoGallery = () => {
         </div>
       </section>
       {/* Introduction section closed */}
+      {/*Ramazan Ration Packages section open*/}
+      <section className="bg-[#004d73] text-white my-10">
+        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
+          <h1 className="text-center ">DAILY MEAL DISTRIBUTION</h1>
+        </div>
+
+        <Carousel
+          responsive={responsive}
+          className=" lg:mx-20 text-white py-10"
+        >
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 1"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 2"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 3"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 4"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 5"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 6"
+          />
+        </Carousel>
+      </section>
+      {/*Ramazan Ration Packages section closed*/}
+      {/*Ramazan Ration Packages section open*/}
+      <section className="bg-[#004d73] text-white my-10">
+        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
+          <h1 className="text-center ">MONTHLY RATION PACKAGES DISTRIBUTION</h1>
+        </div>
+
+        <Carousel
+          responsive={responsive}
+          className=" lg:mx-20 text-white py-10"
+        >
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 1"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 2"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 3"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 4"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 5"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 6"
+          />
+        </Carousel>
+      </section>
+      {/*Ramazan Ration Packages section closed*/}
+      {/*Ramazan Ration Packages section open*/}
+      <section className="bg-[#004d73] text-white my-10">
+        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
+          <h1 className="text-center ">CASH DISTRIBUTION ON ROADS</h1>
+        </div>
+
+        <Carousel
+          responsive={responsive}
+          className=" lg:mx-20 text-white py-10"
+        >
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 1"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 2"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 3"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 4"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 5"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 6"
+          />
+        </Carousel>
+      </section>
+      {/*Ramazan Ration Packages section closed*/}
+      {/*Ramazan Ration Packages section open*/}
+      <section className="bg-[#004d73] text-white my-10">
+        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
+          <h1 className="text-center ">WINTER PACKAGES DISTRIBUTION</h1>
+        </div>
+
+        <Carousel
+          responsive={responsive}
+          className=" lg:mx-20 text-white py-10"
+        >
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 1"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 2"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 3"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 4"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 5"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 6"
+          />
+        </Carousel>
+      </section>
+      {/*Ramazan Ration Packages section closed*/}
+      {/*Ramazan Ration Packages section open*/}
+      <section className="bg-[#004d73] text-white my-10">
+        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
+          <h1 className="text-center ">LUNCH BOXES DISTRIBUTION ON ROADS</h1>
+        </div>
+
+        <Carousel
+          responsive={responsive}
+          className=" lg:mx-20 text-white py-10"
+        >
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 1"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 2"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 3"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 4"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 5"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 6"
+          />
+        </Carousel>
+      </section>
+      {/*Ramazan Ration Packages section closed*/}
+      {/*Ramazan Ration Packages section open*/}
+      <section className="bg-[#004d73] text-white my-10">
+        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
+          <h1 className="text-center ">WATER PROJECTS</h1>
+        </div>
+
+        <Carousel
+          responsive={responsive}
+          className=" lg:mx-20 text-white py-10"
+        >
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 1"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 2"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 3"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 4"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 5"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="Video 6"
+          />
+        </Carousel>
+      </section>
+      {/*Ramazan Ration Packages section closed*/}
     </main>
   );
 };

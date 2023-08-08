@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Gallery = () => {
   return (
-    <main className="w-full grid lg:grid-cols-2 gap-2 md:gap-0  min-h-screen mt-20   place-items-center   py-10 md:py-20 px-2 lg:px-20 ">
+    <main className="w-full grid lg:grid-cols-2 gap-2 md:gap-0  min-h-screen mt-20   place-items-center   py-10 md:py-15 px-4 lg:px-20 ">
       <Card
         link="/gallery/picturegallery"
         title="Pictures Gallery"
