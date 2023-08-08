@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import WTOC from "../../assets/freeFoodDis/WTOC.png"
 
 const Charity = () => {
     return (
@@ -13,17 +15,21 @@ const Charity = () => {
                 <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-20 gap-6'>
                     <div className="lg:w-[50%]">
                         <p className=' pl-1 pb-4 lg:pr-24 md:pr-24 sm:pr-24 text-justify '>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum,
+                            Spogmai Foundation is a well-known and successful non-profit, non-governmental, and non-political charity Hangu organization. Since 2015, the Spogmai Foundation has been working to give Timely Aid and Relief Support (Spogmai) to the poor people of Hangu District.
+                            <br />
+                            Founded by a local patron, Tahir Fada, and later joined by other volunteers motivated to make a difference, the foundation has now benefited thousands of families and many other individuals in a variety of ways.
+                            <br />
+                            Our charitable organization is committed to delivering safe and clean monthly rations, free food distribution, orphan support, and other services to communities throughout the Hangu area. We think that poor and needy family help is a basic human right and that every person deserves access to it.
                         </p>
-                        <button className=' bg-blue-600 p-4 rounded-3xl font-bold my-5'>Read More</button>
+                        <Link to="/AboutUs">
+                        <button className=' bg-blue-700 p-4 rounded-3xl font-bold my-5 border-2 border-white hover:scale-105'>
+                            Read More
+                        </button>
+                        </Link>
                     </div>
 
                     <div className='lg:w-[50%]'>
-                        <img src="https://love.lambeth.gov.uk/wp-content/uploads/2020/05/hubs-2-500-x-320.jpg" alt="who we are " />
+                        <img src={WTOC} alt="who we are " />
                     </div>
                 </div>
 
