@@ -3,7 +3,7 @@ import Card from "./Card";
 
 const Gallery = () => {
   return (
-    <main className="pt-20" id="/gallery#picturegalllery">
+    <main className="pt-20 " id="/gallery#picturegalllery">
       {/* Gallery section open */}
       <div className='w-full h-52 bg-cover bg-center bg-[url("https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675")]'>
         <div className=" text-white text-4xl font-bold  pt-20 md:pl-20 pl-10 ">
@@ -13,10 +13,9 @@ const Gallery = () => {
       </div>
       {/* Gallery section Closed */}
       {/* Introduction section open */}
-      <section className="    pt-20 px-5  md:px-20 ">
+      <section className="    pt-20 px-5  md:px-20 bg-white">
         <div>
-          <h1 className="text-4xl font-bold"> INTRODUCTION </h1>
-          <div className=" w-24 h-1 bg-blue-500 rounded-full mt-3 "></div>
+          <h1 className="text-4xl font-bold "> INTRODUCTION </h1>
 
           <p className="py-10 text-gray-500">
             Welcome to our Picture gallery! Here you can find picture of our
@@ -30,7 +29,7 @@ const Gallery = () => {
       </section>
       {/* Introduction section closed */}
       {/* Picture Card Section Open */}
-      <div className="w-full grid md:grid-cols-3 gap-8 my-[5rem] bg-gradient-to-t from-blue-900 bg-black py-10 md:py-20 px-1 md:px-20 ">
+      <div className="w-full grid md:grid-cols-3 gap-8 my-[5rem] bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black py-10 md:py-20 px-1 md:px-20 ">
         <div>
           <Card
             title="ImageAlbum"

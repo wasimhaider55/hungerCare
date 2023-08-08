@@ -7,18 +7,18 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import BottomToTop from "../BottomToTop"
+import BottomToTop from "../BottomToTop";
 
 const Footer = () => {
   return (
-    <footer className="  left-0 right-0 w-full bg-gradient-to-t from-blue-900 bg-black   pt-10 ">
+    <footer className="  left-0 right-0 w-full bg-[#004d73]   pt-10 ">
       <div className="container mx-auto">
         <div className="grid grid-col-1 md:grid-cols-4 gap-8 content-center ">
           {/* Column 1 */}
           <div className="text-white">
             <h1 className="font-bold text-lg">HungerCare</h1>
             <div>
-              <p className="p-10 text-gray-500">
+              <p className="p-10 text-gray-300">
                 HungerCare Foundation is a registered non-governmental,
                 non-political and non-profit charity organization of KPK
                 Province of Pakistan, working since 2015 to support the poorest
@@ -30,7 +30,7 @@ const Footer = () => {
           {/* Column 2 */}
           <div className="text-white">
             <h1 className="font-bold text-lg">Useful Links</h1>
-            <ul className="  p-10  justify-center text-gray-500 ">
+            <ul className="  p-10  justify-center text-gray-300 ">
               <li
                 activeclass="active"
                 spy={"true"}
@@ -60,9 +60,7 @@ const Footer = () => {
                 hover:scale-101  duration-200  hover:text-white"
               >
                 <Link to="./causes">
-                  <div className="flex gap-2">
-                    Our Causes
-                  </div>
+                  <div className="flex gap-2">Our Causes</div>
                 </Link>
               </li>
               <li
@@ -102,18 +100,18 @@ const Footer = () => {
 
           <div className="text-white">
             <h1 className="font-bold text-lg">Our Social Media Links</h1>
-            <ul className="flex gap-4 text-2xl text-blue-500 p-10 ">
-              <li className="cursor-pointer border border-blue-300  hover:border-blue-500 p-2">
+            <ul className="flex gap-4 text-2xl text-gray-300 p-10 ">
+              <li className="cursor-pointer border border-gray-300  hover:border-blue-500 p-2">
                 <i>
                   <FaFacebookSquare />
                 </i>
               </li>
-              <li className="cursor-pointer border border-blue-300  hover:border-blue-500 p-2">
+              <li className="cursor-pointer border border-gray-300  hover:border-blue-500 p-2">
                 <i>
                   <FaTwitterSquare />
                 </i>
               </li>
-              <li className="cursor-pointer border border-blue-300 hover:border-blue-500 p-2">
+              <li className="cursor-pointer border border-gray-300 hover:border-blue-500 p-2">
                 <i>
                   <FaYoutubeSquare />
                 </i>
@@ -125,9 +123,9 @@ const Footer = () => {
           <div className="text-white">
             <h1 className="font-bold text-lg">Contact Info</h1>
             <div className="mt-[2rem]">
-              <ul className="text-gray-500">
+              <ul className="text-gray-300">
                 <li className="flex gap-3 my-[.5rem]">
-                  <i className="text-blue-500">
+                  <i className="text-gray-300">
                     <FaMapMarkerAlt />
                   </i>
                   <span>
@@ -137,13 +135,13 @@ const Footer = () => {
                   </span>
                 </li>
                 <li className="flex gap-3 my-[.5rem]">
-                  <i className="text-blue-500">
+                  <i className="text-gray-300">
                     <FaPhone />
                   </i>
                   <span>00923322178822</span>
                 </li>
                 <li className="flex gap-3 my-[.5rem]">
-                  <i className="text-blue-500">
+                  <i className="text-gray-300">
                     <MdEmail />
                   </i>
                   <span>hungercare11@gmail.com</span>
@@ -153,14 +151,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-end items-end bg-blue-900 p-6 ">
+      <hr className="border-1  border-gray-600" />
+      <div className="flex justify-end items-end bg-[#004d73] p-6 ">
         <p className="text-white xl:pr-96 lg:pr-72 md:pr-48 sm:pr-16 pr-2  opacity-50">
-         Copyright ©2015 All Rights Reserved by spogmai Foundation pakistan
+          Copyright ©2015 All Rights Reserved by spogmai Foundation pakistan
         </p>
         {/* Bottom To Top components render */}
         <BottomToTop />
       </div>
-      
     </footer>
   );
 };

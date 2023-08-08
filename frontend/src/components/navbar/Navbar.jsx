@@ -40,14 +40,14 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center fixed top-0 px-4 w-full h-20 text-white bg-gradient-to-t from-blue-900 bg-black z-10">
-        {/* navBar barand or logo */}
+      <nav className="flex justify-between items-center fixed top-0 px-4 w-full h-24 text-white bg-[#004d73] z-10">
+        {/* navBar brand or logo */}
         <div>
           <img src={logo} alt="LogoImage" className="h-[4rem] md:ml-5" />
         </div>
 
         {/* navBar Links started */}
-        <ul className="hidden md:flex justify-center text-gray-300">
+        <ul className="hidden md:flex justify-center text-gray-300 font-semibold">
           <li
             activeclass="active"
             spy={"true"}
