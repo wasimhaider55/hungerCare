@@ -53,7 +53,7 @@ const DisabledPeopleSupport = () => {
 
 
       {/* Disabled People Support section Open */}
-      <section className='bg-gradient-to-t from-blue-900 bg-black text-white'>
+      <section className='bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black'>
 
         <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 capitalize'>
           <h1 className='sm:pl-8 '>Disabled People Support</h1>
@@ -72,7 +72,7 @@ const DisabledPeopleSupport = () => {
             </p>
           </div>
 
-          <div className='lg:w-[40%] pb-5'>
+          <div className='lg:w-[40%] pb-5 text-white'>
             <div className=' lg:mx-16 md:mx-10 sm:mx-10 rounded-md shadow-lg shadow-slate-900'>
               <div className=' bg-gradient-to-l from-black to-blue-700  rounded-md cursor-pointer'>
                 <img src={bg1} alt="deily lunch distribution" className='p-1' />

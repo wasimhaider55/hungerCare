@@ -29,7 +29,7 @@ const DailyMealDis = () => {
         <main>
 
             {/* Daily Meal distribution section Open */}
-            <section className='bg-gradient-to-t from-blue-900 bg-black text-white'>
+            <section className='bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black'>
 
                 <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase'>
                     <h1 className='sm:pl-8 '>1. DAILY MEAL DISTRIBUTION</h1>
@@ -50,14 +50,14 @@ const DailyMealDis = () => {
 
                     <div className='lg:w-[40%] pb-5'>
                         <div className=' lg:mx-16 md:mx-10 sm:mx-10 rounded-md shadow-lg shadow-slate-900'>
-                            <div className=' bg-gradient-to-l from-black to-blue-700  rounded-md cursor-pointer'>
+                            <div className=' bg-gradient-to-l from-black to-blue-700 text-white  rounded-md cursor-pointer'>
                                 <img src={bg1} alt="deily lunch distribution" className='p-1' />
                                 <h1 className=' px-4 text-md pt-4 text-center'>Picture Gallery</h1>
                                 <p className=' px-4 text-sm my-3 font-light pb-4 text-center '> Daily lunch distribution in Hangu
                                 </p>
                             </div>
 
-                            <div className=' bg-gradient-to-l from-black to-blue-700  rounded-md cursor-pointer'>
+                            <div className=' bg-gradient-to-l from-black to-blue-700 text-white   rounded-md cursor-pointer'>
                                 <img className=' lg:mt-10 p-1' src={bg1} alt="deily lunch distribution" />
                                 <h1 className=' px-4 text-md pt-4 text-center'>Picture Gallery</h1>
                                 <p className=' px-4 text-sm  my-3 font-light  pb-4 text-center '> Daily Dinner distribution in shelter Home
@@ -193,7 +193,7 @@ const DailyMealDis = () => {
 
 
             {/*Ramazan Ration Packages section open*/}
-            <section className='bg-gradient-to-t from-blue-900 bg-black text-white'>
+            <section className='bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black'>
 
                 <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase'>
                     <h1 className='sm:pl-8 '>3. Ramazan RATION PACKAGES</h1>
