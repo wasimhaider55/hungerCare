@@ -99,7 +99,7 @@ const VideoGallery = () => {
           className=" lg:mx-20 text-white py-10"
         >
           <VideoCard
-            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
             title="Video 1"
           />
           <VideoCard
