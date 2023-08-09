@@ -29,7 +29,7 @@ const Gallery = () => {
       </section>
       {/* Introduction section closed */}
       {/* Picture Card Section Open */}
-      <div className="w-full grid md:grid-cols-3 gap-8 my-[5rem] bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black py-10 md:py-20 px-1 md:px-20 ">
+      <div className="w-full grid md:grid-cols-3 gap-8 my-[5rem]  py-10 md:py-20 px-1 md:px-20 ">
         <div>
           <Card
             title="ImageAlbum"
