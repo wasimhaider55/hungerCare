@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+
 import VideoCard from "../../../gallery/videoGallery/VideoCard";
 
 import Card from "./Card";
@@ -47,7 +48,6 @@ const Education = () => {
           </p>
           <ol className="list-decimal pl-5">
             <li>Orpahan education support</li>
-            <li>Slum school</li>
           </ol>
         </div>
       </section>
@@ -55,33 +55,22 @@ const Education = () => {
 
       {/*Education Support section open*/}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-20">
+        {/* Slum school section start */}
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">EDUCATION SUPPORT</h1>
+          <h1 className="sm:pl-8 ">ORPHAN EDUCATION SUPPORT</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio
-              consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et
-              blanditiis alias tenetur nemo repellat voluptas! Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Voluptatem aliquid
-              ipsa totam dolore quam, eligendi distinctio consectetur
-              voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis
-              alias tenetur nemo repellat voluptas! Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore
-              quam, eligendi distinctio consectetur voluptatibus maxime?
-              Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo
-              repellat voluptas! Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Voluptatem aliquid ipsa totam dolore quam,
-              eligendi distinctio consectetur voluptatibus maxime? Expedita
-              eaque, nulla ipsa et blanditiis alias tenetur nemo repellat
-              voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Voluptatem aliquid ipsa totam dolore quam, eligendi
-              distinctio consectetur voluptatibus maxime? Expedita eaque, nulla
-              ipsa et blanditiis alias tenetur nemo repellat voluptas! Lorem
-              ipsum,
+              There are a number of poor orphan families included under SPOGMAI
+              Foundation Monthly Widow/Orphan Family Support Program who
+              regularly receive monthly allowance up to Rs. 20,000 in the form
+              of cash from SPOGMAI Foundation for fulfilling their day to day
+              living expenses. Those orphan families include such orphans whose
+              educational expenses are also borne by SPOGMAI Foundation so that
+              their education is not suffered due to financial crises or
+              poverty.
             </p>
           </div>
 
@@ -89,6 +78,7 @@ const Education = () => {
             <Card />
           </div>
         </div>
+        {/* Slum school section end */}
 
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
