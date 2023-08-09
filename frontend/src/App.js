@@ -65,7 +65,11 @@ function App() {
           exact
           element={<DisabledPeopleSupport />}
         />
-        <Route path="/ourcauses/education" exact element={<Education />} />
+        <Route
+          path="/ourcauses/educationsupport"
+          exact
+          element={<Education />}
+        />
         {/* Gallery Components Routing */}
         <Route path="/gallery" exact element={<Gallery />} />
         <Route

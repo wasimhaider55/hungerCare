@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Card = (props) => {
   const { title, image, link } = props;
   return (
-    <div className="w-100  shadow-md rounded-lg overflow-hidden  transition transform hover:-translate-y-1 shadow-lg shadow-slate-900 ">
+    <div className="w-100   rounded-lg overflow-hidden  transition transform hover:-translate-y-1 shadow-lg shadow-slate-900 ">
       <Link to={link}>
         <div className="bg-blue-600  border-2 border-gray-500 ">
           <div className="relative group">
