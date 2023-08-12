@@ -145,11 +145,17 @@ const AboutUs = () => {
                 <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-20  gap-6'>
                     <div className="lg:w-[50%]">
                         <p className=' pl-1 pb-4 lg:pr-24 md:pr-24 sm:pr-24 text-justify '>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum,
+                            The Spogmai Foundation, a multi-sectoral charitable organization, offers financial assistance to
+                            the poorest communities in Hangu and surrounding areas that are struggling to meet their basic needs
+                            due to poverty, problems with finances, or economic crises. To provide help and relief support to needy
+                            families, including widows, orphans, handicapped elderly patients, the homeless, vulnerable, and all those afflicted
+                            by poverty, we have merged technology, resources, and workers.
+                            <br />
+                            Common people from over the world provide in a variety of ways, including with cash, food, clothing, shelter, medicine,
+                            sponsorship,education, and volunteering.
+                            <br />
+                            Zakat is one among the many forms of kindness that we accept. In accordance with Islamic Shariah, we use these charities in
+                            the appropriate sectors as Sadaqah, Fitrana, Kafarah and General Charity.
                         </p>
                     </div>
 
