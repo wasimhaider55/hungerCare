@@ -14,6 +14,7 @@ import DisabledPeopleSupport from "./components/navbar/pages/disabledpeoplesuppo
 import FreeFoodDis from "./components/navbar/pages/freefooddist/FreeFoodDis";
 import OrphanFamilySupport from "./components/navbar/pages/orphanfamilysupport/OrphanFamilySupport";
 import PoorFamilySupport from "./components/navbar/pages/poorfamilysupport/PoorFamilySupport";
+import Education from "./components/navbar/pages/education/Education";
 // OurCauses import End
 
 // Gallery Import
@@ -43,7 +44,7 @@ function App() {
         <Route path="/aboutus" exact element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/OurActivities" exact element={<OurActivities/>} />
+        <Route path="/OurActivities" exact element={<OurActivities />} />
         <Route
           path="/ourcauses/orphanfamilysupport"
           exact
@@ -63,6 +64,11 @@ function App() {
           path="/ourcauses/disablepeoplesupport"
           exact
           element={<DisabledPeopleSupport />}
+        />
+        <Route
+          path="/ourcauses/educationsupport"
+          exact
+          element={<Education />}
         />
         {/* Gallery Components Routing */}
         <Route path="/gallery" exact element={<Gallery />} />

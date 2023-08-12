@@ -98,8 +98,8 @@ const AboutUs = () => {
                     </p>
                 </div>
 
-                <div className='lg:w-[50%] sm:pt-14 sm:pl-10 '>
-                    <img src="https://love.lambeth.gov.uk/wp-content/uploads/2020/05/hubs-2-500-x-320.jpg" alt="who we are " />
+                <div className='lg:w-[50%]  sm:pl-10 '>
+                    <img src="https://scontent.fpew2-1.fna.fbcdn.net/v/t1.6435-9/186923574_2822234421439498_6703471043452647215_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFuazqjSTyW9GsAkMy2LCtKerEj2IzSP3Z6sSPYjNI_dqEV0nYioK01Rc_ihr2PM7VVSCOH7u_yboszMWBQLrek&_nc_ohc=NTW8_5jdzFMAX_QFWx2&_nc_ht=scontent.fpew2-1.fna&oh=00_AfAjrN7SI_ACFZl9VMbSAm_f5XXMtA0vboWZNw7Ivy-s8A&oe=64FAC5B3" alt="who we are " />
                 </div>
 
             </div>

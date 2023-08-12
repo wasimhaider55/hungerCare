@@ -3,7 +3,7 @@ import React from "react";
 const VideoCard = ({ link, title }) => {
   return (
     <div className="lg:mx-3 md:mx-12 sm:mx-10 mx-5 rounded-lg shadow-lg shadow-slate-900">
-      <div className=" bg-blue-600 rounded-lg  cursor-pointer">
+      <div className=" bg-gray-100 text-black rounded-lg  cursor-pointer">
         <iframe
           className="w-full aspect-video rounded-t-lg"
           src={link}

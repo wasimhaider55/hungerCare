@@ -22,7 +22,7 @@ const Charity = () => {
                             Our charitable organization is committed to delivering safe and clean monthly rations, free food distribution, orphan support, and other services to communities throughout the Hangu area. We think that poor and needy family help is a basic human right and that every person deserves access to it.
                         </p>
                         <Link to="/AboutUs">
-                        <button className=' bg-blue-700 p-4 rounded-3xl font-bold my-5 border-2 border-white hover:scale-105'>
+                        <button className=' bg-blue-500 p-4 rounded-3xl my-5 text-white border-2 border-white hover:scale-105'>
                             Read More
                         </button>
                         </Link>

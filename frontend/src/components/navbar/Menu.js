@@ -19,6 +19,11 @@ export const imageItems = [
     title: "Disabled People Support",
     path: "/ourcauses/disablepeoplesupport",
   },
+  {
+    id: 4,
+    title: "Education Support",
+    path: "/ourcauses/educationsupport",
+  },
 ];
 export const videoItems = [
   {

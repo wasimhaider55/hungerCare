@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import VideoCard from "./VideoCard";
+import VideoCard from "../../card/VideoCard";
 
 const VideoGallery = () => {
   const responsive = {
@@ -34,6 +34,7 @@ const VideoGallery = () => {
         </div>
       </div>
       {/* Gallery section Closed */}
+
       {/* Introduction section open */}
       <section className="    pt-20 px-5  md:px-20 ">
         <div>
@@ -51,6 +52,7 @@ const VideoGallery = () => {
         </div>
       </section>
       {/* Introduction section closed */}
+
       {/*Ramazan Ration Packages section open*/}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
@@ -88,6 +90,7 @@ const VideoGallery = () => {
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}
+
       {/*Ramazan Ration Packages section open*/}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
@@ -99,7 +102,7 @@ const VideoGallery = () => {
           className=" lg:mx-20 text-white py-10"
         >
           <VideoCard
-            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
             title="Video 1"
           />
           <VideoCard
@@ -125,6 +128,7 @@ const VideoGallery = () => {
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}
+
       {/*Ramazan Ration Packages section open*/}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
@@ -162,6 +166,7 @@ const VideoGallery = () => {
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}
+
       {/*Ramazan Ration Packages section open*/}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
@@ -199,6 +204,7 @@ const VideoGallery = () => {
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}
+
       {/*Ramazan Ration Packages section open*/}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
@@ -236,6 +242,7 @@ const VideoGallery = () => {
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}
+
       {/*Ramazan Ration Packages section open*/}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
