@@ -39,9 +39,7 @@ const Card = () => {
                     </div>
                 </Link>
 
-
             </div>
-
 
         </section>
     )
