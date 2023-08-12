@@ -16,7 +16,7 @@ const FreeFoodDis = () => {
 
 
       {/* Overview section Open */}
-      <div className=' lg:text-4xl text-3xl font-bold py-16 lg:pl-24 md:pl-20 pl-4'>
+      <div className='lg:text-4xl text-3xl font-bold py-16 lg:pl-24 md:pl-20 pl-4'>
         <h1>Overview</h1>
         <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
         <p className=' pl-1 pr-4 py-8 lg:pr-24 md:pr-24 sm:pr-24 text-justify text-lg '>
