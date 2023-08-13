@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import Card from "./Card";
+import IntroSection from "./IntroSection";
 import Charity from "./Charity";
 import Causes from "./Causes";
 import ffd1 from "../../assets/freeFoodDis/ffd1.png";
@@ -34,7 +34,6 @@ const Home = () => {
     {
       url: spbg2,
     },
-    
   ];
 
   // create hooks
@@ -79,12 +78,10 @@ const Home = () => {
         <div className="hidden group-hover:block absolute sm:top-[55%] top-[30%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
-
       </section>
-      <Card />
+      <IntroSection />
       <Charity />
       <Causes />
-
     </main>
   );
 };

@@ -1,11 +1,6 @@
 import { Link } from "react-router-dom";
-import {
-  FaFacebookSquare,
-  FaTwitterSquare,
-  FaYoutubeSquare,
-  FaPhone,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FooterMenu, FooterIcon } from "./Menu";
+import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import BottomToTop from "../BottomToTop";
 
@@ -18,119 +13,70 @@ const Footer = () => {
           <div className="text-white">
             <h1 className="font-bold text-lg">HungerCare</h1>
             <div>
-              <p className="p-10 text-gray-300">
-                HungerCare Foundation is a registered non-governmental,
+              <p className="p-5 text-gray-300">
+                Spogmai Foundation is a registered non-governmental,
                 non-political and non-profit charity organization of KPK
                 Province of Pakistan, working since 2015 to support the poorest
-                communities of Peshawar and connected areas.
+                communities of Hangu and connected areas.
               </p>
             </div>
           </div>
 
           {/* Column 2 */}
+          {/* Start of Menu  */}
           <div className="text-white">
             <h1 className="font-bold text-lg">Useful Links</h1>
-            <ul className="  p-10  justify-center text-gray-300 ">
-              <li
-                activeclass="active"
-                spy={"true"}
-                smooth={"true"}
-                duration={400}
-                className="py-1 cursor-pointer capitalize 
-                hover:scale-101  duration-200 hover:text-white"
-              >
-                <Link to="/">Home</Link>
-              </li>
-              <li
-                activeclass="active"
-                spy={"true"}
-                smooth={"true"}
-                duration={400}
-                className=" py-1 cursor-pointer capitalize 
-                hover:scale-101  duration-200  hover:text-white"
-              >
-                <Link to="AboutUs">About Us</Link>
-              </li>
-              <li
-                activeclass="active"
-                spy={"true"}
-                smooth={"true"}
-                duration={400}
-                className="py-1 cursor-pointer capitalize 
-                hover:scale-101  duration-200  hover:text-white"
-              >
-                <Link to="./causes">
-                  <div className="flex gap-2">Our Causes</div>
-                </Link>
-              </li>
-              <li
-                activeclass="active"
-                spy={"true"}
-                smooth={"true"}
-                duration={400}
-                className="py-1 cursor-pointer capitalize 
-                hover:scale-101  duration-200  hover:text-white"
-              >
-                <Link to="./gallery">Gallery</Link>
-              </li>
-              <li
-                activeclass="active"
-                spy={"true"}
-                smooth={"true"}
-                duration={400}
-                className="py-1 cursor-pointer capitalize 
-                hover:scale-101  duration-200  hover:text-white"
-              >
-                <Link to="/ContactUs">Contact Us</Link>
-              </li>
-              <li
-                activeclass="active"
-                spy={"true"}
-                smooth={"true"}
-                duration={400}
-                className="py-1 cursor-pointer capitalize 
-                hover:scale-101  duration-200  hover:text-white"
-              >
-                <Link to="/DonateNow">Donate Now</Link>
-              </li>
+            <ul className="  p-5  justify-center text-gray-300 ">
+              {FooterMenu.map((menu, index) => {
+                return (
+                  <Link key={index} to={menu.path}>
+                    {" "}
+                    <li
+                      activeclass="active"
+                      spy={"true"}
+                      smooth={"true"}
+                      duration={400}
+                      className="py-1 cursor-pointer capitalize 
+                      hover:scale-101  duration-200 hover:text-white"
+                    >
+                      {menu.title}
+                    </li>
+                  </Link>
+                );
+              })}
             </ul>
           </div>
-
+          {/* End of Menu  */}
           {/* Column 3 */}
 
           <div className="text-white">
             <h1 className="font-bold text-lg">Our Social Media Links</h1>
-            <ul className="flex gap-4 text-2xl text-gray-300 p-10 ">
-              <li className="cursor-pointer border border-gray-300  hover:border-blue-500 p-2">
-                <i>
-                  <FaFacebookSquare />
-                </i>
-              </li>
-              <li className="cursor-pointer border border-gray-300  hover:border-blue-500 p-2">
-                <i>
-                  <FaTwitterSquare />
-                </i>
-              </li>
-              <li className="cursor-pointer border border-gray-300 hover:border-blue-500 p-2">
-                <i>
-                  <FaYoutubeSquare />
-                </i>
-              </li>
+            <ul className="flex gap-4 text-2xl text-gray-300 p-5 ">
+              {FooterIcon.map((icon, index) => {
+                return (
+                  <li
+                    key={index}
+                    className="cursor-pointer border border-gray-300  hover:border-blue-500 p-2"
+                  >
+                    <i>{icon.icon}</i>
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
           {/* Column 4 */}
           <div className="text-white">
             <h1 className="font-bold text-lg">Contact Info</h1>
-            <div className="mt-[2rem]">
+            <div className="p-5">
               <ul className="text-gray-300">
                 <li className="flex gap-3 my-[.5rem]">
                   <i className="text-gray-300">
                     <FaMapMarkerAlt />
                   </i>
                   <span>
-                    Office # 1, First Floor, STH Plaza,
-                    <br /> Forest Bazar, Peshawar,
+                    Office , First Floor, STH Plaza,
+                    <br /> Kacha Pakha, Hangu,
                     <br /> PAKISTAN
                   </span>
                 </li>
@@ -144,7 +90,7 @@ const Footer = () => {
                   <i className="text-gray-300">
                     <MdEmail />
                   </i>
-                  <span>hungercare11@gmail.com</span>
+                  <span>spogmai11@gmail.com</span>
                 </li>
               </ul>
             </div>
