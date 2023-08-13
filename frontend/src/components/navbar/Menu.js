@@ -1,3 +1,10 @@
+export const NavMenu = [
+  {
+    title: "Home",
+    path: "/",
+  },
+];
+
 export const imageItems = [
   {
     id: 1,
