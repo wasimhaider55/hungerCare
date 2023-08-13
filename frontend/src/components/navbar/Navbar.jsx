@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "./Button";
 import { Dropdown, Drop } from "./Dropdown";
 import logoo from "../../assets/logoo.png";
+import { NavMenu } from "./NavMenu";
 
 const Navbar = () => {
   // React Hooks
@@ -40,7 +41,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="flex justify-between items-center fixed top-0 px-4 w-full h-24 text-white bg-[#004d73] z-10">
+      <nav className=" flex justify-between items-center fixed top-0 px-4 w-full h-24 text-white bg-[#004d73] z-10">
         {/* navBar brand or logo */}
         <div>
           <img src={logoo} alt="LogoImage" className="h-[9rem] pb-3 md:ml-5" />
@@ -185,90 +186,28 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "md:hidden   justify-center items-start absolute ml-[7rem] w-[90rem]  mt-[26rem] bg-gradient-to-b from-black to-blue-900 text-gray-300"
+              : "md:hidden  fixed  right-0    w-[60%]  mt-[20rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
           }
         >
-          <li
-            onClick={() => {
-              setNav(!nav);
-            }}
-            activeclass="active"
-            spy={"true"}
-            smooth={"true"}
-            duration={400}
-            className=" px-4 cursor-pointer capitalize py-6 text-xl font-bold"
-          >
-            <Link to="/">Home</Link>
-          </li>
-
-          <li
-            onClick={() => {
-              setNav(!nav);
-            }}
-            activeclass="active"
-            spy={"true"}
-            smooth={"true"}
-            duration={400}
-            className=" px-4 cursor-pointer capitalize py-6 text-xl font-bold"
-          >
-            <Link to="/aboutus">About Us</Link>
-          </li>
-
-          <li
-            activeclass="active"
-            spy={"true"}
-            smooth={"true"}
-            duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-            onClick={click}
-          >
-            <div className="flex gap-1">
-              Our Causes <AiOutlineDown className="h-5 mt-4" />
-            </div>
-
-            {dropdown && <Dropdown />}
-          </li>
-
-          <li
-            onClick={() => {
-              setNav(!nav);
-            }}
-            activeclass="active"
-            spy={"true"}
-            smooth={"true"}
-            duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
-          >
-            <Link to="/gallery">Gallery</Link>
-          </li>
-
-          <li
-            onClick={() => {
-              setNav(!nav);
-            }}
-            activeclass="active"
-            spy={"true"}
-            smooth={"true"}
-            duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
-          >
-            <Link to="/contactus">Contact Us</Link>
-          </li>
-
-          <li
-            onClick={() => {
-              setNav(!nav);
-            }}
-            activeclass="active"
-            spy={"true"}
-            smooth={"true"}
-            duration={400}
-            className="px-4 cursor-pointer capitalize py-6 text-xl font-bold"
-          >
-            <Link to="/DonateNow">Donate Now</Link>
-          </li>
+          {NavMenu.map((menu) => {
+            return (
+              <Link to={menu.path}>
+                {" "}
+                <li
+                  onClick={() => {
+                    setNav(!nav);
+                  }}
+                  activeclass="active"
+                  spy={"true"}
+                  smooth={"true"}
+                  duration={400}
+                  className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
+                >
+                  {menu.title}
+                </li>
+              </Link>
+            );
+          })}
         </ul>
       </nav>
     </>
