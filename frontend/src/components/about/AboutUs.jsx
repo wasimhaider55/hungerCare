@@ -25,13 +25,16 @@ const AboutUs = () => {
                 scroollY = 1390;
             else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH >= 800) {
                 // eslint-disable-next-line no-unused-vars
-                scroollY = 2070;
+                scroollY = 2430;
             }
-            else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 100) {
-                scroollY = 2300;
+            else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 400) {
+                scroollY = 2850;
+            }
+            else if (WINDOW_WIDTH < 400 && WINDOW_WIDTH > 200) {
+                scroollY = 2900;
             }
             else {
-                scroollY = 1470;
+                scroollY = 1730;
             }
             window.scrollTo(50, scroollY);
         }
@@ -40,15 +43,18 @@ const AboutUs = () => {
             // const ScrollY = WINDOW_WIDTH >= 1390 ? 
             if (WINDOW_WIDTH >= 1390)
                 scroollY = 1390;
-            else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH >= 800) {
+            else if (WINDOW_WIDTH < 1350 && WINDOW_WIDTH > 810) {
                 // eslint-disable-next-line no-unused-vars
-                scroollY = 2900;
+                scroollY = 3300;
             }
-            else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 100) {
-                scroollY = 3290;
+            else if (WINDOW_WIDTH < 800 && WINDOW_WIDTH > 400) {
+                scroollY = 3730;
+            }
+            else if (WINDOW_WIDTH < 400 && WINDOW_WIDTH > 200) {
+                scroollY = 3880;
             }
             else {
-                scroollY = 2100;
+                scroollY = 2300;
             }
             window.scrollTo(50, scroollY);
         }
