@@ -1,7 +1,12 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import tahirfida from "../../assets/teamPics/tahirfida.jpg";
 import wasimhaider from "../../assets/teamPics/wasimhaider.png";
+import jamshidRehman from "../../assets/teamPics/jamshidRehman.jpg";
+import nabiMukhles from "../../assets/teamPics/nabiMukhles.jpg";
+import arifHussain from "../../assets/teamPics/arifHussain.jpg";
+import amjidKhan from "../../assets/teamPics/amjidKhan.jpg";
 import { Link } from "react-router-dom";
 import Card from "./Card";
 
@@ -32,29 +37,39 @@ const OurTeam = () => {
       </h1>
       <Carousel responsive={responsive} className="py-10 lg:mx-10 text-white">
         <Card
-          image={wasimhaider}
-          title="WasimHaider"
+          image={tahirfida}
+          title="Tahir Fida"
+          description="Founder & president"
+        />
+        <Card
+          image={nabiMukhles}
+          title="Nabi Mukhles"
           description="Vice President"
+        />
+        <Card
+          image={arifHussain}
+          title="Arif Hussain"
+          description="Vice President of UAE"
+        />
+        <Card
+          image={amjidKhan}
+          title="Amjid Khan"
+          description="General Secretary"
         />
         <Card
           image={wasimhaider}
           title="WasimHaider"
-          description="Vice President"
+          description="Joint Secretary"
+        />
+        <Card
+          image={jamshidRehman}
+          title="Jamshid Rehman"
+          description="Finance Secretary"
         />
         <Card
           image={wasimhaider}
           title="WasimHaider"
-          description="Vice President"
-        />
-        <Card
-          image={wasimhaider}
-          title="WasimHaider"
-          description="Vice President"
-        />
-        <Card
-          image={wasimhaider}
-          title="WasimHaider"
-          description="Vice President"
+          description="Office Secretary"
         />
       </Carousel>
       ;{/* Help us Section */}

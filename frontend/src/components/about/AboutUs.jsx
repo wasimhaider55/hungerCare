@@ -2,6 +2,7 @@
 import OurTeam from './OurTeam';
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
+import WWD from "../../assets/freeFoodDis/WWD.png"
 
 const AboutUs = () => {
     const location = useLocation();
@@ -67,12 +68,6 @@ const AboutUs = () => {
                     <div className='w-24 h-1 bg-red-500 rounded-full mt-3'></div>
                 </div>
             </div>
-
-
-
-
-
-
             {/* About Us section Closed */}
 
 
@@ -84,16 +79,20 @@ const AboutUs = () => {
 
             <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-10  gap-6'>
 
-                <div className="lg:w-[50%]">
-                    <p className=' pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify '>
+                <div className="lg:w-[50%] pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify">
+                    <p>
                         Spogmai Foundation is a well-known and successful non-profit, non-governmental, and non-political charity Hangu organization. Since 2015, the Spogmai Foundation has been working to give Timely Aid and Relief Support (Spogmai) to the poor people of Hangu District.
-                        <br />
+                    </p>
+                    <p className=' mt-2'>
                         Founded by a local patron, Tahir Fada, and later joined by other volunteers motivated to make a difference, the foundation has now benefited thousands of families and many other individuals in a variety of ways.
-                        <br />
+                    </p>
+                    <p className=' mt-2'>
                         Our charitable organization is committed to delivering safe and clean monthly rations, free food distribution, orphan support, and other services to communities throughout the Hangu area. We think that poor and needy family help is a basic human right and that every person deserves access to it.
-                        <br />
+                    </p>
+                    <p className=' mt-2'>
                         We welcome you to visit our charity page and see the touching stories of transformation that our efforts have facilitated. Each success story is supported by a network of committed individuals who think that positive change is not just a possibility, but also a responsibility.
-                        <br />
+                    </p>
+                    <p className=' mt-2'>
                         Thank you for visiting the Charity Page of the Spogmai Foundation. Your being here attests to the goodness that lives within all of us. Let us collaborate to build a brighter, more fair future for the communities we serve.
                     </p>
                 </div>
@@ -108,25 +107,43 @@ const AboutUs = () => {
 
             {/* Our history section Open */}
             <section className='bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black'>
-
                 <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4 uppercase'>
                     <h1>Our History</h1>
                     <div className=' w-16 h-1 bg-blue-600 rounded-full mt-3 '></div>
                 </div>
 
-                <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-20  gap-6'>
+                <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-10  gap-6'>
 
-                    <div className="lg:w-[50%]">
-                        <p className=' pl-1 pb-4 lg:pr-24 md:pr-24 sm:pr-24 text-justify '>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum,
+                    <div className="lg:w-[50%] pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify">
+                        <p>
+                            The Spogmai Foundation emerged in the midst of 2015, against the backdrop of a globe
+                            coping with social and economic difficulties. This charitable organization was founded
+                            by the visionary Tahir Fida to make a real difference in the lives of those in need.
+                            Spogmai, named after the Pashto word for "blossom," symbolized the blossoming of compassion
+                            and cooperation. With a focus on taking on important concerns such as poverty, education,
+                            and healthcare, the foundation launched a journey that would come to affect the lives of countless people.
                         </p>
+                        <p className=' mt-2'>
+                            Tahir Fida's great faith in the power of collaborative goodwill moved the Spogmai Foundation's
+                            growth over the years.That was the time when Mr. Tahir Fida of Hangu Pakistan, a What identified
+                            Spogmai was not only its commitment to charitable causes but also its ability to forge partnerships
+                            with donors from Arab countries. Considered altering people's minds regarding making beneficial use
+                            of social networking networks. He began highlighting his humanitarian activities on social media
+                            in order to refocus the public's focus away from spreading negativity and toward doing something
+                            helpful for their society.
+                        </p>
+                        <p className=' mt-2'>
+                            Within a short period of time, many from within Pakistan and Arabs were inspired by Tahir Fida's humanitarian
+                            mission on social media and joined his cause of assisting the destitute. In just a few years, Mr. Tahir Fida's
+                            mission of feeding only a few homeless people spread and, with the monetarily and voluntarily support of his
+                            followers, transformed into helping thousands of people in various ways, resulting in the establishment of a
+                            well-known charity organization, namely Spogmai Foundation.
+
+                        </p>
+
                     </div>
 
-                    <div className='lg:w-[50%] pb-5'>
+                    <div className='lg:w-[50%]  sm:pl-10 pb-5'>
                         <img src="https://love.lambeth.gov.uk/wp-content/uploads/2020/05/hubs-2-500-x-320.jpg" alt="who we are " />
                     </div>
 
@@ -136,36 +153,39 @@ const AboutUs = () => {
 
 
             {/* what we Do section  */}
-
             <section >
                 <div id="whatWeDo" className=' lg:text-4xl text-3xl font-bold pt-4 lg:pl-24 md:pl-20 pl-4 uppercase'>
                     <h1>What We Do</h1>
                     <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
                 </div>
-                <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-20  gap-6'>
-                    <div className="lg:w-[50%]">
-                        <p className=' pl-1 pb-4 lg:pr-24 md:pr-24 sm:pr-24 text-justify '>
+                <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-10  gap-6'>
+                    <div className="lg:w-[50%] pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify">
+                        <p>
                             The Spogmai Foundation, a multi-sectoral charitable organization, offers financial assistance to
                             the poorest communities in Hangu and surrounding areas that are struggling to meet their basic needs
                             due to poverty, problems with finances, or economic crises. To provide help and relief support to needy
                             families, including widows, orphans, handicapped elderly patients, the homeless, vulnerable, and all those afflicted
                             by poverty, we have merged technology, resources, and workers.
-                            <br />
+                        </p>
+                        <p className=' mt-2'>
                             Common people from over the world provide in a variety of ways, including with cash, food, clothing, shelter, medicine,
                             sponsorship,education, and volunteering.
-                            <br />
+                        </p>
+                        <p className=' mt-2'>
                             Zakat is one among the many forms of kindness that we accept. In accordance with Islamic Shariah, we use these charities in
                             the appropriate sectors as Sadaqah, Fitrana, Kafarah and General Charity.
                         </p>
+
                     </div>
 
-                    <div className='lg:w-[50%]'>
-                        <img src="https://love.lambeth.gov.uk/wp-content/uploads/2020/05/hubs-2-500-x-320.jpg" alt="who we are " />
+                    <div className='lg:w-[50%]  sm:pl-10'>
+                        <img src={WWD} alt="who we are " />
                     </div>
                 </div>
             </section>
             {/* what we Do section Closed */}
 
+            {/* our team components render here  */}
             <OurTeam />
         </main>
 

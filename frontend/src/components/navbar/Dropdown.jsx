@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { imageItems, videoItems } from "./Menu";
+import { imageItems, videoItems } from "./NavMenu";
 import { Link } from "react-router-dom";
 
 export function Dropdown() {

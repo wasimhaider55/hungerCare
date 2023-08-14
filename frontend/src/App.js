@@ -21,6 +21,7 @@ import Education from "./components/navbar/pages/education/Education";
 import Gallery from "./components/gallery/Gallery";
 import PictureGallery from "./components/gallery/pictureGallery/PictureGallery";
 import VideoGallery from "./components/gallery/videoGallery/VideoGallery";
+import ImageAlbum from "./components/gallery/imageAlbum/ImageAlbum";
 // End
 // Footer import
 import Footer from "./components/footer/Footer";
@@ -78,6 +79,7 @@ function App() {
           element={<PictureGallery />}
         />
         <Route path="/gallery/videogallery" exact element={<VideoGallery />} />
+        <Route path="/gallery/imagealbum" exact element={<ImageAlbum />} />
         {/* Gallery components Rounting end */}
 
         {/* Donate Now  */}

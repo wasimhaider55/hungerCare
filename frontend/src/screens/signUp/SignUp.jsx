@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logoo.png";
 
 const SignUp = () => {
   const [name, setName] = useState("");

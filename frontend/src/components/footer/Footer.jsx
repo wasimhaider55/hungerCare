@@ -6,9 +6,9 @@ import BottomToTop from "../BottomToTop";
 
 const Footer = () => {
   return (
-    <footer className="  left-0 right-0 w-full bg-[#004d73]   pt-10 ">
+    <footer className="  left-0 right-0 w-full bg-[#004d73] pl-2   pt-10 ">
       <div className="container mx-auto">
-        <div className="grid grid-col-1 md:grid-cols-4 gap-8 content-center ">
+        <div className="grid grid-col-1 md:grid-cols-4 gap-8  content-center ">
           {/* Column 1 */}
           <div className="text-white">
             <h1 className="font-bold text-lg">HungerCare</h1>

@@ -31,7 +31,7 @@ const Card = () => {
 
   return (
     <section>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 mx-3 sm:mx-20 sm:px-0 sm:py-24 py-4 text-white">
+      <div className="grid  md:grid-cols-3 gap-8 px-12 mx-3 sm:mx-20 sm:px-0 sm:py-24 py-4 text-white">
         {DetailsData.map((item, index) => {
           return (
             <IntroCard

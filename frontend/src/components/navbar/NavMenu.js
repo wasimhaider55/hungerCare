@@ -1,3 +1,33 @@
+// For Mobile Menu
+
+export const NavMenu = [
+  {
+    title: "Home",
+    path: "/",
+  },
+  {
+    title: "About Us",
+    path: "/aboutus",
+  },
+  {
+    title: "Our Causes",
+    path: "/OurActivities",
+  },
+  {
+    title: "Gallery",
+    path: "/gallery",
+  },
+  {
+    title: "Contact Us",
+    path: "/contactus",
+  },
+  {
+    title: "Donate Now",
+    path: "/donatenow",
+  },
+];
+
+// Our Causes SubMenu
 export const imageItems = [
   {
     id: 1,
@@ -25,6 +55,8 @@ export const imageItems = [
     path: "/ourcauses/educationsupport",
   },
 ];
+
+// Gallery SubMenu
 export const videoItems = [
   {
     id: 1,
