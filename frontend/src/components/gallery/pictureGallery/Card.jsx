@@ -11,7 +11,7 @@ const Card = (props) => {
             <img
               src={image}
               alt="title"
-              className="w-full h-50 object-cover "
+              className="w-full h-52 object-cover "
             />
             <button className="mx-[8rem] my-[5rem] opacity-0 absolute inset-0 flex justify-center items-center transition duration-300 bg-white border border-gray-500 text-gray-500 text-sm font-semibold py-2 px-4 rounded-full group-hover:opacity-100">
               ViewMore

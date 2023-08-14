@@ -26,7 +26,7 @@ const Getintouch = () => {
             </i>
             <span>
               Office # 1, First Floor,STH Plaza,
-              <br /> Forest Bazar, Peshawar,
+              <br /> Kacha Pakha, Hangu,
               <br /> PAKISTAN
             </span>
           </li>

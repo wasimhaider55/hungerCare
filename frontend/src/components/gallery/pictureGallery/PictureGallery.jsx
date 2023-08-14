@@ -1,5 +1,8 @@
 import React from "react";
 import Card from "./Card";
+import ffd4 from "../../../assets/freeFoodDis/ffd4.png";
+import ffd3 from "../../../assets/freeFoodDis/ffd3.jpg";
+import bg1 from "../../../assets/bg1.jpg";
 
 const Gallery = () => {
   return (
@@ -33,38 +36,32 @@ const Gallery = () => {
       <div className="w-full grid md:grid-cols-3 gap-8 my-[5rem]  py-10 md:py-20 px-1 md:px-20 ">
         <div>
           <Card
-            title="ImageAlbum"
-            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+            title="Free Food Distribution"
+            image={ffd4}
             link="/gallery/imagealbum"
           />
         </div>
         <div>
+          <Card title="Orphan Family Support" image={bg1} />
+        </div>
+        <div>
           <Card
-            title="Daily lunch distribution in Hunger"
-            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+            title="Poor Family Support"
+            image="https://images.squarespace-cdn.com/content/v1/577eab6d03596e5318b18a43/1616705131281-N5S4XIVBSLFSPZ4R819V/Orphange-Care.png?format=1500w"
           />
         </div>
         <div>
           <Card
-            title="thirdImage"
-            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
+            title="Disabled People Support"
+            image="https://cdn.pixabay.com/photo/2015/04/06/23/40/wheelchair-710265_640.jpg"
           />
         </div>
         <div>
-          <Card
-            title="fourthImage"
-            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
-          />
+          <Card title="Education Support" image={ffd3} />
         </div>
         <div>
           <Card
-            title="fifthImage"
-            image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
-          />
-        </div>
-        <div>
-          <Card
-            title="sixthImage"
+            title="Comming Soon"
             image="https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675"
           />
         </div>
