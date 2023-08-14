@@ -107,25 +107,39 @@ const AboutUs = () => {
 
             {/* Our history section Open */}
             <section className='bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black'>
-
                 <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4 uppercase'>
                     <h1>Our History</h1>
                     <div className=' w-16 h-1 bg-blue-600 rounded-full mt-3 '></div>
                 </div>
 
-                <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-20  gap-6'>
+                <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-10  gap-6'>
 
-                    <div className="lg:w-[50%]">
-                        <p className=' pl-1 pb-4 lg:pr-24 md:pr-24 sm:pr-24 text-justify '>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-                            Lorem ipsum,
+                    <div className="lg:w-[50%] pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify">
+                        <p>
+                            After 2010, with the fast-growing use of social media sites (specifically Facebook)
+                            throughout the world, unfortunately majority of these sites’ users from Pakistan were
+                            found discussing politics, and spreading negativity on social media sites, thereby not
+                            only wasting their time but also losing their abilities of doing something positive and productive
+                            for their country.
                         </p>
+                        <p className=' mt-2'>
+                            That was the time when Mr. Tahir fida, from Hangu Pakistan, an The founder of spogmai foundation Hangu,
+                            who was enthusiastic about helping the needy people of his city Hangu, and had been
+                            already feeding the homeless people daily from his own salary, thought about changing people’s mind about making
+                            the positive use of social media sites. He started to highlight his humanitarian works on social media for the
+                            purpose to divert the people’s mind from spreading negativity into doing something positive for their society and Country.
+                        </p>
+                        <p className=' mt-2'>
+                            Within a very short time, inspired from Tahir fida noble cause over social media, people from inside Pakistan and abroad
+                            joined his cause of helping the needy people. In just few years, that mission of feeding only a few homeless people by Mr. Tahir fida
+                            by his own salary, spread and with the monetarily and voluntarily support of his followers, transformed into helping thousands of
+                            people in different ways, which later on resulted into the inception of a well known charity organization, namely Spogmai Foundation.
+
+                        </p>
+
                     </div>
 
-                    <div className='lg:w-[50%] pb-5'>
+                    <div className='lg:w-[50%]  sm:pl-10 pb-5'>
                         <img src="https://love.lambeth.gov.uk/wp-content/uploads/2020/05/hubs-2-500-x-320.jpg" alt="who we are " />
                     </div>
 
