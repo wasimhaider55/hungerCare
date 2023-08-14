@@ -116,24 +116,28 @@ const AboutUs = () => {
 
                     <div className="lg:w-[50%] pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify">
                         <p>
-                            After 2010, with the fast-growing use of social media sites (specifically Facebook)
-                            throughout the world, unfortunately majority of these sites’ users from Pakistan were
-                            found discussing politics, and spreading negativity on social media sites, thereby not
-                            only wasting their time but also losing their abilities of doing something positive and productive
-                            for their country.
+                            The Spogmai Foundation emerged in the midst of 2015, against the backdrop of a globe
+                            coping with social and economic difficulties. This charitable organization was founded
+                            by the visionary Tahir Fida to make a real difference in the lives of those in need.
+                            Spogmai, named after the Pashto word for "blossom," symbolized the blossoming of compassion
+                            and cooperation. With a focus on taking on important concerns such as poverty, education,
+                            and healthcare, the foundation launched a journey that would come to affect the lives of countless people.
                         </p>
                         <p className=' mt-2'>
-                            That was the time when Mr. Tahir fida, from Hangu Pakistan, an The founder of spogmai foundation Hangu,
-                            who was enthusiastic about helping the needy people of his city Hangu, and had been
-                            already feeding the homeless people daily from his own salary, thought about changing people’s mind about making
-                            the positive use of social media sites. He started to highlight his humanitarian works on social media for the
-                            purpose to divert the people’s mind from spreading negativity into doing something positive for their society and Country.
+                            Tahir Fida's great faith in the power of collaborative goodwill moved the Spogmai Foundation's
+                            growth over the years.That was the time when Mr. Tahir Fida of Hangu Pakistan, a What identified
+                            Spogmai was not only its commitment to charitable causes but also its ability to forge partnerships
+                            with donors from Arab countries. Considered altering people's minds regarding making beneficial use
+                            of social networking networks. He began highlighting his humanitarian activities on social media
+                            in order to refocus the public's focus away from spreading negativity and toward doing something
+                            helpful for their society.
                         </p>
                         <p className=' mt-2'>
-                            Within a very short time, inspired from Tahir fida noble cause over social media, people from inside Pakistan and abroad
-                            joined his cause of helping the needy people. In just few years, that mission of feeding only a few homeless people by Mr. Tahir fida
-                            by his own salary, spread and with the monetarily and voluntarily support of his followers, transformed into helping thousands of
-                            people in different ways, which later on resulted into the inception of a well known charity organization, namely Spogmai Foundation.
+                            Within a short period of time, many from within Pakistan and Arabs were inspired by Tahir Fida's humanitarian
+                            mission on social media and joined his cause of assisting the destitute. In just a few years, Mr. Tahir Fida's
+                            mission of feeding only a few homeless people spread and, with the monetarily and voluntarily support of his
+                            followers, transformed into helping thousands of people in various ways, resulting in the establishment of a
+                            well-known charity organization, namely Spogmai Foundation.
 
                         </p>
 
