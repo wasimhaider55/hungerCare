@@ -3,6 +3,8 @@ import OurTeam from './OurTeam';
 import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
 import WWD from "../../assets/freeFoodDis/WWD.png"
+import ourhistory from "../../assets/freeFoodDis/ourhistory.png"
+import sf from "../../assets/freeFoodDis/sf.jpg"
 
 const AboutUs = () => {
     const location = useLocation();
@@ -120,7 +122,7 @@ const AboutUs = () => {
 
                 <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-10  gap-6'>
 
-                    <div className="lg:w-[50%] pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify">
+                    <div className="lg:w-[60%] pl-1 pb-4 lg:pr-2 md:pr-2 sm:pr-2 text-justify">
                         <p>
                             The Spogmai Foundation emerged in the midst of 2015, against the backdrop of a globe
                             coping with social and economic difficulties. This charitable organization was founded
@@ -129,7 +131,7 @@ const AboutUs = () => {
                             and cooperation. With a focus on taking on important concerns such as poverty, education,
                             and healthcare, the foundation launched a journey that would come to affect the lives of countless people.
                         </p>
-                        <p className=' mt-2'>
+                        <p className=' mt-4'>
                             Tahir Fida's great faith in the power of collaborative goodwill moved the Spogmai Foundation's
                             growth over the years.That was the time when Mr. Tahir Fida of Hangu Pakistan, a What identified
                             Spogmai was not only its commitment to charitable causes but also its ability to forge partnerships
@@ -138,7 +140,7 @@ const AboutUs = () => {
                             in order to refocus the public's focus away from spreading negativity and toward doing something
                             helpful for their society.
                         </p>
-                        <p className=' mt-2'>
+                        <p className=' mt-4'>
                             Within a short period of time, many from within Pakistan and Arabs were inspired by Tahir Fida's humanitarian
                             mission on social media and joined his cause of assisting the destitute. In just a few years, Mr. Tahir Fida's
                             mission of feeding only a few homeless people spread and, with the monetarily and voluntarily support of his
@@ -149,8 +151,14 @@ const AboutUs = () => {
 
                     </div>
 
-                    <div className='lg:w-[50%]  sm:pl-10 pb-5'>
-                        <img src="https://love.lambeth.gov.uk/wp-content/uploads/2020/05/hubs-2-500-x-320.jpg" alt="who we are " />
+                    <div className='lg:w-[40%]'>
+                        <div className='sm:pl-10 pb-5 '>
+                            <img src={sf} alt="Our history" className='h-[300px] w-full'/>
+                        </div>
+
+                        <div className='sm:pl-10 pb-5'>
+                            <img src={ourhistory} alt="Our history " />
+                        </div>
                     </div>
 
                 </div>
