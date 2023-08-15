@@ -59,7 +59,8 @@ const Causes = () => {
         />
         <CausesCard
           image={ES}
-          description="   Education is being empowered by compassionate support. Join us in
+          title="Education Support"
+          description="Education is being empowered by compassionate support. Join us in
           our mission to empower students by offering resources and
           opportunities for better futures."
         />
