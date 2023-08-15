@@ -16,17 +16,31 @@ const FreeFoodDis = () => {
 
 
       {/* Overview section Open */}
-      <div className='lg:text-4xl text-3xl font-bold py-16 lg:pl-24 md:pl-20 pl-4'>
+      <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
         <h1>Overview</h1>
         <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
-        <p className=' pl-1 pr-4 py-8 lg:pr-24 md:pr-24 sm:pr-24 text-justify text-lg '>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum,
-        </p>
       </div>
+
+      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify'>
+        <p>
+          The Spogmai Foundation's Free Food Distribution program symbolizes the organization's commitment
+          to reducing hunger and boosting social welfare in our neighborhood. Recognizing the critical need
+          for food security, the foundation has launched an initiative to deliver nutritious meals to those
+          in need.
+        </p>
+        <p className="mt-3">
+          Many people in our neighborhood live in poverty and cannot even afford to buy food for themselves
+          and their families. The major reason for starting the TARS Foundation was to give homeless
+          individuals in our community access to free food. Thankfully, as time went on and with the help of
+          contributors, the number of beneficiaries increased from hundreds to thousands.
+        </p>
+        <h3 className=" font-bold mt-5"> There are the following at Spogmai Foundation Free Food Initiative</h3>
+        <p className=" mt-4">1 Daily Meal Distribution</p>
+        <p className=" mt-2">2 Monthly Ration Packages Distribution</p>
+        <p className=" mt-2">3 Ramadan Ration Packages Distribution</p>
+        <p className=" mt-2">4 Ramadan iftaar Dastarkhwan</p>
+      </div>
+
       {/* Overview section Closed */}
 
 
