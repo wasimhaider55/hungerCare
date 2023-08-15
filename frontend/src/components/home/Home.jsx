@@ -9,7 +9,7 @@ import ffd3 from "../../assets/freeFoodDis/ffd3.jpg";
 import ffd4 from "../../assets/freeFoodDis/ffd4.png";
 import ffd5 from "../../assets/freeFoodDis/ffd5.png";
 import spbg1 from "../../assets/freeFoodDis/spbg1.jpg";
-import spbg2 from "../../assets/freeFoodDis/spbg2.jpg";
+import spbg2 from "../../assets/freeFoodDis/spbg2.png";
 
 const Home = () => {
   const slides = [
