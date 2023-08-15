@@ -1,6 +1,10 @@
 import React from "react";
-
 import Card from "./Card";
+import ffd2 from "../../assets/freeFoodDis/ffd2.png"
+import pfs from "../../assets/freeFoodDis/pfs.jpg"
+import OFS from "../../assets/freeFoodDis/OFS.png"
+import DPS1 from "../../assets/freeFoodDis/DPS1.png"
+import ES1 from "../../assets/freeFoodDis/ES1.png"
 
 const OurActivities = () => {
   return (
@@ -13,27 +17,27 @@ const OurActivities = () => {
         <div className="grid md:grid-cols-3 gap-5 justify-center mx-10">
           <Card
             title="Free Food Distribution"
-            image="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fHw%3D&w=1000&q=80"
+            image={ffd2}
             link="/ourcauses/freefooddistribution"
           />
           <Card
             title="Poor Family Support"
-            image="https://showhope.org/content/uploads/2020/09/9Q9A6112-1024x686.jpg"
+            image={pfs}
             link="/ourcauses/poorfamilysupport"
           />
           <Card
             title=" Orphan Family Support"
-            image="https://media.istockphoto.com/id/458112661/photo/african-children.jpg?s=612x612&w=0&k=20&c=uAThB_6QlEgJYP-_JvAFH1y2HX_Q9SY7X6U8hf7JYuw="
+            image={OFS}
             link="/ourcauses/orphanfamilysupport"
           />
           <Card
             title="Disabled People Support"
-            image="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fHw%3D&w=1000&q=80"
+            image={DPS1}
             link="/ourcauses/disablepeoplesupport"
           />
           <Card
             title="Education Support"
-            image="https://showhope.org/content/uploads/2020/09/9Q9A6112-1024x686.jpg"
+            image={ES1}
             link="/ourcauses/educationsupport"
           />
           <Card
