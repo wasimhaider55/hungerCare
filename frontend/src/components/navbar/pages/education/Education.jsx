@@ -39,20 +39,24 @@ const Education = () => {
         </div>
       </div>
       {/* Education section Closed */}
-      {/* Overview section open */}
-      <section className="    pt-20 px-5  md:px-20">
-        <div className="text-gray-500 space-x-3 space-y-3">
-          <h1 className="text-4xl font-bold text-black "> OVERVIEW </h1>
-          <p>
-            Spogmai foundation is running the following programs related to free
-            education.
-          </p>
-          <ol className="list-decimal pl-5">
-            <li>Orpahan education support</li>
-          </ol>
-        </div>
-      </section>
-      {/* Overview section closed */}
+      
+      {/* Overview section Open */}
+      <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
+        <h1>Overview</h1>
+        <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
+      </div>
+
+      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
+          Lorem ipsum,
+        </p>
+      </div>
+
+      {/* Overview section Closed */}
 
       {/*Education Support section open*/}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">

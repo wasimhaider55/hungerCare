@@ -37,11 +37,14 @@ const DisabledPeopleSupport = () => {
       {/* Disabled people support section Closed */}
 
 
-      {/* Overview section Open */}
-      <div className=' lg:text-4xl text-3xl font-bold py-16 lg:pl-24 md:pl-20 pl-4'>
+       {/* Overview section Open */}
+       <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
         <h1>Overview</h1>
         <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
-        <p className=' pl-1 pr-4 py-8 lg:pr-24 md:pr-24 sm:pr-24 text-justify text-lg '>
+      </div>
+
+      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
+        <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
@@ -49,6 +52,7 @@ const DisabledPeopleSupport = () => {
           Lorem ipsum,
         </p>
       </div>
+
       {/* Overview section Closed */}
 
 
