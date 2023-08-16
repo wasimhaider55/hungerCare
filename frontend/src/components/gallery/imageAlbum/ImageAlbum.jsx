@@ -1,23 +1,29 @@
 import React, { useState } from "react";
+
+import ffd4 from "../../../assets/freeFoodDis/ffd4.png";
+import ffd3 from "../../../assets/freeFoodDis/ffd2.png";
+import spbg2 from "../../../assets/freeFoodDis/spbg2.png";
+import bg1 from "../../../assets//bg1.jpg";
+
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 
 function App() {
   const slides = [
     {
       id: 1,
-      img: "https://images.unsplash.com/photo-1547005327-ef75a6961556?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      img: ffd4,
     },
     {
       id: 2,
-      img: "https://images.unsplash.com/photo-1480926965639-9b5f63a0817b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      img: ffd3,
     },
     {
       id: 3,
-      img: "https://images.unsplash.com/photo-1566024287286-457247b70310?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fG9jZWFufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+      img: spbg2,
     },
     {
       id: 4,
-      img: "https://images.unsplash.com/photo-1494791368093-85217fbbf8de?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b2NlYW58ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+      img: bg1,
     },
     {
       id: 5,
