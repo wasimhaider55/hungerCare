@@ -39,7 +39,7 @@ const Education = () => {
         </div>
       </div>
       {/* Education section Closed */}
-      
+
       {/* Overview section Open */}
       <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
         <h1>Overview</h1>
@@ -47,13 +47,22 @@ const Education = () => {
       </div>
 
       <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum,
+        <p className="mt-2 mb-6">
+          At Spogmai Charity Foundation, we believe education is the cornerstone of progress, which is why our Education Support program is dedicated to unlocking opportunities for every learner.
         </p>
+        <strong>Our Approach:</strong>
+        <p className="mt-4">
+          We provide access to quality education, mentorship, and resources to nurture a generation of empowered individuals. We ensure that children from all backgrounds have access to education, bridging gaps and fostering inclusivity.
+          We support teachers by offering training and resources, ensuring that the learning environment is dynamic and effective.
+        </p>
+        <p className="mt-2">
+          Our program focuses on both academic and practical skills, preparing students for real-world challenges and opportunities.
+          and We encourage students to dream big. With guidance and support, we inspire them to pursue careers aligned with their passions.
+        </p>
+        <p className="mt-2 mb-8">
+          By contributing to our Education Support program, you contribute to a brighter future for individuals and society as a whole.
+        </p>
+        <strong>Together, let's light the path to knowledge and open doors to endless possibilities.</strong>
       </div>
 
       {/* Overview section Closed */}
