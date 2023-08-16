@@ -48,7 +48,7 @@ const Education = () => {
 
       <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
         <p className="mt-2 mb-6">
-          At Spogmai Charity Foundation, we believe education is the cornerstone of progress, which is why our Education Support program is dedicated to unlocking opportunities for every learner.
+          At Spogmai Foundation, we believe education is the cornerstone of progress, which is why our Education Support program is dedicated to unlocking opportunities for every learner.
         </p>
         <strong>Our Approach:</strong>
         <p className="mt-4">
