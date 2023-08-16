@@ -39,27 +39,27 @@ const DailyMealDis = () => {
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 lg:pr-24 md:pr-14 sm:pr-24 text-justify ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio
-              consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et
-              blanditiis alias tenetur nemo repellat voluptas! Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Voluptatem aliquid
-              ipsa totam dolore quam, eligendi distinctio consectetur
-              voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis
-              alias tenetur nemo repellat voluptas! Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore
-              quam, eligendi distinctio consectetur voluptatibus maxime?
-              Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo
-              repellat voluptas! Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Voluptatem aliquid ipsa totam dolore quam,
-              eligendi distinctio consectetur voluptatibus maxime? Expedita
-              eaque, nulla ipsa et blanditiis alias tenetur nemo repellat
-              voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Voluptatem aliquid ipsa totam dolore quam, eligendi
-              distinctio consectetur voluptatibus maxime? Expedita eaque, nulla
-              ipsa et blanditiis alias tenetur nemo repellat voluptas! Lorem
-              ipsum,
+              Spogmai Foundation is committed to solving food insecurity through a daily meal
+              delivery program. Recognizing the importance of nutrition, the foundation works
+              to guarantee that people in economically disadvantaged areas receive a consistent
+              and nutritious meal every day. This initiative provides a lifeline for those facing
+              financial difficulties, ensuring they have regular access to food and support. The
+              foundation contributes to the well-being and dignity of individuals by eliminating
+              hunger and encouraging a healthier and more stable life for all through its daily
+              meal distribution. Spogmai Charity Foundation's daily meal distribution program goes
+              above and beyond addressing the community's basic nutritional needs. It develops a sense
+              of community and solidarity by providing a venue for where individuals can congregate,
+              share experiences, and enjoy a moment of rest from their everyday hardships. Not only
+              does this program nourish the body, but it additionally encourages a sense of belonging
+              and solidarity among participants. The foundation makes a positive influence well beyond
+              the plate by extending a helping hand and exhibiting compassion via consistent meal distribution,
+              reaffirming the belief that every individual deserves access to dignified nutrition and care.
+              <br />
+              <p className=" mt-5">
+                <strong>The clips below show our Daily Food Distribution.</strong>
+              </p>
             </p>
+
           </div>
 
           <div className="lg:w-[40%] pb-5">
@@ -114,26 +114,27 @@ const DailyMealDis = () => {
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio
-              consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et
-              blanditiis alias tenetur nemo repellat voluptas! Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Voluptatem aliquid
-              ipsa totam dolore quam, eligendi distinctio consectetur
-              voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis
-              alias tenetur nemo repellat voluptas! Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore
-              quam, eligendi distinctio consectetur voluptatibus maxime?
-              Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo
-              repellat voluptas! Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Voluptatem aliquid ipsa totam dolore quam,
-              eligendi distinctio consectetur voluptatibus maxime? Expedita
-              eaque, nulla ipsa et blanditiis alias tenetur nemo repellat
-              voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Voluptatem aliquid ipsa totam dolore quam, eligendi
-              distinctio consectetur voluptatibus maxime? Expedita eaque, nulla
-              ipsa et blanditiis alias tenetur nemo repellat voluptas! Lorem
-              ipsum,
+              Certainly, distributing monthly ration packages to impoverished families in our area
+              is a critical initiative undertaken by Spogmai  Foundation. This program is designed
+              to address the ongoing challenges faced by vulnerable households in accessing essential
+              food supplies. By providing a comprehensive package of staple foods and necessities on
+              a monthly basis, the foundation aims to alleviate the burden of food insecurity and enhance
+              the quality of life for these families.
+              <br />
+              The monthly ration package includes a carefully curated selection of items such as rice, flour,
+              lentils, cooking oil, sugar, and basic hygiene products. This approach ensures that families receive
+              a balanced and sufficient diet, along with items to maintain their personal hygiene. By extending
+              this assistance regularly, the foundation not only meets immediate needs but also helps families plan
+              their resources more effectively, contributing to long-term stability.
+              <br />
+              Moreover, beyond the tangible impact of providing sustenance, the monthly ration distribution fosters a
+              sense of support and unity within the community. It brings families together, emphasizing that they are
+              not alone in their struggles. This collective effort builds a network of solidarity that strengthens
+              community ties and uplifts individuals emotionally as well as physically.
+              <br />
+              <p className=" mt-5">
+                <strong>The clips below show our Monthly Rations Distribution.</strong>
+              </p>
             </p>
           </div>
 
@@ -184,26 +185,24 @@ const DailyMealDis = () => {
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio
-              consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et
-              blanditiis alias tenetur nemo repellat voluptas! Lorem ipsum,
-              dolor sit amet consectetur adipisicing elit. Voluptatem aliquid
-              ipsa totam dolore quam, eligendi distinctio consectetur
-              voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis
-              alias tenetur nemo repellat voluptas! Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore
-              quam, eligendi distinctio consectetur voluptatibus maxime?
-              Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo
-              repellat voluptas! Lorem ipsum, dolor sit amet consectetur
-              adipisicing elit. Voluptatem aliquid ipsa totam dolore quam,
-              eligendi distinctio consectetur voluptatibus maxime? Expedita
-              eaque, nulla ipsa et blanditiis alias tenetur nemo repellat
-              voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Voluptatem aliquid ipsa totam dolore quam, eligendi
-              distinctio consectetur voluptatibus maxime? Expedita eaque, nulla
-              ipsa et blanditiis alias tenetur nemo repellat voluptas! Lorem
-              ipsum,
+              Every year during Ramadan, Spogmai Foundation does something special. They put together
+              special packages of food for families who don't have enough to eat. These packages have things
+              like rice, flour, lentils, and other important foods. They also include things to help keep clean,
+              like soap and toothpaste.
+              <br />
+              <br />
+              Ramadan is a special time for many people, and these packages are a way to help families have a good
+              and healthy Ramadan. Giving out these packages also shows that people care about each other. It's a
+              way of sharing and being kind to others.
+              <br />
+              <br />
+              By doing this every year, the Spogmai Foundation makes sure that families have enough food
+              and things they need, especially during this important time. It's a way to help and make a difference
+              in the lives of those who need it.
+              <br />
+              <p className=" mt-5">
+                <strong>The clips below show our Ramazan Ration Distribution.</strong>
+              </p>
             </p>
           </div>
 
