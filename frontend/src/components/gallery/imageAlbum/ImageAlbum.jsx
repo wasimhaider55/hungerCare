@@ -120,7 +120,7 @@ function App() {
           {slides.map((slide, slideIndex) => (
             <span key={slideIndex} onClick={() => goToSlide(slideIndex)}>
               <img
-                className="w-[120px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                className="h-28 w-28 inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300"
                 src={slide.img}
                 alt="/"
               />
