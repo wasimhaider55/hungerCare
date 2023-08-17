@@ -217,25 +217,22 @@ const DailyMealDis = () => {
 
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
-            link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="Video1"
+            link="https://www.youtube.com/embed/5RX1enG0DrM"
+            title="spogmai foundation ki taraf se hangu tehseel tall me rashan taqseem kia geia tahir fida k sath"
           />
           <VideoCard
             link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="Video2"
+            title="spogmai foundation k rashan ki tayari Tahir fida k sath"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="Video3"
+            link="https://www.youtube.com/embed/cbBR0t5cmB0"
+            title="spogmai foundation ki taraf se zella hangu me ramazan ki rashan taqseem kia geya"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="Video4"
+            link="https://www.youtube.com/embed/oYg7m3__FOc"
+            title="spogmai foundation ki taraf se ramazan ul mubarak k laey rashan tehseel thall me taqseem kia geya"
           />
-          <VideoCard
-            link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="Video5"
-          />
+          
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}
@@ -253,7 +250,7 @@ const DailyMealDis = () => {
         </div>
       </Link>
       {/* Help us Section closed */}
-    </main>
+    </main >
   );
 };
 
