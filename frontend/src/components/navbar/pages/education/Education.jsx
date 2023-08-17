@@ -96,20 +96,24 @@ const Education = () => {
 
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
-            link="https://www.youtube.com/embed/QmVEDlrwg8Y"
-            title="video1"
+            link="https://www.youtube.com/embed/-i70DZH0tUU"
+            title="spogmai foundation program mrasta qest 15 tahir fida k sath hangu k mukhtalif schoolon me tawon"
           />
           <VideoCard
             link="https://www.youtube.com/embed/QmVEDlrwg8Y"
-            title="video1"
+            title="spogmai foundation program mrasta qest 14 tahir fida k sath hangu k mukhtalif schoolon me tawon"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/QmVEDlrwg8Y"
-            title="video1"
+            link="https://www.youtube.com/embed/P66dhTrT97E"
+            title="spogmai foundation program mrasta qest 13 Tahir fida k sath hangu darsamand k schools me tawon"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/QmVEDlrwg8Y"
-            title="video1"
+            link="https://www.youtube.com/embed/t9nbaXlzkck"
+            title="spogmai foundation program mrasta qest 8 Tahir fida k sath hangu tehseel tall k schools me tawon"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/8rKXdDgcj18"
+            title="spogmai foundation program mrasta qest 2 Tahir fida k sath hangu me mukhtalif schoolon me tawon"
           />
         </Carousel>
       </section>
