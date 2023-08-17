@@ -38,17 +38,29 @@ const DisabledPeopleSupport = () => {
 
 
       {/* Overview section Open */}
-      <div className=' lg:text-4xl text-3xl font-bold py-16 lg:pl-24 md:pl-20 pl-4'>
+      <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
         <h1>Overview</h1>
         <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
-        <p className=' pl-1 pr-4 py-8 lg:pr-24 md:pr-24 sm:pr-24 text-justify text-lg '>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum,
-        </p>
       </div>
+
+      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
+        <p className=" mt-2 mb-6">
+          At the Spogmai Foundation, we are dedicated to championing the rights and potential of disabled individuals through our comprehensive Disabled People Support program.
+        </p>
+        <strong>Our Approach:</strong>
+        <p className="mt-4">
+          We work tirelessly to create an inclusive society that celebrates diversity and supports the needs of disabled individuals. We strive to ensure that all aspects of life are accessible, from infrastructure to information, promoting independence and participation.
+        </p>
+        <p className=" mt-2">
+          Our program provides a range of services, from medical assistance and therapy to emotional support, empowering disabled individuals to live fulfilling lives and
+          We promote education and skill development, fostering self-confidence and equipping disabled individuals with tools for self-sufficiency.
+        </p>
+        <p className=" mt-2 mb-8">
+          Your support amplifies the voices of disabled individuals and contributes to a more inclusive and empathetic society.
+        </p>
+        <strong>Together, let's build a world where every individual's abilities shine.</strong>
+      </div>
+
       {/* Overview section Closed */}
 
 

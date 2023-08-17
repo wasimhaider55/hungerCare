@@ -13,7 +13,8 @@ const Card = (props) => {
               alt="title"
               className="w-full h-80 object-cover "
             />
-            <button className="xs:hidden mx-[10rem] my-[8.4rem] opacity-0 absolute inset-0 flex justify-center items-center transition duration-300 bg-white border-2 border-gray-500 text-gray-500 text-md font-semibold py-2 px-4 rounded-full group-hover:opacity-100">
+            <div className=" absolute inset-0 hover:bg-gray-900 rounded-t-xl group-hover:opacity-40"></div>
+            <button className=" h-12 w-32 m-auto opacity-0 absolute inset-0 flex justify-center items-center transition duration-300 bg-white border-2 border-gray-500 text-gray-500 text-md font-semibold py-2 px-4 rounded-full md:group-hover:opacity-100">
               ViewMore
             </button>
           </div>

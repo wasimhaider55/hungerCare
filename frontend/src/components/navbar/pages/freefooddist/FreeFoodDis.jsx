@@ -21,7 +21,7 @@ const FreeFoodDis = () => {
         <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
       </div>
 
-      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify'>
+      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
         <p>
           The Spogmai Foundation's Free Food Distribution program symbolizes the organization's commitment
           to reducing hunger and boosting social welfare in our neighborhood. Recognizing the critical need
@@ -30,11 +30,11 @@ const FreeFoodDis = () => {
         </p>
         <p className="mt-3">
           Many people in our neighborhood live in poverty and cannot even afford to buy food for themselves
-          and their families. The major reason for starting the TARS Foundation was to give homeless
+          and their families. The major reason for starting the Spogmai Foundation was to give homeless
           individuals in our community access to free food. Thankfully, as time went on and with the help of
           contributors, the number of beneficiaries increased from hundreds to thousands.
         </p>
-        <h3 className=" font-bold mt-5"> There are the following at Spogmai Foundation Free Food Initiative</h3>
+        <h3 className=" font-bold mt-5 text-gray-700"> There are the following at Spogmai Foundation Free Food Initiative</h3>
         <p className=" mt-4">1 Daily Meal Distribution</p>
         <p className=" mt-2">2 Monthly Ration Packages Distribution</p>
         <p className=" mt-2">3 Ramadan Ration Packages Distribution</p>

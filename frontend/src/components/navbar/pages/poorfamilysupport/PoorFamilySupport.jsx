@@ -16,17 +16,27 @@ const PoorFamilySupport = () => {
 
 
       {/* Overview section Open */}
-      <div className=' lg:text-4xl text-3xl font-bold py-16 lg:pl-24 md:pl-20 pl-4'>
+      <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
         <h1>Overview</h1>
         <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
-        <p className=' pl-1 pr-4 py-8 lg:pr-24 md:pr-24 sm:pr-24 text-justify text-lg '>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-          Lorem ipsum,
-        </p>
       </div>
+
+      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
+        <p className=" mb-5">
+          At the Spogmai Charity Foundation, we extend a helping hand to vulnerable families through our dedicated Poor Family Support program.
+        </p>
+        <strong>Our Approach:</strong>
+        <p className="mt-4">
+          We offer practical assistance that covers essential needs, fosters education and promotes self-sufficiency.
+          We alleviate the burden of poverty by providing families with access to food, cash and shelter, ensuring their basic necessities are met
+          We build a sense of community by connecting families, encouraging mutual support, and fostering a network for shared growth.
+        </p>
+        <p className="mt-4 mb-8">
+          Your support can create lasting change. By contributing to our Poor Family Support program, you become a partner in uplifting families from the grips of poverty.
+        </p>
+        <strong>Together, let's empower families and pave the way for a brighter tomorrow.</strong>
+      </div>
+
       {/* Overview section Closed */}
 
 
@@ -70,7 +80,7 @@ const PoorFamilySupport = () => {
 
 
 
-    </main>
+    </main >
   );
 };
 

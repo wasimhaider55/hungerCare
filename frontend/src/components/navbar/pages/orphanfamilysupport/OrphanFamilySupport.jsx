@@ -15,30 +15,38 @@ const OrphanFamilySupport = () => {
       {/* orphan family support section Closed */}
 
       {/* Overview section Open */}
-      <div className="   py-16 lg:px-24 md:pl-20 px-6 text-gray-500 space-y-5">
-        <h1 className="font-bold text-black lg:text-4xl text-3xl">Overview</h1>
-        <div className=" w-20 h-1 bg-blue-600 rounded-full mt-3 "></div>
+      <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
+        <h1>Overview</h1>
+        <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
+      </div>
+
+      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
         <p>
-          Orphans, being innocent souls, endure significant suffering on Earth
-          due to the lack of proper parental guidance. As the most vulnerable
-          group in society, they require ample support to help restore their
-          lives to a state of normalcy.
+          <strong className=" font-semibold">  Orphan Family Support Nurturing Hope and Providing Strength </strong>
+          The Spogmai Foundation's aim focuses on building hope and offering support to orphaned families.
+          We recognize the particular problems that orphaned children and their families experience,
+          and our Orphan Family Support program is committed to making a long-term positive difference
+          in their lives.
         </p>
-        <p>
-          Prophet Muhammad PBUH said:{" "}
-          <span className="font-semibold">
+        <p className=" mt-2">
+          We believe every child, regardless of what they face, needs a stable and caring environment in which to thrive.
+          Our Orphan Family Support program provides a comprehensive strategy that includes emotional, educational, and
+          financial assistance, with the goal of providing a solid foundation for these families to build on.
+        </p>
+        <p className="mt-2">
+          Prophet Muhammad PBUH said:
+          <strong className="font-semibold">
             "I and the person who looks after an orphan and provides for him,
             will be in Paradise like this,
-          </span>{" "}
+          </strong>
           putting his index and middle fingers together." ~ Sahi Bukhari
         </p>
-        <p>
-          In our community, numerous families headed by poor widows or orphaned
-          individuals are struggling to make ends meet, living below the poverty
-          threshold. These families have lost one or both parents, which has
-          also resulted in a loss of income, making it difficult for them to
-          cover their daily expenses.
+        <p className="my-2">
+          Spogmai Charity Foundation cordially invites you to join us on this transforming journey.
+          By contributing to our Orphan Family Support program, you become an inspiration of hope
+          for these families, assisting them in rebuilding their lives and embracing a bright future.
         </p>
+        <strong>Let us work together to uplift, empower, and motivate orphaned families toward a brighter future.</strong>
       </div>
       {/* Overview section Closed */}
 
