@@ -5,7 +5,6 @@ import bg1 from "../../../../assets/bg1.jpg";
 import RRPD from "../../../../assets/freeFoodDis/RRPD.png";
 import { Link } from "react-router-dom";
 import VideoCard from "../../../card/VideoCard";
-import FreeFoodCard from "./FreeFoodCard";
 import SmallCard from "./SmallCard";
 
 const DailyMealDis = () => {
@@ -77,29 +76,9 @@ const DailyMealDis = () => {
         </div>
 
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
+            title="Video 1"
           />
         </Carousel>
       </section>
@@ -148,29 +127,21 @@ const DailyMealDis = () => {
         </div>
 
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
+            title="Video 1"
           />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/oYg7m3__FOc"
+            title="Video 2"
           />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/cbBR0t5cmB0"
+            title="Video 3"
           />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
+            title="Video 4"
           />
         </Carousel>
       </section>
@@ -232,7 +203,7 @@ const DailyMealDis = () => {
             link="https://www.youtube.com/embed/oYg7m3__FOc"
             title="spogmai foundation ki taraf se ramazan ul mubarak k laey rashan tehseel thall me taqseem kia geya"
           />
-          
+
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}
