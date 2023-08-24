@@ -66,7 +66,7 @@ const DailyMealDis = () => {
             <SmallCard
               image={bg1}
               title="Picture Gallery"
-              description="Daily lunch distribution in Hangu"
+              description="Monthly Ration Distribution"
             />
           </div>
         </div>
@@ -74,19 +74,19 @@ const DailyMealDis = () => {
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="Video 1"
+            title="Spogami Foundation Distribute Monthly Ration packages"
           />
           <VideoCard
             link="https://www.youtube.com/embed/oYg7m3__FOc"
-            title="Video 2"
+            title="Monthly Ration Distribution Spogmai Foundation with Tahir Fida"
           />
           <VideoCard
             link="https://www.youtube.com/embed/cbBR0t5cmB0"
-            title="Video 3"
+            title="Ration Packages Distributionm the founder of Spogmai foundation"
           />
           <VideoCard
             link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="Video 4"
+            title="Monthly Ration Packages Distribution in Hangu District"
           />
         </Carousel>
       </section>
