@@ -32,7 +32,7 @@ const DailyMealDis = () => {
       {/*Monthly Ration Packages section Open */}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">2. MONTHLY RATION PACKAGES</h1>
+          <h1 className="sm:pl-8 ">1. MONTHLY RATION PACKAGES</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
@@ -95,7 +95,7 @@ const DailyMealDis = () => {
       {/*Ramazan Ration Packages section open*/}
       <section className=" text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">3. Ramazan RATION PACKAGES</h1>
+          <h1 className="sm:pl-8 ">2. Ramazan RATION PACKAGES</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
@@ -134,19 +134,19 @@ const DailyMealDis = () => {
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/5RX1enG0DrM"
-            title="spogmai foundation ki taraf se hangu tehseel tall me rashan taqseem kia geia tahir fida k sath"
+            title="Ration packages distribution Spogmai foundation district Hangu in tehsil Tall"
           />
           <VideoCard
             link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="spogmai foundation k rashan ki tayari Tahir fida k sath"
+            title="Ration packages distribution Spogmai foundation with Tahir fida"
           />
           <VideoCard
             link="https://www.youtube.com/embed/cbBR0t5cmB0"
-            title="spogmai foundation ki taraf se zella hangu me ramazan ki rashan taqseem kia geya"
+            title="Ramazan Ration packages distribution Spogmai foundation at district Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/oYg7m3__FOc"
-            title="spogmai foundation ki taraf se ramazan ul mubarak k laey rashan tehseel thall me taqseem kia geya"
+            title="Ramazan Ration packages distribution Spogmai foundation district Hangu in tehsil Tall"
           />
 
         </Carousel>

@@ -8,11 +8,10 @@ const VideoCard = ({ link, title }) => {
           className="w-full aspect-video rounded-t-lg"
           src={link}
           title="YouTube video player"
-          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         ></iframe>
-        <p className=" px-4 text-md   my-8 text-lg  pb-4 ">{title}</p>
+        <p className=" px-4 text-md my-8 pb-4 sm:h-24 h-32 ">{title}</p>
       </div>
     </div>
   );
