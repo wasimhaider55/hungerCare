@@ -32,7 +32,7 @@ export const imageItems = [
   {
     id: 1,
     title: "Free Food Distribution",
-    path: "/ourcauses/freefooddistribution",
+    path: "/ourcauses/freeRationdistribution",
   },
   {
     id: 2,
