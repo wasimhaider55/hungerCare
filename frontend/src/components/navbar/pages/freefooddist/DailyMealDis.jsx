@@ -5,7 +5,6 @@ import bg1 from "../../../../assets/bg1.jpg";
 import RRPD from "../../../../assets/freeFoodDis/RRPD.png";
 import { Link } from "react-router-dom";
 import VideoCard from "../../../card/VideoCard";
-import FreeFoodCard from "./FreeFoodCard";
 import SmallCard from "./SmallCard";
 
 const DailyMealDis = () => {
@@ -30,85 +29,10 @@ const DailyMealDis = () => {
   };
   return (
     <main>
-      {/* Daily Meal distribution section Open */}
+      {/*Monthly Ration Packages section Open */}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">1. DAILY MEAL DISTRIBUTION</h1>
-        </div>
-
-        <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
-          <div className="lg:w-[60%] pt-10">
-            <p className="sm:pl-8  pb-4 lg:pr-24 md:pr-14 sm:pr-24 text-justify ">
-              Spogmai Foundation is committed to solving food insecurity through a daily meal
-              delivery program. Recognizing the importance of nutrition, the foundation works
-              to guarantee that people in economically disadvantaged areas receive a consistent
-              and nutritious meal every day. This initiative provides a lifeline for those facing
-              financial difficulties, ensuring they have regular access to food and support. The
-              foundation contributes to the well-being and dignity of individuals by eliminating
-              hunger and encouraging a healthier and more stable life for all through its daily
-              meal distribution. Spogmai Charity Foundation's daily meal distribution program goes
-              above and beyond addressing the community's basic nutritional needs. It develops a sense
-              of community and solidarity by providing a venue for where individuals can congregate,
-              share experiences, and enjoy a moment of rest from their everyday hardships. Not only
-              does this program nourish the body, but it additionally encourages a sense of belonging
-              and solidarity among participants. The foundation makes a positive influence well beyond
-              the plate by extending a helping hand and exhibiting compassion via consistent meal distribution,
-              reaffirming the belief that every individual deserves access to dignified nutrition and care.
-              <br />
-              <p className=" mt-5">
-                <strong>The clips below show our Daily Food Distribution.</strong>
-              </p>
-            </p>
-
-          </div>
-
-          <div className="lg:w-[40%] pb-5">
-            <SmallCard
-              image={bg1}
-              title="Picture Gallery"
-              description="Daily lunch distribution in Hangu"
-            />
-            <SmallCard
-              image={bg1}
-              title="Picture Gallery"
-              description=" Daily Dinner distribution in shelter Home"
-            />
-          </div>
-        </div>
-
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-        </Carousel>
-      </section>
-      {/* Daily meal distribution section Closed */}
-
-      {/*Monthly Ration Packages section Open */}
-      <section className=" bg-white text-black">
-        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">2. MONTHLY RATION PACKAGES</h1>
+          <h1 className="sm:pl-8 ">1. MONTHLY RATION PACKAGES</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
@@ -142,44 +66,36 @@ const DailyMealDis = () => {
             <SmallCard
               image={bg1}
               title="Picture Gallery"
-              description="Daily lunch distribution in Hangu"
+              description="Monthly Ration Distribution"
             />
           </div>
         </div>
 
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
+            title="Spogami Foundation Distribute Monthly Ration packages"
           />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/oYg7m3__FOc"
+            title="Monthly Ration Distribution Spogmai Foundation with Tahir Fida"
           />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/cbBR0t5cmB0"
+            title="Ration Packages Distributionm the founder of Spogmai foundation"
           />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
-          />
-          <FreeFoodCard
-            text="  Lorem ipsum dolor sit amet consectetur adipisicing aspernatur vitae officia deserunt facilis suscipit"
-            image="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4"
+          <VideoCard
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
+            title="Monthly Ration Packages Distribution in Hangu District"
           />
         </Carousel>
       </section>
       {/*Monthly Ration Packages section closed */}
 
       {/*Ramazan Ration Packages section open*/}
-      <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
+      <section className=" text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">3. Ramazan RATION PACKAGES</h1>
+          <h1 className="sm:pl-8 ">2. Ramazan RATION PACKAGES</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
@@ -218,21 +134,21 @@ const DailyMealDis = () => {
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/5RX1enG0DrM"
-            title="spogmai foundation ki taraf se hangu tehseel tall me rashan taqseem kia geia tahir fida k sath"
+            title="Ration packages distribution Spogmai foundation district Hangu in tehsil Tall"
           />
           <VideoCard
             link="https://www.youtube.com/embed/KcMlMPsy7fU"
-            title="spogmai foundation k rashan ki tayari Tahir fida k sath"
+            title="Ration packages distribution Spogmai foundation with Tahir fida"
           />
           <VideoCard
             link="https://www.youtube.com/embed/cbBR0t5cmB0"
-            title="spogmai foundation ki taraf se zella hangu me ramazan ki rashan taqseem kia geya"
+            title="Ramazan Ration packages distribution Spogmai foundation at district Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/oYg7m3__FOc"
-            title="spogmai foundation ki taraf se ramazan ul mubarak k laey rashan tehseel thall me taqseem kia geya"
+            title="Ramazan Ration packages distribution Spogmai foundation district Hangu in tehsil Tall"
           />
-          
+
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}

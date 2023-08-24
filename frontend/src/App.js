@@ -11,7 +11,7 @@ import AboutUs from "./components/about/AboutUs";
 // OurCauses import
 import OurActivities from "./components/activities/OurActivities";
 import DisabledPeopleSupport from "./components/navbar/pages/disabledpeoplesupport/DisabledPeopleSupport";
-import FreeFoodDis from "./components/navbar/pages/freefooddist/FreeFoodDis";
+import FreeRationDis from "./components/navbar/pages/freefooddist/FreeRationDis";
 import OrphanFamilySupport from "./components/navbar/pages/orphanfamilysupport/OrphanFamilySupport";
 import PoorFamilySupport from "./components/navbar/pages/poorfamilysupport/PoorFamilySupport";
 import Education from "./components/navbar/pages/education/Education";
@@ -52,9 +52,9 @@ function App() {
           element={<OrphanFamilySupport />}
         />
         <Route
-          path="/ourcauses/freefooddistribution"
+          path="/ourcauses/freeRationdistribution"
           exact
-          element={<FreeFoodDis />}
+          element={<FreeRationDis />}
         />
         <Route
           path="/ourcauses/poorfamilysupport"
