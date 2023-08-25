@@ -1,7 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import VideoCard from "../../../card/VideoCard";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const OrphanFamilySupport = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
   return (
     <main className=" pt-20">
       {/*orphan family support section open */}
@@ -84,6 +106,24 @@ const OrphanFamilySupport = () => {
             />
           </div>
         </div>
+        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+          <VideoCard
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
+            title="Spogami Foundation Distribute Monthly Ration packages"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/oYg7m3__FOc"
+            title="Monthly Ration Distribution Spogmai Foundation with Tahir Fida"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/cbBR0t5cmB0"
+            title="Ration Packages Distributionm the founder of Spogmai foundation"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/KcMlMPsy7fU"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+        </Carousel>
       </section>
       {/* orphan family support section components Closed */}
 
