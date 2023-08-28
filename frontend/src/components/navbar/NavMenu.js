@@ -31,7 +31,7 @@ export const NavMenu = [
 export const imageItems = [
   {
     id: 1,
-    title: "Free Food Distribution",
+    title: "Free Ration Distribution",
     path: "/ourcauses/freeRationdistribution",
   },
   {
