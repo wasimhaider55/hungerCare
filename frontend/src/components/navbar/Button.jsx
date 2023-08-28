@@ -1,11 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { AiFillHeart } from "react-icons/ai";
 
 export function Button() {
   return (
-    <Link to="/signup">
-      <button className=" lg:flex hidden bg-blue-600 text-white  px-6 py-2 rounded-full">
-        Sign Up
+    <Link to="/DonateNow">
+      <button className=" lg:flex hidden bg-pink-600 text-white  px-4 py-2 rounded-full">
+        <span className="my-auto pr-1">
+          <AiFillHeart />
+        </span>
+        DonateNow
       </button>
     </Link>
   );
