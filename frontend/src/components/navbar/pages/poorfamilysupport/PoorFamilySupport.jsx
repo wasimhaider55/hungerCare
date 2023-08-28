@@ -90,19 +90,19 @@ const PoorFamilySupport = () => {
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/U2TgIZ-3KPM?si=U1GMGDypd5TKM445"
-            title="Spogmai foundation support poor family in naryab Hangu"
+            title="Spogmai foundation support poor family in village naryab district Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/4RE4jC60Mx8?si=VRlj1PpFLQvYNNlk"
-            title="poor family support"
+            title="Spogmai foundation support poor family in hangu district"
           />
           <VideoCard
             link="https://www.youtube.com/embed/qJr7RM4uKvc?si=WJP-Gs36ZpxCO7iB"
-            title="poor family support"
+            title="The founder of spogmai foundation tahir fida support poor family in village tarri Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/BqiKL3fY93o?si=XXIlyjMkCHgZvejU"
-            title="poor family support"
+            title="Spogami foundation support poor family in village Darsamand Hangu"
           />
         </Carousel>
       </section>
