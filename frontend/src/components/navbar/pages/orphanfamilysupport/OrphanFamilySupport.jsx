@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import VideoCard from "../../../card/VideoCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import SmallCard from "../freefooddist/SmallCard";
+import bg1 from "../../../../assets/bg1.jpg";
 
 const OrphanFamilySupport = () => {
   const responsive = {
@@ -79,33 +81,42 @@ const OrphanFamilySupport = () => {
           <div className=" w-16 h-1 bg-blue-600 rounded-full mt-3 "></div>
         </div>
 
-        <div className="lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-20  gap-6">
-          <div className="lg:w-[50%]">
-            <p className=" pl-1 pb-4 lg:pr-24 md:pr-24 sm:pr-24 text-justify ">
-              SPOGMAI Foundation is currently sponsoring several orphan families
-              in Hangu and connected regions, and is financially supporting them
-              to cover their daily living expenses. Through this program,
-              vulnerable orphans and their families receive a regular monthly
-              allowance in between Rs.10,000 to Rs.20,000 depending upon family
-              needs and number of family members, which enables them to cover
-              their food, clothes, education and other daily living expenses.
-              Apart from regular monthly allowance in the shape of cash, SPOGMAI
-              Foundation also distributes Monthly Ration Packages in orphan
-              families so that they can have enough food available in their
-              houses. In addition to the above, clothes are also distributed in
-              those families on different occasions, including Eid. Also with
-              the arrival of winter season, warm clothes are distributed in
-              them.
+        <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
+          <div className="lg:w-[60%] pt-10">
+            <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
+              Certainly, distributing monthly ration packages to impoverished families in our area
+              is a critical initiative undertaken by Spogmai  Foundation. This program is designed
+              to address the ongoing challenges faced by vulnerable households in accessing essential
+              food supplies. By providing a comprehensive package of staple foods and necessities on
+              a monthly basis, the foundation aims to alleviate the burden of food insecurity and enhance
+              the quality of life for these families.
+              <br />
+              The monthly ration package includes a carefully curated selection of items such as rice, flour,
+              lentils, cooking oil, sugar, and basic hygiene products. This approach ensures that families receive
+              a balanced and sufficient diet, along with items to maintain their personal hygiene. By extending
+              this assistance regularly, the foundation not only meets immediate needs but also helps families plan
+              their resources more effectively, contributing to long-term stability.
+              <br />
+              Moreover, beyond the tangible impact of providing sustenance, the monthly ration distribution fosters a
+              sense of support and unity within the community. It brings families together, emphasizing that they are
+              not alone in their struggles. This collective effort builds a network of solidarity that strengthens
+              community ties and uplifts individuals emotionally as well as physically.
+              <br />
+              <p className=" mt-5">
+                <strong>The clips below show our Monthly Rations Distribution.</strong>
+              </p>
             </p>
           </div>
 
-          <div className="lg:w-[50%] pb-5">
-            <img
-              src="https://images.squarespace-cdn.com/content/v1/577eab6d03596e5318b18a43/1599066636360-H7Y593575V2IJG569ITW/Orphans.png"
-              alt="who we are "
+          <div className="lg:w-[40%] pt-20">
+            <SmallCard
+              image={bg1}
+              title="Picture Gallery"
+              description="Monthly Ration Distribution"
             />
           </div>
         </div>
+
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/KcMlMPsy7fU"
