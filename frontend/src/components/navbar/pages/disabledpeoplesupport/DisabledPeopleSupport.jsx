@@ -3,6 +3,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import bg1 from "../../../../assets/bg1.jpg";
 import { Link } from "react-router-dom";
+import VideoCard from "../../../card/VideoCard";
 
 const DisabledPeopleSupport = () => {
   const responsive = {
@@ -104,47 +105,55 @@ const DisabledPeopleSupport = () => {
           </div>
         </div>
 
-        <Carousel responsive={responsive} className=' lg:mx-20 text-white'>
-          <div className='lg:mx-3 md:mx-12 sm:mx-10 mx-5 '>
-            <div className=' bg-gradient-to-l from-black to-blue-700  rounded-xl cursor-pointer'>
-              <img src="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4" alt="free food distribution" className='p-1' />
-              <p className=' px-4 text-md pt-10  my-10 font-light  pb-4 '>Lorem, ipsum dolor sit amet consectetur adipisicing
-                aspernatur vitae, officia deserunt facilis suscipit
-              </p>
-            </div>
-          </div>
-          <div className='lg:mx-3 md:mx-12 sm:mx-10 mx-5'>
-            <div className=' bg-gradient-to-l from-black to-blue-700  rounded-xl cursor-pointer'>
-              <img src="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4" alt="free food distribution" className='p-1' />
-              <p className=' px-4 text-md pt-10  my-10 font-light  pb-4 '>Lorem, ipsum dolor sit amet consectetur adipisicing
-                aspernatur vitae, officia deserunt facilis suscipit
-              </p>
-            </div>
-          </div>
-          <div className='lg:mx-3 md:mx-12 sm:mx-10 mx-5'>
-            <div className=' bg-gradient-to-l from-black to-blue-700  rounded-xl cursor-pointer'>
-              <img src="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4" alt="free food distribution" className='p-1' />
-              <p className=' px-4 text-md pt-10  my-10 font-light  pb-4 '>Lorem, ipsum dolor sit amet consectetur adipisicing
-                aspernatur vitae, officia deserunt facilis suscipit
-              </p>
-            </div>
-          </div>
-          <div className='lg:mx-3 md:mx-12 sm:mx-10 mx-5'>
-            <div className=' bg-gradient-to-l from-black to-blue-700  rounded-xl cursor-pointer'>
-              <img src="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4" alt="free food distribution" className='p-1' />
-              <p className=' px-4 text-md pt-10   my-10 font-light  pb-4 '>Lorem, ipsum dolor sit amet consectetur adipisicing
-                aspernatur vitae, officia deserunt facilis suscipit
-              </p>
-            </div>
-          </div>
-          <div className='lg:mx-3 md:mx-12 sm:mx-10 mx-5'>
-            <div className=' bg-gradient-to-l from-black to-blue-700  rounded-xl cursor-pointer'>
-              <img src="https://media.licdn.com/dms/image/C4E12AQHY1jqipj8HFA/article-cover_image-shrink_720_1280/0/1644916369002?e=2147483647&v=beta&t=Bpzh_gYu30BcBwkNmh8Ul1Bll91qJ3rKg9aiC1dNEo4" alt="free food distribution" className='p-1' />
-              <p className=' px-4 text-md pt-10   my-10 font-light  pb-4 '>Lorem, ipsum dolor sit amet consectetur adipisicing
-                aspernatur vitae, officia deserunt facilis suscipit
-              </p>
-            </div>
-          </div>
+        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+          <VideoCard
+            link="https://www.youtube.com/embed/QeWNYe-ZULk?si=x2YQxE9CP146mebv"
+            title="Spogami Foundation Distribute Monthly Ration packages"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/Rjnxorasego?si=TU5EMjkOpPL5wiKt"
+            title="Monthly Ration Distribution Spogmai Foundation with Tahir Fida"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/DqhPvdN_1yk?si=AU-xukjK45fwMQIu"
+            title="Ration Packages Distributionm the founder of Spogmai foundation"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/iHsitsXSNQE?si=3XlhPWorcH9tGaB6"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/AZfqTCb2yJY?si=UZ6u1WRE15Ouc6yz"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/BqiKL3fY93o?si=XXIlyjMkCHgZvejU"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/cXI7esD_xLc?si=BTHKKA0v_csI6p9L"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/fAJrKq-_leU?si=aiWseLW9-9CJlC1D"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/KbHj3mBwE6E?si=NpIfan_laYQBDzZQ"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/JpMfJhnXE4k?si=0lbutDYz7dKU9p-y"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/hSEw87lSDnk?si=kFRVOJ33X-nZfpNr"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/4RE4jC60Mx8?si=VRlj1PpFLQvYNNlk"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
         </Carousel>
       </section>
       {/* Disabled People Support section Closed */}
