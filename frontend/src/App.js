@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 
 import ContactUs from "./components/contact/ContactUs";
-import SignUp from "./screens/signUp/SignUp";
 
 import Navbar from "./components/navbar/Navbar";
 import AboutUs from "./components/about/AboutUs";
@@ -44,7 +43,7 @@ function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="/aboutus" exact element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/signup" element={<SignUp />} />
+
         <Route path="/OurActivities" exact element={<OurActivities />} />
         <Route
           path="/ourcauses/orphanfamilysupport"
