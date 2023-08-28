@@ -104,6 +104,18 @@ const PoorFamilySupport = () => {
             link="https://www.youtube.com/embed/BqiKL3fY93o?si=XXIlyjMkCHgZvejU"
             title="Spogami foundation support poor family in village Darsamand Hangu"
           />
+          <VideoCard
+            link="https://www.youtube.com/embed/F84mIKofYCU?si=lY1Z-2IgWjWHLUeC"
+            title="spogmai foundation support poor family in district hangu"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/hFvDsdv-0vI?si=gbCFvtvWhuqNzMDg"
+            title="spogmai foundation support poor family in village sarozai district hangu"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/d-M2i5Dl9nM?si=FFVmWPKjTdP72SFh"
+            title="spogmai foundation support poor family in village balyamena district hangu"
+          />
         </Carousel>
       </section>
       {/* poor famillies support section components Closed */}

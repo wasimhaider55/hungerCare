@@ -108,55 +108,39 @@ const DisabledPeopleSupport = () => {
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/QeWNYe-ZULk?si=x2YQxE9CP146mebv"
-            title="spogmai foundation program dalasa qest 41 tahir fida k sath dowaba k zehni mareez ki halat behtar"
+            title="spogmai foundation support disabled person who's from dawaba Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/Rjnxorasego?si=TU5EMjkOpPL5wiKt"
-            title="spogmai foundation program dalasa qest 40 Tahir fida k sath hangu Kahi k cancer k bimar bachi"
+            title="spogmai foundation support cancer patient in Kahi district Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/DqhPvdN_1yk?si=AU-xukjK45fwMQIu"
-            title="Ration Packages Distributionm the founder of Spogmai foundation"
+            title="spogmai foundation support dissabled person who's from lakhti banda hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/iHsitsXSNQE?si=3XlhPWorcH9tGaB6"
-            title="Monthly Ration Packages Distribution in Hangu District"
+            title="spogmai foundation support dissabled person who's from tange banda Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/AZfqTCb2yJY?si=UZ6u1WRE15Ouc6yz"
-            title="Monthly Ration Packages Distribution in Hangu District"
+            title="spogmai foundation support dissabled person who's from togh sary banda Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/cXI7esD_xLc?si=BTHKKA0v_csI6p9L"
-            title="Monthly Ration Packages Distribution in Hangu District"
+            title="spogmai foundation support dissabled person who's from jawar ghundi Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/KZT7Hug9OQQ?si=xptEEz2vWFRqq9CE"
-            title="Monthly Ration Packages Distribution in Hangu District"
+            title="spogmai foundation support dissabled person who's from district Karak"
           />
           <VideoCard
             link="https://www.youtube.com/embed/MksfSTiaHc4?si=yFzaed3kACYcYqo7"
-            title="Monthly Ration Packages Distribution in Hangu District"
+            title="spogmai foundation support dissabled person who's from district Karak village taht e nasrati"
           />
           <VideoCard
             link="https://www.youtube.com/embed/3huoYedMbZQ?si=6zyMPmT27mYpO2X"
-            title="Monthly Ration Packages Distribution in Hangu District"
-          />
-          <VideoCard
-            link="https://www.youtube.com/embed/myEAN3EspGo?si=yIuXtZEc9PhtW6eB"
-            title="Monthly Ration Packages Distribution in Hangu District"
-          />
-          <VideoCard
-            link="https://www.youtube.com/embed/F84mIKofYCU?si=lY1Z-2IgWjWHLUeC"
-            title="Monthly Ration Packages Distribution in Hangu District"
-          />
-          <VideoCard
-            link="https://www.youtube.com/embed/hFvDsdv-0vI?si=gbCFvtvWhuqNzMDg"
-            title="Monthly Ration Packages Distribution in Hangu District"
-          />
-          <VideoCard
-            link="https://www.youtube.com/embed/d-M2i5Dl9nM?si=FFVmWPKjTdP72SFh"
-            title="Monthly Ration Packages Distribution in Hangu District"
+            title="spogmai foundation support dissabled person"
           />
         </Carousel>
       </section>
