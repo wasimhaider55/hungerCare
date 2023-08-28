@@ -120,23 +120,23 @@ const OrphanFamilySupport = () => {
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/fAJrKq-_leU?si=aiWseLW9-9CJlC1D"
-            title="orphan support"
+            title="Spogmai foundation support orphan family in village Kahi district Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/KbHj3mBwE6E?si=NpIfan_laYQBDzZQ"
-            title="orphan support"
+            title="The founder of Spogmai foundation Tahir fida support orphan familes in Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/JpMfJhnXE4k?si=0lbutDYz7dKU9p-y"
-            title="orphan family support"
+            title="The Spogmai foundation support orphan family in village darsamand district Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/hSEw87lSDnk?si=kFRVOJ33X-nZfpNr"
-            title="orphan family support"
+            title="Spogmai foundation support many orphan's family in village darsamand "
           />
            <VideoCard
             link="https://www.youtube.com/embed/-Uj5oUylymw?si=-fYUeNuybZ01uwJK"
-            title="orphan family support"
+            title="Spogmai foundation support orphan family in village Tarri band district Hangu"
           />
         </Carousel>
       </section>
