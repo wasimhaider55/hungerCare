@@ -36,7 +36,7 @@ const Gallery = () => {
       <div className="w-full grid md:grid-cols-3 gap-8 my-[5rem]  py-10 md:py-20 px-1 md:px-20 ">
         <div>
           <Card
-            title="Free Food Distribution"
+            title="Free Ration Distribution"
             image={ffd4}
             link="/gallery/imagealbum"
           />
