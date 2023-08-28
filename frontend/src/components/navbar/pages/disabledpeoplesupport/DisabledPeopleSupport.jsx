@@ -108,11 +108,11 @@ const DisabledPeopleSupport = () => {
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/QeWNYe-ZULk?si=x2YQxE9CP146mebv"
-            title="Spogami Foundation Distribute Monthly Ration packages"
+            title="spogmai foundation program dalasa qest 41 tahir fida k sath dowaba k zehni mareez ki halat behtar"
           />
           <VideoCard
             link="https://www.youtube.com/embed/Rjnxorasego?si=TU5EMjkOpPL5wiKt"
-            title="Monthly Ration Distribution Spogmai Foundation with Tahir Fida"
+            title="spogmai foundation program dalasa qest 40 Tahir fida k sath hangu Kahi k cancer k bimar bachi"
           />
           <VideoCard
             link="https://www.youtube.com/embed/DqhPvdN_1yk?si=AU-xukjK45fwMQIu"
@@ -127,31 +127,35 @@ const DisabledPeopleSupport = () => {
             title="Monthly Ration Packages Distribution in Hangu District"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/BqiKL3fY93o?si=XXIlyjMkCHgZvejU"
-            title="Monthly Ration Packages Distribution in Hangu District"
-          />
-          <VideoCard
             link="https://www.youtube.com/embed/cXI7esD_xLc?si=BTHKKA0v_csI6p9L"
             title="Monthly Ration Packages Distribution in Hangu District"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/fAJrKq-_leU?si=aiWseLW9-9CJlC1D"
+            link="https://www.youtube.com/embed/KZT7Hug9OQQ?si=xptEEz2vWFRqq9CE"
             title="Monthly Ration Packages Distribution in Hangu District"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/KbHj3mBwE6E?si=NpIfan_laYQBDzZQ"
+            link="https://www.youtube.com/embed/MksfSTiaHc4?si=yFzaed3kACYcYqo7"
             title="Monthly Ration Packages Distribution in Hangu District"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/JpMfJhnXE4k?si=0lbutDYz7dKU9p-y"
+            link="https://www.youtube.com/embed/3huoYedMbZQ?si=6zyMPmT27mYpO2X"
             title="Monthly Ration Packages Distribution in Hangu District"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/hSEw87lSDnk?si=kFRVOJ33X-nZfpNr"
+            link="https://www.youtube.com/embed/myEAN3EspGo?si=yIuXtZEc9PhtW6eB"
             title="Monthly Ration Packages Distribution in Hangu District"
           />
           <VideoCard
-            link="https://www.youtube.com/embed/4RE4jC60Mx8?si=VRlj1PpFLQvYNNlk"
+            link="https://www.youtube.com/embed/F84mIKofYCU?si=lY1Z-2IgWjWHLUeC"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/hFvDsdv-0vI?si=gbCFvtvWhuqNzMDg"
+            title="Monthly Ration Packages Distribution in Hangu District"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/d-M2i5Dl9nM?si=FFVmWPKjTdP72SFh"
             title="Monthly Ration Packages Distribution in Hangu District"
           />
         </Carousel>
