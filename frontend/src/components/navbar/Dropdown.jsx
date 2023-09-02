@@ -17,7 +17,7 @@ export function Dropdown() {
       >
         {imageItems.map((item, indx) => {
           return (
-            <Link key={indx}>
+            <Link to={item.path} key={indx}>
               <li
                 key={item.id}
                 className=" py-2 px-4 text-sm  bg-[#004d73] cursor-pointer hover:bg-blue-700"
@@ -31,6 +31,7 @@ export function Dropdown() {
     </>
   );
 }
+
 export function Drop() {
   const [click1, setClick1] = useState(false);
 
@@ -47,7 +48,6 @@ export function Drop() {
         {videoItems.map((item, indx) => {
           return (
             <Link to={item.path} key={indx}>
-              {" "}
               <li className=" py-2 px-4 text-sm  bg-[#004d73] cursor-pointer hover:bg-blue-700">
                 {item.title}
               </li>
