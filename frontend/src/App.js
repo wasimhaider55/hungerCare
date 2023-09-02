@@ -51,7 +51,7 @@ function App() {
           element={<OrphanFamilySupport />}
         />
         <Route
-          path="/ourcauses/freeRationdistribution"
+          path="/ourcauses/freerationdistribution"
           exact
           element={<FreeRationDis />}
         />

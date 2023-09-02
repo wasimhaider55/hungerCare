@@ -171,9 +171,9 @@ const Navbar = () => {
               : "md:hidden  fixed  right-0    w-[60%]  mt-[20rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
           }
         >
-          {NavMenu.map((menu) => {
+          {NavMenu.map((menu, indx) => {
             return (
-              <Link to={menu.path}>
+              <Link to={menu.path} key={indx}>
                 {" "}
                 <li
                   onClick={() => {
