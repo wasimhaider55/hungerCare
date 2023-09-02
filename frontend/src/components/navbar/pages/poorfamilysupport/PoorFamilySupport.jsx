@@ -1,7 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import VideoCard from "../../../card/VideoCard";
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 const PoorFamilySupport = () => {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
   return (
     <main className=" pt-20">
       {/*poor famillies support section open */}
@@ -65,6 +87,36 @@ const PoorFamilySupport = () => {
           </div>
 
         </div>
+        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+          <VideoCard
+            link="https://www.youtube.com/embed/U2TgIZ-3KPM?si=U1GMGDypd5TKM445"
+            title="Spogmai foundation support poor family in village naryab district Hangu"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/4RE4jC60Mx8?si=VRlj1PpFLQvYNNlk"
+            title="Spogmai foundation support poor family in hangu district"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/qJr7RM4uKvc?si=WJP-Gs36ZpxCO7iB"
+            title="The founder of spogmai foundation tahir fida support poor family in village tarri Hangu"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/BqiKL3fY93o?si=XXIlyjMkCHgZvejU"
+            title="Spogami foundation support poor family in village Darsamand Hangu"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/F84mIKofYCU?si=lY1Z-2IgWjWHLUeC"
+            title="spogmai foundation support poor family in district hangu"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/hFvDsdv-0vI?si=gbCFvtvWhuqNzMDg"
+            title="spogmai foundation support poor family in village sarozai district hangu"
+          />
+          <VideoCard
+            link="https://www.youtube.com/embed/d-M2i5Dl9nM?si=FFVmWPKjTdP72SFh"
+            title="spogmai foundation support poor family in village balyamena district hangu"
+          />
+        </Carousel>
       </section>
       {/* poor famillies support section components Closed */}
 

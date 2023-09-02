@@ -77,14 +77,14 @@ const Education = () => {
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              There are a number of poor orphan families included under SPOGMAI
-              Foundation Monthly Widow/Orphan Family Support Program who
-              regularly receive monthly allowance up to Rs. 20,000 in the form
-              of cash from SPOGMAI Foundation for fulfilling their day to day
-              living expenses. Those orphan families include such orphans whose
-              educational expenses are also borne by SPOGMAI Foundation so that
-              their education is not suffered due to financial crises or
-              poverty.
+              From spogmai foundation As the winter season draws near, we are excited to launch our 'Winter Warmth Initiative,' where we extend our hands of care to orphan families by providing them with essential winter gear
+              "Join us in making a difference this winter by ensuring that orphan children and their families have the warmth they deserve. Our initiative aims to provide cozy winter coats, caps, gloves, and more."
+              <p className="pt-3">
+                This winter, let's come with spogmai foundation  together to share the gift of warmth with those in need. Through our 'Winter Essentials Drive,' we're collecting winter coats, hats, gloves, and more to support orphan families.
+              </p>
+              <p className="pt-3">
+                With the cold months approaching, our mission is to ensure that no orphan child feels the chill. We're launching our 'Winter Comfort Campaign,' providing orphan families with the warmth and protection they need.
+              </p>
             </p>
           </div>
 
@@ -97,23 +97,23 @@ const Education = () => {
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/-i70DZH0tUU"
-            title="spogmai foundation program mrasta qest 15 tahir fida k sath hangu k mukhtalif schoolon me tawon"
+            title="spogmai foundation support different  school children's in district Hangu"
           />
           <VideoCard
             link="https://www.youtube.com/embed/QmVEDlrwg8Y"
-            title="spogmai foundation program mrasta qest 14 tahir fida k sath hangu k mukhtalif schoolon me tawon"
+            title="spogmai foundation support different  school children's in winter weather"
           />
           <VideoCard
             link="https://www.youtube.com/embed/P66dhTrT97E"
-            title="spogmai foundation program mrasta qest 13 Tahir fida k sath hangu darsamand k schools me tawon"
+            title="spogmai foundation support education children of darsamand school"
           />
           <VideoCard
             link="https://www.youtube.com/embed/t9nbaXlzkck"
-            title="spogmai foundation program mrasta qest 8 Tahir fida k sath hangu tehseel tall k schools me tawon"
+            title="spogmai foundation supportschool students in Hangu tehseel tall"
           />
           <VideoCard
             link="https://www.youtube.com/embed/8rKXdDgcj18"
-            title="spogmai foundation program mrasta qest 2 Tahir fida k sath hangu me mukhtalif schoolon me tawon"
+            title="spogmai foundation support school student and distribute jacket of winter"
           />
         </Carousel>
       </section>
