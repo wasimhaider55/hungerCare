@@ -42,22 +42,32 @@ const Gallery = () => {
           />
         </div>
         <div>
-          <Card title="Orphan Family Support" image={bg1} />
+          <Card
+            title="Orphan Family Support"
+            image={bg1}
+            link="/gallery/imagealbum"
+          />
         </div>
         <div>
           <Card
             title="Poor Family Support"
             image="https://images.squarespace-cdn.com/content/v1/577eab6d03596e5318b18a43/1616705131281-N5S4XIVBSLFSPZ4R819V/Orphange-Care.png?format=1500w"
+            link="/gallery/imagealbum"
           />
         </div>
         <div>
           <Card
             title="Disabled People Support"
             image="https://cdn.pixabay.com/photo/2015/04/06/23/40/wheelchair-710265_640.jpg"
+            link="/gallery/imagealbum"
           />
         </div>
         <div>
-          <Card title="Education Support" image={ffd3} />
+          <Card
+            title="Education Support"
+            image={ffd3}
+            link="/gallery/imagealbum"
+          />
         </div>
         <div>
           <Card
