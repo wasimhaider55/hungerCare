@@ -76,31 +76,20 @@ const OrphanFamilySupport = () => {
 
       {/* orphan family support section components open */}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
-        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4 capitalize">
-          <h1>Orphan Familie's Support</h1>
-          <div className=" w-16 h-1 bg-blue-600 rounded-full mt-3 "></div>
+        <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 capitalize'>
+          <h1 className='sm:pl-8 '> Orphan Familie's Support </h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              Certainly, distributing monthly ration packages to impoverished families in our area
-              is a critical initiative undertaken by Spogmai  Foundation. This program is designed
-              to address the ongoing challenges faced by vulnerable households in accessing essential
-              food supplies. By providing a comprehensive package of staple foods and necessities on
-              a monthly basis, the foundation aims to alleviate the burden of food insecurity and enhance
-              the quality of life for these families.
+              The Spogmai Foundation's Orphan Families Support program is dedicated to making a meaningful difference in the lives of families who have lost their primary caregivers. Our initiative is designed to provide essential assistance and support to these vulnerable families, helping them navigate the challenges they face and providing a path towards a brighter future.
               <br />
-              The monthly ration package includes a carefully curated selection of items such as rice, flour,
-              lentils, cooking oil, sugar, and basic hygiene products. This approach ensures that families receive
-              a balanced and sufficient diet, along with items to maintain their personal hygiene. By extending
-              this assistance regularly, the foundation not only meets immediate needs but also helps families plan
-              their resources more effectively, contributing to long-term stability.
+              We firmly believe that every orphaned family deserves access to opportunities, resources, and a nurturing environment. Our committed team works tirelessly to ensure that these families receive the care, guidance, and resources they need to heal and thrive.
               <br />
-              Moreover, beyond the tangible impact of providing sustenance, the monthly ration distribution fosters a
-              sense of support and unity within the community. It brings families together, emphasizing that they are
-              not alone in their struggles. This collective effort builds a network of solidarity that strengthens
-              community ties and uplifts individuals emotionally as well as physically.
+              Our program goes beyond just addressing practical needs. It also promotes inclusivity and raises awareness about the resilience and potential of orphaned families. By creating a supportive and compassionate community, we aim to break down stigmas and societal barriers, fostering an environment where these families can rebuild their lives with dignity and hope.
+              <br />
+              The Spogmai Foundation's Orphan Families Support program is not only about providing essential resources but also about offering emotional and psychological support, and empowering these families to move towards self-sufficiency and a brighter future. We believe that by embracing diversity and working together, we can create a more inclusive and compassionate society where orphaned families can thrive and find hope amidst adversity.
               <br />
               <p className=" mt-5">
                 <strong>The clips below show our Monthly Rations Distribution.</strong>
@@ -134,7 +123,7 @@ const OrphanFamilySupport = () => {
             link="https://www.youtube.com/embed/hSEw87lSDnk?si=kFRVOJ33X-nZfpNr"
             title="Spogmai foundation support many orphan's family in village darsamand "
           />
-           <VideoCard
+          <VideoCard
             link="https://www.youtube.com/embed/-Uj5oUylymw?si=-fYUeNuybZ01uwJK"
             title="Spogmai foundation support orphan family in village Tarri band district Hangu"
           />
