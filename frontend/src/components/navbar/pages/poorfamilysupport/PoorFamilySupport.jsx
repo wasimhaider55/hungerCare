@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import VideoCard from "../../../card/VideoCard";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import SmallCard from "../freefooddist/SmallCard";
+import bg1 from "../../../../assets/bg1.jpg";
 
 const PoorFamilySupport = () => {
   const responsive = {
@@ -65,27 +67,32 @@ const PoorFamilySupport = () => {
       {/*poor famillies support section components open */}
       <section className='bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black'>
 
-        <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4 capitalize'>
-          <h1>Poor Familie's Support</h1>
-          <div className=' w-16 h-1 bg-blue-600 rounded-full mt-3 '></div>
+        <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 capitalize'>
+          <h1 className='sm:pl-8 '>Poor Familie's Support</h1>
         </div>
 
-        <div className='lg:flex lg:pl-24  pt-10 mb-24 px-4 md:px-20  gap-6'>
-
-          <div className="lg:w-[50%]">
-            <p className=' pl-1 pb-4 lg:pr-24 md:pr-24 sm:pr-24 text-justify '>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum,
+        <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
+          <div className="lg:w-[60%] pt-10">
+            <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
+              The Spogmai Foundation's Poor Families Support program is dedicated to bringing about positive change in the lives of economically disadvantaged families within our community. Our initiative is designed to address the unique challenges faced by these families and provide them with the support they need to build brighter futures.
+              <br />
+              We firmly believe that every family, regardless of their economic circumstances, deserves access to opportunities, resources, and support. Our dedicated team works tirelessly to ensure that economically disadvantaged families receive the assistance and encouragement necessary to overcome financial obstacles and achieve their goals.
+              <br />
+              The Spogmai Foundation's Poor Families Support program is not only about providing essential resources but also about empowering families to lead self-sufficient and dignified lives. We believe that by embracing diversity and working together, we can build a more inclusive and compassionate society where every family, regardless of their economic status, can thrive.
+              <br />
+              <p className=" mt-5">
+                <strong>The clips below show our Monthly Rations Distribution.</strong>
+              </p>
             </p>
           </div>
 
-          <div className='lg:w-[50%] pb-5'>
-            <img src="https://love.lambeth.gov.uk/wp-content/uploads/2020/05/hubs-2-500-x-320.jpg" alt="who we are " />
+          <div className="lg:w-[40%] pt-20">
+            <SmallCard
+              image={bg1}
+              title="Picture Gallery"
+              description="Monthly Ration Distribution"
+            />
           </div>
-
         </div>
         <Carousel responsive={responsive} className=" lg:mx-20 text-white">
           <VideoCard

@@ -4,6 +4,7 @@ import 'react-multi-carousel/lib/styles.css';
 import bg1 from "../../../../assets/bg1.jpg";
 import { Link } from "react-router-dom";
 import VideoCard from "../../../card/VideoCard";
+import SmallCard from "../freefooddist/SmallCard";
 
 const DisabledPeopleSupport = () => {
   const responsive = {
@@ -72,36 +73,29 @@ const DisabledPeopleSupport = () => {
           <h1 className='sm:pl-8 '>Disabled People Support</h1>
         </div>
 
-        <div className='lg:flex lg:pl-24  mb-24 px-4 md:px-20'>
-
+        <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
-            <p className='sm:pl-8  pb-4 lg:pr-24 md:pr-14 sm:pr-24 text-justify '>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem aliquid ipsa totam dolore quam, eligendi distinctio consectetur voluptatibus maxime? Expedita eaque, nulla ipsa et blanditiis alias tenetur nemo repellat voluptas!
-              Lorem ipsum,
+            <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
+              Spogmai Foundation is committed to making a positive difference in the lives of disabled individuals within our community. Our Disabled People Support program is a vital initiative designed to address the unique challenges faced by individuals with disabilities and provide them with the support they need to lead fulfilling lives.
+              <br />
+              Our program is founded on the belief that every person, regardless of their abilities, deserves access to opportunities, resources, and support. We work tirelessly to ensure that disabled individuals receive the assistance and encouragement they need to overcome obstacles and achieve their goals.
+              <br />
+              Moreover, our program goes beyond just addressing practical needs. It promotes inclusivity and raises awareness about the capabilities and potential of disabled individuals. By fostering a supportive and inclusive environment, we aim to break down societal barriers and promote a more equitable and compassionate society.
+              <br />
+              Spogmai Foundation's Disabled People Support program is not only about providing essential resources but also about empowering disabled individuals to lead fulfilling and independent lives. We believe that by embracing diversity and working together, we can create a more inclusive and compassionate society where every person, regardless of their abilities, can thrive.
+              <br />
+              <p className=" mt-5">
+                <strong>The clips below show our Monthly Rations Distribution.</strong>
+              </p>
             </p>
           </div>
 
-          <div className='lg:w-[40%] pb-5 text-white'>
-            <div className=' lg:mx-16 md:mx-10 sm:mx-10 rounded-md shadow-lg shadow-slate-900'>
-              <div className=' bg-gradient-to-l from-black to-blue-700  rounded-md cursor-pointer'>
-                <img src={bg1} alt="deily lunch distribution" className='p-1' />
-                <h1 className=' px-4 text-md pt-4 text-center'>Picture Gallery</h1>
-                <p className=' px-4 text-sm my-3 font-light pb-4 text-center '> Daily lunch distribution in Hangu
-                </p>
-              </div>
-
-              <div className=' bg-gradient-to-l from-black to-blue-700  rounded-md cursor-pointer'>
-                <img className=' lg:mt-10 p-1' src={bg1} alt="deily lunch distribution" />
-                <h1 className=' px-4 text-md pt-4 text-center'>Picture Gallery</h1>
-                <p className=' px-4 text-sm  my-3 font-light  pb-4 text-center '> Daily Dinner distribution in shelter Home
-                </p>
-              </div>
-            </div>
-
+          <div className="lg:w-[40%] pt-20">
+            <SmallCard
+              image={bg1}
+              title="Picture Gallery"
+              description="Monthly Ration Distribution"
+            />
           </div>
         </div>
 
