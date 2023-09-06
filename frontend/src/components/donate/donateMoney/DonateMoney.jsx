@@ -28,7 +28,7 @@ const DonateMoney = () => {
                     <h1 className='text-2xl font-bold'>IMPORTANT NOTE</h1>
                     <p className=' font-bold py-5'>We accept all types of charity including Zakat, Sadaqah, Fitrana, Kafarah, General Charity, and we make sure to utilize these charities in the relevant sectors according to Islamic Shariah.</p>
                     <p className='pb-5'>You can either donate towards anyone of our specific causes, or you may leave the choice of utilizing your charity on our discretion and we will make the best use of your charity in the most needed causes. For list of our help sectors, please visit Our Causes link.</p>
-                    <p>If you would like to inform us after donating, or if you would like to discuss with us about your charity or if you have any question before making donation to our Foundation, please feel free to contact us either on our email <strong>wasimhaider2022@gmail.com</strong> or contact our Founder & President Mr. Wasim Haider on his official Contact / WhatsApp number <strong>0092 336 0574327</strong>.</p>
+                    <p>If you would like to inform us after donating, or if you would like to discuss with us about your charity or if you have any question before making donation to our Foundation, please feel free to contact us either on our email <strong>wasimhaider2022@gmail.com</strong> or contact our Founder & President Mr. Tahir Fida on his official Contact / WhatsApp number <strong>0092 336 0574327</strong>.</p>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ const DonateMoney = () => {
             <div className='sm:pt-20 pt-8 md:pl-20 pl-5'>
                 <h1 className=' text-black lg:text-4xl sm:text-3xl text-2xl font-bold'> How To Donate </h1>
                 <div className=' w-24 h-1 bg-red-500 rounded-full mt-3'></div>
-                <p className='md:text-xl text-lg pt-5 text-black'>Donation can be made to HungerCare Foundation using one of the following methods :</p>
+                <p className='md:text-xl text-lg pt-5 text-black'>Donation can be made to Spogmai Foundation using one of the following methods :</p>
             </div>
 
 
@@ -58,12 +58,12 @@ const DonateMoney = () => {
                 <hr className='border-1 border-gray-600' />
                 {showDivs[0] && <div className='sm:px-10 px-3  text-justify'>
                     <p className='py-3 '>
-                        You can donate to HungerCare at any “Bank of UBL” Branch in Pakistan:
+                        You can donate to Spogmai at any “Bank of UBL” Branch in Pakistan:
                     </p>
-                    <h1> <strong>Account Title:</strong> HungerCare Fundation </h1>
+                    <h1> <strong>Account Title:</strong> Spogmai Fundation </h1>
                     <h1> <strong>Account Number:</strong> 200609810056361002</h1>
                     <h1> <strong>Iban Number:</strong> PK56BAHL20060981563601</h1>
-                    <h1> <strong>Bank Name:</strong> Bank AL Habib Limited</h1>
+                    <h1> <strong>Bank Name:</strong> United Bank Limited</h1>
                     <h1> <strong>Branch Name:</strong> University Road Branch, Peshawar, PAKISTAN.</h1>
                     <h1> <strong>Branch Code:</strong> 2006</h1>
                     <p className='py-5'> <strong>Note:</strong> Due to prevailing restrictions by the current government on all commercial bank accounts in Pakistan, Direct Bank Transfer to above account can only be made from a Pakistani Bank and not from abroad. Please use other options if you are an international donor. Please contact us via our WhatsApp <strong>00923360574327</strong>  if you need more details for international bank transfer.</p>
@@ -105,9 +105,9 @@ const DonateMoney = () => {
                 <hr className='border-1 border-gray-600' />
                 {showDivs[2] && <div className='sm:px-10 px-3 text-justify'>
                     <p className='py-3 '>
-                        You can send or drop a crossed-cheque payable to “HungerCare” on the following address:
+                        You can send or drop a crossed-cheque payable to “Spogmai” on the following address:
                     </p>
-                    <h1>  HungerCare </h1>
+                    <h1>  Spogmai </h1>
                     <h1> Office # 1, First Floor,STH Plaza,,</h1>
                     <h1> Main Forest Bazar Agriculture University ,</h1>
                     <h1> Peshawar 27800, PAKISTAN</h1>
@@ -132,7 +132,7 @@ const DonateMoney = () => {
                     <p className='py-3 '>
                         You can make cash donation by visiting our Office at the following address:
                     </p>
-                    <h1>  HungerCare </h1>
+                    <h1>  Spogmai </h1>
                     <h1> Office # 1, First Floor,STH Plaza,,</h1>
                     <h1> Main Forest Bazar Agriculture University ,</h1>
                     <h1> Peshawar 27800, PAKISTAN</h1>

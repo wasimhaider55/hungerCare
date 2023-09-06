@@ -27,12 +27,11 @@ const DonateFood = () => {
             <div className="mx-[2rem] py-[2rem] text-white flex flex-col gap-5">
               <h1 className="text-3xl">Food Donation Form</h1>
               <p>
-                Thank you for your interest in donating food to Spogmi
+                Thank you for your interest in donating food to Spogmai
                 foundation! Please use this form to provide information on your
                 food donation then our team will get back to you as soon as we
                 can. If you have any questions, or would prefer to speak to us
-                directly, please email food@hunger.org.uk or call us on 0207 041
-                8491.
+                directly, please email wasimhaider_2022 or call us on 0336-0574327.
               </p>
               {/* 1st ul  */}
               <p className="text-2xl">Guidelines for food donations: </p>
