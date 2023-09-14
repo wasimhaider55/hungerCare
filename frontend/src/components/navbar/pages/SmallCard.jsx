@@ -10,7 +10,7 @@ const SmallCard = ({ image, title, description }) => {
             alt="deily lunch distribution"
             className=" h-48 w-full rounded-t-md"
           />
-          <div className=" absolute inset-0 hover:bg-gray-900  group-hover:opacity-40"></div>
+          <div className=" absolute inset-0 hover:bg-gray-900 rounded-t-md group-hover:opacity-40"></div>
           <button className=" h-10 w-28 m-auto opacity-0 absolute inset-0 flex justify-center items-center transition duration-300 bg-white border-2 border-gray-500 text-gray-500 text-md font-semibold py-2 px-4 rounded-full md:group-hover:opacity-100">
             ViewMore
           </button>
