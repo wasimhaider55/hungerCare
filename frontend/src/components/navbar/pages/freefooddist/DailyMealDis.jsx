@@ -5,7 +5,7 @@ import bg1 from "../../../../assets/bg1.jpg";
 import RRPD from "../../../../assets/freeFoodDis/RRPD.png";
 import { Link } from "react-router-dom";
 import VideoCard from "../../../card/VideoCard";
-import SmallCard from "./SmallCard";
+import SmallCard from "../SmallCard";
 
 const DailyMealDis = () => {
   const responsive = {
@@ -38,26 +38,35 @@ const DailyMealDis = () => {
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              Certainly, distributing monthly ration packages to impoverished families in our area
-              is a critical initiative undertaken by Spogmai  Foundation. This program is designed
-              to address the ongoing challenges faced by vulnerable households in accessing essential
-              food supplies. By providing a comprehensive package of staple foods and necessities on
-              a monthly basis, the foundation aims to alleviate the burden of food insecurity and enhance
-              the quality of life for these families.
+              Certainly, distributing monthly ration packages to impoverished
+              families in our area is a critical initiative undertaken by
+              Spogmai Foundation. This program is designed to address the
+              ongoing challenges faced by vulnerable households in accessing
+              essential food supplies. By providing a comprehensive package of
+              staple foods and necessities on a monthly basis, the foundation
+              aims to alleviate the burden of food insecurity and enhance the
+              quality of life for these families.
               <br />
-              The monthly ration package includes a carefully curated selection of items such as rice, flour,
-              lentils, cooking oil, sugar, and basic hygiene products. This approach ensures that families receive
-              a balanced and sufficient diet, along with items to maintain their personal hygiene. By extending
-              this assistance regularly, the foundation not only meets immediate needs but also helps families plan
-              their resources more effectively, contributing to long-term stability.
+              The monthly ration package includes a carefully curated selection
+              of items such as rice, flour, lentils, cooking oil, sugar, and
+              basic hygiene products. This approach ensures that families
+              receive a balanced and sufficient diet, along with items to
+              maintain their personal hygiene. By extending this assistance
+              regularly, the foundation not only meets immediate needs but also
+              helps families plan their resources more effectively, contributing
+              to long-term stability.
               <br />
-              Moreover, beyond the tangible impact of providing sustenance, the monthly ration distribution fosters a
-              sense of support and unity within the community. It brings families together, emphasizing that they are
-              not alone in their struggles. This collective effort builds a network of solidarity that strengthens
-              community ties and uplifts individuals emotionally as well as physically.
+              Moreover, beyond the tangible impact of providing sustenance, the
+              monthly ration distribution fosters a sense of support and unity
+              within the community. It brings families together, emphasizing
+              that they are not alone in their struggles. This collective effort
+              builds a network of solidarity that strengthens community ties and
+              uplifts individuals emotionally as well as physically.
               <br />
               <p className=" mt-5">
-                <strong>The clips below show our Monthly Rations Distribution.</strong>
+                <strong>
+                  The clips below show our Monthly Rations Distribution.
+                </strong>
               </p>
             </p>
           </div>
@@ -101,23 +110,28 @@ const DailyMealDis = () => {
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              Every year during Ramadan, Spogmai Foundation does something special. They put together
-              special packages of food for families who don't have enough to eat. These packages have things
-              like rice, flour, lentils, and other important foods. They also include things to help keep clean,
-              like soap and toothpaste.
+              Every year during Ramadan, Spogmai Foundation does something
+              special. They put together special packages of food for families
+              who don't have enough to eat. These packages have things like
+              rice, flour, lentils, and other important foods. They also include
+              things to help keep clean, like soap and toothpaste.
               <br />
               <br />
-              Ramadan is a special time for many people, and these packages are a way to help families have a good
-              and healthy Ramadan. Giving out these packages also shows that people care about each other. It's a
-              way of sharing and being kind to others.
+              Ramadan is a special time for many people, and these packages are
+              a way to help families have a good and healthy Ramadan. Giving out
+              these packages also shows that people care about each other. It's
+              a way of sharing and being kind to others.
               <br />
               <br />
-              By doing this every year, the Spogmai Foundation makes sure that families have enough food
-              and things they need, especially during this important time. It's a way to help and make a difference
-              in the lives of those who need it.
+              By doing this every year, the Spogmai Foundation makes sure that
+              families have enough food and things they need, especially during
+              this important time. It's a way to help and make a difference in
+              the lives of those who need it.
               <br />
               <p className=" mt-5">
-                <strong>The clips below show our Ramazan Ration Distribution.</strong>
+                <strong>
+                  The clips below show our Ramazan Ration Distribution.
+                </strong>
               </p>
             </p>
           </div>
@@ -148,11 +162,9 @@ const DailyMealDis = () => {
             link="https://www.youtube.com/embed/oYg7m3__FOc"
             title="Ramazan Ration packages distribution Spogmai foundation district Hangu in tehsil Tall"
           />
-
         </Carousel>
       </section>
       {/*Ramazan Ration Packages section closed*/}
-
 
       {/* Help us Section open */}
       <Link to="/donateNow">
@@ -166,7 +178,7 @@ const DailyMealDis = () => {
         </div>
       </Link>
       {/* Help us Section closed */}
-    </main >
+    </main>
   );
 };
 
