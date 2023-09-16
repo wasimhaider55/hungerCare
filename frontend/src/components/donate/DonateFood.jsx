@@ -23,16 +23,16 @@ const DonateFood = () => {
       <div className="p-1">
         <div className="w-full md:w-[70%] md:mx-auto my-[6rem] ">
           {/* section Green  */}
-          <div className="w-full min-h-screen bg-[#5bb132] rounded-t-lg">
-            <div className="mx-[2rem] py-[2rem] text-white flex flex-col gap-5">
+          <div className="w-full min-h-screen bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black rounded-t-lg">
+            <div className="mx-[2rem] py-[2rem]  flex flex-col gap-5">
               <h1 className="text-3xl">Food Donation Form</h1>
               <p>
-                Thank you for your interest in donating food to Spogmi
+                Thank you for your interest in donating food to Spogmai
                 foundation! Please use this form to provide information on your
                 food donation then our team will get back to you as soon as we
                 can. If you have any questions, or would prefer to speak to us
-                directly, please email food@hunger.org.uk or call us on 0207 041
-                8491.
+                directly, please email wasimhaider_2022 or call us on
+                0336-0574327.
               </p>
               {/* 1st ul  */}
               <p className="text-2xl">Guidelines for food donations: </p>
@@ -99,40 +99,65 @@ const DonateFood = () => {
               </div>
               {/* Organization  */}
               <div>
-                <h1 className="text-lg" htmlFor="check">
+                <h1 className="text-lg" htmlFor="organizationtype">
                   2. Organisation Type
                 </h1>
                 <div className="pl-[1rem] space-y-6 mt-6 text-sm">
                   <div className="flex gap-2">
-                    <input type="radio" name="check" id="check" />
+                    <input
+                      type="radio"
+                      name="organizationtype"
+                      id="organizationtype"
+                    />
                     <h1>Events/Catering</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="check" id="check" />
+                    <input
+                      type="radio"
+                      name="organizationtype"
+                      id="organizationtype"
+                    />
                     <h1>Farm</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="check" id="check" />
+                    <input
+                      type="radio"
+                      name="organizationtype"
+                      id="organizationtype"
+                    />
                     <h1>Manufacturer/Producer</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="check" id="check" />
+                    <input
+                      type="radio"
+                      name="organizationtype"
+                      id="organizationtype"
+                    />
                     <h1>Wholesaler</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="check" id="check" />
+                    <input
+                      type="radio"
+                      name="organizationtype"
+                      id="organizationtype"
+                    />
                     <h1>Distributor</h1>
                   </div>
                   <div className="flex gap-2">
-                    <input type="radio" name="check" id="check" />
+                    <input
+                      type="radio"
+                      name="organizationtype"
+                      id="organizationtype"
+                    />
                     <h1>Restaurant</h1>
                   </div>
+
                   <div className="flex gap-2">
-                    <input type="radio" name="check" id="check" />
-                    <h1>Film</h1>
-                  </div>
-                  <div className="flex gap-2">
-                    <input type="radio" name="check" id="check" />
+                    <input
+                      type="radio"
+                      name="organizationtype"
+                      id="organizationtype"
+                    />
                     <h1>Other</h1>
                   </div>
                 </div>
@@ -207,7 +232,7 @@ const DonateFood = () => {
               </h1>
               <button
                 type="submit"
-                className="bg-[#5bb132] w-full  md:w-[12%] rounded px-4 py-3 text-white"
+                className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black w-full  md:w-[12%] rounded px-4 py-3 "
               >
                 Submit
               </button>

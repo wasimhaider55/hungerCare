@@ -3,9 +3,11 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 
+import ES1 from "../../../../assets/freeFoodDis/ES1.png";
+
 import VideoCard from "../../../card/VideoCard";
 
-import Card from "./Card";
+import SmallCard from "../SmallCard";
 
 const Education = () => {
   const responsive = {
@@ -41,28 +43,40 @@ const Education = () => {
       {/* Education section Closed */}
 
       {/* Overview section Open */}
-      <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
+      <div className="lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4">
         <h1>Overview</h1>
-        <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
+        <div className=" w-20 h-1 bg-blue-600 rounded-full mt-3 "></div>
       </div>
 
-      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
+      <div className="py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500">
         <p className="mt-2 mb-6">
-          At Spogmai Foundation, we believe education is the cornerstone of progress, which is why our Education Support program is dedicated to unlocking opportunities for every learner.
+          At Spogmai Foundation, we believe education is the cornerstone of
+          progress, which is why our Education Support program is dedicated to
+          unlocking opportunities for every learner.
         </p>
         <strong>Our Approach:</strong>
         <p className="mt-4">
-          We provide access to quality education, mentorship, and resources to nurture a generation of empowered individuals. We ensure that children from all backgrounds have access to education, bridging gaps and fostering inclusivity.
-          We support teachers by offering training and resources, ensuring that the learning environment is dynamic and effective.
+          We provide access to quality education, mentorship, and resources to
+          nurture a generation of empowered individuals. We ensure that children
+          from all backgrounds have access to education, bridging gaps and
+          fostering inclusivity. We support teachers by offering training and
+          resources, ensuring that the learning environment is dynamic and
+          effective.
         </p>
         <p className="mt-2">
-          Our program focuses on both academic and practical skills, preparing students for real-world challenges and opportunities.
-          and We encourage students to dream big. With guidance and support, we inspire them to pursue careers aligned with their passions.
+          Our program focuses on both academic and practical skills, preparing
+          students for real-world challenges and opportunities. and We encourage
+          students to dream big. With guidance and support, we inspire them to
+          pursue careers aligned with their passions.
         </p>
         <p className="mt-2 mb-8">
-          By contributing to our Education Support program, you contribute to a brighter future for individuals and society as a whole.
+          By contributing to our Education Support program, you contribute to a
+          brighter future for individuals and society as a whole.
         </p>
-        <strong>Together, let's light the path to knowledge and open doors to endless possibilities.</strong>
+        <strong>
+          Together, let's light the path to knowledge and open doors to endless
+          possibilities.
+        </strong>
       </div>
 
       {/* Overview section Closed */}
@@ -77,19 +91,34 @@ const Education = () => {
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              From spogmai foundation As the winter season draws near, we are excited to launch our 'Winter Warmth Initiative,' where we extend our hands of care to orphan families by providing them with essential winter gear
-              "Join us in making a difference this winter by ensuring that orphan children and their families have the warmth they deserve. Our initiative aims to provide cozy winter coats, caps, gloves, and more."
+              From spogmai foundation As the winter season draws near, we are
+              excited to launch our 'Winter Warmth Initiative,' where we extend
+              our hands of care to orphan families by providing them with
+              essential winter gear "Join us in making a difference this winter
+              by ensuring that orphan children and their families have the
+              warmth they deserve. Our initiative aims to provide cozy winter
+              coats, caps, gloves, and more."
               <p className="pt-3">
-                This winter, let's come with spogmai foundation  together to share the gift of warmth with those in need. Through our 'Winter Essentials Drive,' we're collecting winter coats, hats, gloves, and more to support orphan families.
+                This winter, let's come with spogmai foundation together to
+                share the gift of warmth with those in need. Through our 'Winter
+                Essentials Drive,' we're collecting winter coats, hats, gloves,
+                and more to support orphan families.
               </p>
               <p className="pt-3">
-                With the cold months approaching, our mission is to ensure that no orphan child feels the chill. We're launching our 'Winter Comfort Campaign,' providing orphan families with the warmth and protection they need.
+                With the cold months approaching, our mission is to ensure that
+                no orphan child feels the chill. We're launching our 'Winter
+                Comfort Campaign,' providing orphan families with the warmth and
+                protection they need.
               </p>
             </p>
           </div>
 
           <div className="lg:w-[40%] pt-20">
-            <Card />
+            <SmallCard
+              image={ES1}
+              title="Picture Gallery"
+              description="Education Support"
+            />
           </div>
         </div>
         {/* Slum school section end */}

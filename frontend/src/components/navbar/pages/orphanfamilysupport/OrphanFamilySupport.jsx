@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import VideoCard from "../../../card/VideoCard";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import SmallCard from "../freefooddist/SmallCard";
+import SmallCard from "../SmallCard";
 import bg1 from "../../../../assets/bg1.jpg";
 
 const OrphanFamilySupport = () => {
@@ -39,23 +39,29 @@ const OrphanFamilySupport = () => {
       {/* orphan family support section Closed */}
 
       {/* Overview section Open */}
-      <div className='lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4'>
+      <div className="lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 pl-4">
         <h1>Overview</h1>
-        <div className=' w-20 h-1 bg-blue-600 rounded-full mt-3 '></div>
+        <div className=" w-20 h-1 bg-blue-600 rounded-full mt-3 "></div>
       </div>
 
-      <div className='py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500'>
+      <div className="py-10 pr-4  lg:pr-16 pl-4 md:pl-20 lg:pl-24 text-justify text-gray-500">
         <p>
-          <strong className=" font-semibold">  Orphan Family Support Nurturing Hope and Providing Strength </strong>
-          The Spogmai Foundation's aim focuses on building hope and offering support to orphaned families.
-          We recognize the particular problems that orphaned children and their families experience,
-          and our Orphan Family Support program is committed to making a long-term positive difference
-          in their lives.
+          <strong className=" font-semibold">
+            {" "}
+            Orphan Family Support Nurturing Hope and Providing Strength{" "}
+          </strong>
+          The Spogmai Foundation's aim focuses on building hope and offering
+          support to orphaned families. We recognize the particular problems
+          that orphaned children and their families experience, and our Orphan
+          Family Support program is committed to making a long-term positive
+          difference in their lives.
         </p>
         <p className=" mt-2">
-          We believe every child, regardless of what they face, needs a stable and caring environment in which to thrive.
-          Our Orphan Family Support program provides a comprehensive strategy that includes emotional, educational, and
-          financial assistance, with the goal of providing a solid foundation for these families to build on.
+          We believe every child, regardless of what they face, needs a stable
+          and caring environment in which to thrive. Our Orphan Family Support
+          program provides a comprehensive strategy that includes emotional,
+          educational, and financial assistance, with the goal of providing a
+          solid foundation for these families to build on.
         </p>
         <p className="mt-2">
           Prophet Muhammad PBUH said:
@@ -66,33 +72,60 @@ const OrphanFamilySupport = () => {
           putting his index and middle fingers together." ~ Sahi Bukhari
         </p>
         <p className="my-2">
-          Spogmai Charity Foundation cordially invites you to join us on this transforming journey.
-          By contributing to our Orphan Family Support program, you become an inspiration of hope
-          for these families, assisting them in rebuilding their lives and embracing a bright future.
+          Spogmai Charity Foundation cordially invites you to join us on this
+          transforming journey. By contributing to our Orphan Family Support
+          program, you become an inspiration of hope for these families,
+          assisting them in rebuilding their lives and embracing a bright
+          future.
         </p>
-        <strong>Let us work together to uplift, empower, and motivate orphaned families toward a brighter future.</strong>
+        <strong>
+          Let us work together to uplift, empower, and motivate orphaned
+          families toward a brighter future.
+        </strong>
       </div>
       {/* Overview section Closed */}
 
       {/* orphan family support section components open */}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
-        <div className=' lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 capitalize'>
-          <h1 className='sm:pl-8 '> Orphan Familie's Support </h1>
+        <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 capitalize">
+          <h1 className="sm:pl-8 "> Orphan Familie's Support </h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
           <div className="lg:w-[60%] pt-10">
             <p className="sm:pl-8  pb-4 xl:pr-5 lg:pr-24 md:pr-14 sm:pr-24 text-justify">
-              The Spogmai Foundation's Orphan Families Support program is dedicated to making a meaningful difference in the lives of families who have lost their primary caregivers. Our initiative is designed to provide essential assistance and support to these vulnerable families, helping them navigate the challenges they face and providing a path towards a brighter future.
+              The Spogmai Foundation's Orphan Families Support program is
+              dedicated to making a meaningful difference in the lives of
+              families who have lost their primary caregivers. Our initiative is
+              designed to provide essential assistance and support to these
+              vulnerable families, helping them navigate the challenges they
+              face and providing a path towards a brighter future.
               <br />
-              We firmly believe that every orphaned family deserves access to opportunities, resources, and a nurturing environment. Our committed team works tirelessly to ensure that these families receive the care, guidance, and resources they need to heal and thrive.
+              We firmly believe that every orphaned family deserves access to
+              opportunities, resources, and a nurturing environment. Our
+              committed team works tirelessly to ensure that these families
+              receive the care, guidance, and resources they need to heal and
+              thrive.
               <br />
-              Our program goes beyond just addressing practical needs. It also promotes inclusivity and raises awareness about the resilience and potential of orphaned families. By creating a supportive and compassionate community, we aim to break down stigmas and societal barriers, fostering an environment where these families can rebuild their lives with dignity and hope.
+              Our program goes beyond just addressing practical needs. It also
+              promotes inclusivity and raises awareness about the resilience and
+              potential of orphaned families. By creating a supportive and
+              compassionate community, we aim to break down stigmas and societal
+              barriers, fostering an environment where these families can
+              rebuild their lives with dignity and hope.
               <br />
-              The Spogmai Foundation's Orphan Families Support program is not only about providing essential resources but also about offering emotional and psychological support, and empowering these families to move towards self-sufficiency and a brighter future. We believe that by embracing diversity and working together, we can create a more inclusive and compassionate society where orphaned families can thrive and find hope amidst adversity.
+              The Spogmai Foundation's Orphan Families Support program is not
+              only about providing essential resources but also about offering
+              emotional and psychological support, and empowering these families
+              to move towards self-sufficiency and a brighter future. We believe
+              that by embracing diversity and working together, we can create a
+              more inclusive and compassionate society where orphaned families
+              can thrive and find hope amidst adversity.
               <br />
               <p className=" mt-5">
-                <strong>The clips below show our Monthly Rations Distribution.</strong>
+                <strong>
+                  The clips below show our Monthly Rations Distribution.
+                </strong>
               </p>
             </p>
           </div>

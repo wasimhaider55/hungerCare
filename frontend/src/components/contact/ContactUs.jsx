@@ -7,22 +7,6 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    // Perform form submission logic here
-    console.log("Name:", name);
-    console.log("Phone Number:", phone);
-    console.log("Email:", email);
-    console.log("Text:", text);
-
-    // Reset form fields
-    setName("");
-    setPhone("");
-    setEmail("");
-    setText("");
-  };
-
   return (
     <div className=" pt-20">
       {/* Contact Us section open */}
@@ -46,7 +30,11 @@ const ContactUs = () => {
           <div className="  flex flex-col  ">
             <div className=" sm:mx-auto sm:w-full sm:max-w-md">
               <div className="bg-gray-100 pt-6 px-4 drop-shadow-2xl sm:rounded-lg sm:px-10">
-                <form className="space-y-6 " onSubmit={handleSubmit}>
+                <form
+                  className="space-y-6"
+                  action="https://getform.io/f/c3f8e7f4-7a2e-453b-a3e9-e76833c37731"
+                  method="POST"
+                >
                   <div>
                     <label
                       htmlFor="name"
@@ -126,24 +114,12 @@ const ContactUs = () => {
                         value={text}
                         onChange={(e) => setText(e.target.value)}
                         placeholder="Enter your message"
-                      ></textarea>
+                      >
+                      </textarea>
                     </div>
                   </div>
 
                   <div>
-                    {/* // Problem in Ifram */}
-                    <iframe
-                      title="reCAPTCHA"
-                      src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LffYKcdAAAAACqzwPgftuOWXbgoKkh24VMc7CLs&amp;co=aHR0cHM6Ly93d3cudGFyc2ZvdW5kYXRpb24ub3JnLnBrOjQ0Mw..&amp;hl=en&amp;v=iZWPJyR27lB0cR4hL_xOX0GC&amp;size=normal&amp;cb=fq3xx2mrghtf"
-                      role="presentation"
-                      height={78}
-                      width={304}
-                      name="a-xgmxr86au6ro"
-                      frameborder="0"
-                      className="my-[1rem] "
-                      scrolling="no"
-                      sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
-                    ></iframe>
                     <button
                       type="submit"
                       className="w-full mb-[2rem]   py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"

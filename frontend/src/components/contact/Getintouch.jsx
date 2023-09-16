@@ -25,7 +25,7 @@ const Getintouch = () => {
               <FaMapMarkerAlt />
             </i>
             <span>
-              Office # 1, First Floor,STH Plaza,
+            Office , First Floor, STH Plaza
               <br /> Kacha Pakha, Hangu,
               <br /> PAKISTAN
             </span>
@@ -40,7 +40,7 @@ const Getintouch = () => {
             <i className="text-blue-500">
               <MdEmail />
             </i>
-            <span>hungercare11@gmail.com</span>
+            <span>spogmai11@gmail.com</span>
           </li>
         </ul>
       </div>
