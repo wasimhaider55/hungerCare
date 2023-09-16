@@ -76,6 +76,7 @@ const DailyMealDis = () => {
               image={bg1}
               title="Picture Gallery"
               description="Monthly Ration Distribution"
+              link="/gallery/freerationdistribution"
             />
           </div>
         </div>
@@ -141,6 +142,7 @@ const DailyMealDis = () => {
               image={RRPD}
               title="Picture Gallery"
               description="Ramzan Ration Packeges Distribution"
+              link="/gallery/freerationdistribution"
             />
           </div>
         </div>

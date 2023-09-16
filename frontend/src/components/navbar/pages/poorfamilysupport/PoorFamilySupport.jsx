@@ -113,7 +113,8 @@ const PoorFamilySupport = () => {
             <SmallCard
               image={bg1}
               title="Picture Gallery"
-              description="Monthly Ration Distribution"
+              description="Poor Family Support"
+              link="/gallery/poorfamilysupport"
             />
           </div>
         </div>
