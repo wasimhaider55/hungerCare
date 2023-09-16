@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const CausesCard = ({ image, title, description }) => {
   return (
-    <div className=" lg:mx-10 md:mx-12 sm:mx-10 mx-5 rounded-xl shadow-lg shadow-slate-900">
+    <div className=" lg:mx-10 md:mx-12 sm:mx-10 mx-5 rounded-xl shadow-md shadow-slate-900">
       <div className=" bg-gray-100 rounded-xl cursor-pointer grid place-items-center">
         <Link to="/donatenow" className="h-56 w-full">
           <div className="relative group rounded-t-xl h-full w-full">

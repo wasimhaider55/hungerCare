@@ -35,7 +35,7 @@ const OurTeam = () => {
       <h1 className="lg:text-4xl text-4xl font-bold  text-center text-black py-8">
         Our Core Team Members
       </h1>
-      <Carousel responsive={responsive} className="py-10 lg:mx-10 text-white">
+      <Carousel responsive={responsive} className="py-10 lg:mx-10 text-white ">
         <Card
           image={tahirfida}
           title="Tahir Fida"
@@ -72,9 +72,9 @@ const OurTeam = () => {
           description="Office Secretary"
         />
       </Carousel>
-      ;{/* Help us Section */}
+      {/* Help us Section */}
       <Link to="/donateNow">
-        <div className="md:flex md:justify-around md:items-center  py-10 px-14 h-56 bg-blue-400 ">
+        <div className="md:flex md:justify-around md:items-center py-10 px-14 h-56 bg-blue-400 ">
           <h1 className="text-white font-bold sm:text-3xl text-2xl">
             Help Us So We Can Help Others
           </h1>

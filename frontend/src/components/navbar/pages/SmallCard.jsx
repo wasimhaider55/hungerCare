@@ -2,7 +2,7 @@ import React from "react";
 
 const SmallCard = ({ image, title, description }) => {
   return (
-    <div className=" lg:mx-16 md:mx-10 sm:mx-10 rounded-md shadow-lg shadow-slate-900">
+    <div className=" lg:mx-16 md:mx-10 sm:mx-10 rounded-md shadow-md shadow-slate-900">
       <div className=" bg-gray-100  rounded-md cursor-pointer text-black">
         <div className="relative group">
           <img
