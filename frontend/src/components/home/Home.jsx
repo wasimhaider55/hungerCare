@@ -10,6 +10,7 @@ import ffd4 from "../../assets/freeFoodDis/ffd4.png";
 import ffd5 from "../../assets/freeFoodDis/ffd5.png";
 import spbg1 from "../../assets/freeFoodDis/spbg1.jpg";
 import spbg2 from "../../assets/freeFoodDis/spbg2.png";
+import OurImpact from "./OurImpact";
 
 const Home = () => {
   const slides = [
@@ -82,6 +83,7 @@ const Home = () => {
       <IntroSection />
       <Charity />
       <Causes />
+      <OurImpact />
     </main>
   );
 };
