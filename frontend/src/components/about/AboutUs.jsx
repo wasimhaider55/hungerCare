@@ -6,6 +6,7 @@ import WWD from "../../assets/freeFoodDis/WWD.png"
 import ourhistory from "../../assets/freeFoodDis/ourhistory.png"
 import sf from "../../assets/freeFoodDis/sf.jpg"
 import ffd2 from "../../assets/freeFoodDis/ffd2.png"
+import SuccessStory from './SuccessStory';
 
 
 const AboutUs = () => {
@@ -155,7 +156,7 @@ const AboutUs = () => {
 
                     <div className='lg:w-[40%]'>
                         <div className='sm:pl-10 pb-5 '>
-                            <img src={sf} alt="Our history" className='h-[300px] w-full'/>
+                            <img src={sf} alt="Our history" className='h-[300px] w-full' />
                         </div>
 
                         <div className='sm:pl-10 pb-5'>
@@ -203,6 +204,8 @@ const AboutUs = () => {
 
             {/* our team components render here  */}
             <OurTeam />
+            {/* render here the successfull  stories */}
+            <SuccessStory />
         </main>
 
 
