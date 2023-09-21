@@ -20,7 +20,11 @@ import Education from "./components/navbar/pages/education/Education";
 import Gallery from "./components/gallery/Gallery";
 import PictureGallery from "./components/gallery/pictureGallery/PictureGallery";
 import VideoGallery from "./components/gallery/videoGallery/VideoGallery";
-import ImageAlbum from "./components/gallery/imageAlbum/ImageAlbum";
+import FRDAlbum from "./components/gallery/pictureGallery/frdAlbum/FRDAlbum";
+import OFSAlbum from "./components/gallery/pictureGallery/ofsAlbum/OFSAlbum";
+import PFSAlbum from "./components/gallery/pictureGallery/pfsAlbum/PFSAlbum";
+import DPSAlbum from "./components/gallery/pictureGallery/dpsAlbum/DPSAlbum";
+import ESAlbum from "./components/gallery/pictureGallery/esAlbum/ESAlbum";
 // End
 // Footer import
 import Footer from "./components/footer/Footer";
@@ -78,7 +82,23 @@ function App() {
           element={<PictureGallery />}
         />
         <Route path="/gallery/videogallery" exact element={<VideoGallery />} />
-        <Route path="/gallery/imagealbum" exact element={<ImageAlbum />} />
+        <Route
+          path="/gallery/freerationdistribution"
+          exact
+          element={<FRDAlbum />}
+        />
+        <Route
+          path="/gallery/orphanfamilysupport"
+          exact
+          element={<OFSAlbum />}
+        />
+        <Route path="/gallery/poorfamilysupport" exact element={<PFSAlbum />} />
+        <Route
+          path="/gallery/disablepeopleusupport"
+          exact
+          element={<DPSAlbum />}
+        />
+        <Route path="/gallery/educationsupport" exact element={<ESAlbum />} />
         {/* Gallery components Rounting end */}
 
         {/* Donate Now  */}

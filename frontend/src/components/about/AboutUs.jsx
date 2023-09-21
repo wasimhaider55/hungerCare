@@ -5,6 +5,9 @@ import { useLocation } from 'react-router-dom';
 import WWD from "../../assets/freeFoodDis/WWD.png"
 import ourhistory from "../../assets/freeFoodDis/ourhistory.png"
 import sf from "../../assets/freeFoodDis/sf.jpg"
+import ffd2 from "../../assets/freeFoodDis/ffd2.png"
+import SuccessStory from './SuccessStory';
+
 
 const AboutUs = () => {
     const location = useLocation();
@@ -106,7 +109,7 @@ const AboutUs = () => {
                 </div>
 
                 <div className='lg:w-[50%]  sm:pl-10 '>
-                    <img src="https://scontent.fpew2-1.fna.fbcdn.net/v/t1.6435-9/186923574_2822234421439498_6703471043452647215_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFuazqjSTyW9GsAkMy2LCtKerEj2IzSP3Z6sSPYjNI_dqEV0nYioK01Rc_ihr2PM7VVSCOH7u_yboszMWBQLrek&_nc_ohc=NTW8_5jdzFMAX_QFWx2&_nc_ht=scontent.fpew2-1.fna&oh=00_AfAjrN7SI_ACFZl9VMbSAm_f5XXMtA0vboWZNw7Ivy-s8A&oe=64FAC5B3" alt="who we are " />
+                    <img src={ffd2} alt="who we are " />
                 </div>
 
             </div>
@@ -153,7 +156,7 @@ const AboutUs = () => {
 
                     <div className='lg:w-[40%]'>
                         <div className='sm:pl-10 pb-5 '>
-                            <img src={sf} alt="Our history" className='h-[300px] w-full'/>
+                            <img src={sf} alt="Our history" className='h-[300px] w-full' />
                         </div>
 
                         <div className='sm:pl-10 pb-5'>
@@ -201,6 +204,8 @@ const AboutUs = () => {
 
             {/* our team components render here  */}
             <OurTeam />
+            {/* render here the successfull  stories */}
+            <SuccessStory />
         </main>
 
 

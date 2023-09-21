@@ -118,6 +118,7 @@ const Education = () => {
               image={ES1}
               title="Picture Gallery"
               description="Education Support"
+              link="/gallery/educationsupport"
             />
           </div>
         </div>
