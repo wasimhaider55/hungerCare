@@ -232,7 +232,8 @@ const DonateFood = () => {
               </h1>
               <button
                 type="submit"
-                className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black w-full  md:w-[12%] rounded px-4 py-3 "
+                className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black w-full  md:w-[12%] 
+                rounded px-4 py-3 hover:bg-gradient-to-b hover:from-[#89e9f9] hover:via-[#d8f6e7] hover:to-[#8ebf9b] "
               >
                 Submit
               </button>

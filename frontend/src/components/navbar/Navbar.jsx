@@ -44,7 +44,7 @@ const Navbar = () => {
       <nav className=" flex justify-between items-center fixed top-0 px-4 w-full h-24 text-white bg-[#004d73] z-10">
         {/* navBar brand or logo */}
         <div>
-          <img src={logoo} alt="LogoImage" className="h-[9rem] pb-3 md:ml-5" />
+          <img src={logoo} alt="LogoImage" className="h-[8rem] pb-3 md:ml-5" />
         </div>
 
         {/* navBar Links started */}

@@ -28,7 +28,7 @@ const SuccessStory = () => {
         <div>
             {/*Our Success Stories section open*/}
             <section className="text-black my-10">
-                <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20">
+                <div className=" lg:text-4xl text-4xl font-bold  text-center text-black py-8 my-10">
                     <h1 className="text-center ">Our Success Stories</h1>
                 </div>
 
@@ -37,16 +37,31 @@ const SuccessStory = () => {
                     className=" lg:mx-20 text-white py-10"
                 >
                     <SuccessCard
-                        link="https://www.youtube.com/embed/5RX1enG0DrM"
+                        link="https://www.youtube.com/embed/KZT7Hug9OQQ"
                     />
                     <SuccessCard
-                        link="https://www.youtube.com/embed/5RX1enG0DrM"
+                        link="https://www.youtube.com/embed/KcMlMPsy7fU"
                     />
                     <SuccessCard
-                        link="https://www.youtube.com/embed/5RX1enG0DrM"
+                        link="https://www.youtube.com/embed/AZfqTCb2yJY"
                     />
                     <SuccessCard
-                        link="https://www.youtube.com/embed/5RX1enG0DrM"
+                        link="https://www.youtube.com/embed/OTKUTfAhd-g"
+                    />
+                    <SuccessCard
+                        link="https://www.youtube.com/embed/oYg7m3__FOc"
+                    />
+                    <SuccessCard
+                        link="https://www.youtube.com/embed/fAJrKq-_leU"
+                    />
+                    <SuccessCard
+                        link="https://www.youtube.com/embed/GPFqDAm7E0A"
+                    />
+                    <SuccessCard
+                        link="https://www.youtube.com/embed/KcMlMPsy7fU"
+                    />
+                    <SuccessCard
+                        link="https://www.youtube.com/embed/6qrxp6914XY"
                     />
                 </Carousel>
             </section>
