@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import logo from "../../assets/logoo.png";
 
 const SignIn = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState({
+    email: "",
+    password: "",
+  });
 
+  let name, value;
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    name = e.target.name;
+    value = e.target.value;
     // Perform form submission logic here
 
     console.log("Email:", email);
@@ -15,8 +20,7 @@ const SignIn = () => {
 
     // Reset form fields
 
-    setEmail("");
-    setPassword("");
+    setUser({ ...user, [name]: value });
   };
 
   return (
@@ -46,10 +50,10 @@ const SignIn = () => {
                     id="email"
                     name="email"
                     type="email"
-                    autoComplete="email"
+                    autoComplete="off"
                     required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={user.name}
+                    onChange={handleSubmit}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
                 </div>
@@ -69,8 +73,8 @@ const SignIn = () => {
                     type="password"
                     autoComplete="current-password"
                     required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    value={user.password}
+                    onChange={handleSubmit}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
                 </div>
