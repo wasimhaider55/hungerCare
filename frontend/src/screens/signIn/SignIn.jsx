@@ -15,12 +15,10 @@ const SignIn = () => {
     value = e.target.value;
     // Perform form submission logic here
 
-    console.log("Email:", email);
-    console.log("Password:", password);
-
     // Reset form fields
 
     setUser({ ...user, [name]: value });
+    console.log(user);
   };
 
   return (
@@ -37,7 +35,7 @@ const SignIn = () => {
                 Sign In
               </h2>
             </div>
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form className="space-y-6">
               <div>
                 <label
                   htmlFor="email"
@@ -96,14 +94,7 @@ const SignIn = () => {
                   </label>
                 </div>
 
-                <div className="text-sm">
-                  <a
-                    href="#"
-                    className="font-medium text-blue-600 hover:text-blue-500"
-                  >
-                    Forgot your password?
-                  </a>
-                </div>
+                <div className="text-sm">Forgot your password?</div>
               </div>
 
               <div>

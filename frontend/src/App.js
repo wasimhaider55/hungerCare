@@ -36,6 +36,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import DonateNow from "./components/donate/DonateNow";
 import DonateFood from "./components/donate/DonateFood";
 import DonateMoney from "./components/donate/donateMoney/DonateMoney";
+import SignIn from "./screens/signIn/SignIn";
+import SignUp from "./screens/signUp/SignUp";
 //  Donate Now End
 
 function App() {
@@ -44,6 +46,8 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
+        <Route path="/signin" exact element={<SignIn />} />
+        <Route path="/signup" exact element={<SignUp />} />
         <Route path="/" exact element={<Home />} />
         <Route path="/aboutus" exact element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />

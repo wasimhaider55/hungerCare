@@ -3,29 +3,32 @@ import { FcGoogle } from "react-icons/fc";
 import logo from "../../assets/logoo.png";
 
 const SignUp = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+    cpassword: "",
+  });
 
+  let name, value;
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    name = e.target.name;
+    value = e.target.value;
     // Perform form submission logic here
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Password:", password);
 
     // Reset form fields
-    setName("");
-    setEmail("");
-    setPassword("");
+
+    setUser({ ...user, [name]: value });
+  };
+
+  const Print = () => {
+    console.log(user);
   };
 
   return (
-    <div
-      id="signup"
-      className=" grid   md:grid-cols-2  p-[1rem]  bg-gray-100 py-24"
-    >
+    <div className=" grid   md:grid-cols-2  p-[1rem]  bg-gray-100 py-24">
       <div className="my-[1rem] mx-auto md:m-auto ">
         <img className="h-[12rem] md:h-[20rem]" src={logo} alt="Workflow" />
       </div>
@@ -38,7 +41,7 @@ const SignUp = () => {
                 Sign Up
               </h2>
             </div>
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            <form className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
@@ -52,8 +55,8 @@ const SignUp = () => {
                     name="name"
                     type="text"
                     required
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={user.name}
+                    onChange={handleSubmit}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
                 </div>
@@ -72,8 +75,8 @@ const SignUp = () => {
                     type="email"
                     autoComplete="email"
                     required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={user.email}
+                    onChange={handleSubmit}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
                 </div>
@@ -93,8 +96,26 @@ const SignUp = () => {
                     type="password"
                     autoComplete="current-password"
                     required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    value={user.password}
+                    onChange={handleSubmit}
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  />
+                </div>
+                <label
+                  htmlFor="cpassword"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  confirm Password
+                </label>
+                <div className="mt-1">
+                  <input
+                    id="cpassword"
+                    name="cpassword"
+                    type="cpassword"
+                    autoComplete="off"
+                    required
+                    value={user.cpassword}
+                    onChange={handleSubmit}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
                 </div>
@@ -120,6 +141,7 @@ const SignUp = () => {
               <div>
                 <button
                   type="submit"
+                  onClick={Print}
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 >
                   Sign Up
