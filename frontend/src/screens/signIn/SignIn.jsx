@@ -1,24 +1,36 @@
 import React, { useState } from "react";
 import logo from "../../assets/logoo.png";
+import { useNavigate } from "react-router-dom";
 
 const SignIn = () => {
-  const [user, setUser] = useState({
-    email: "",
-    password: "",
-  });
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-  let name, value;
-  const handleSubmit = (e) => {
+  const userLogin = async (e) => {
     e.preventDefault();
 
-    name = e.target.name;
-    value = e.target.value;
-    // Perform form submission logic here
+    const res = await fetch("/LogIn", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    });
 
-    // Reset form fields
+    const data = await res.json();
 
-    setUser({ ...user, [name]: value });
-    console.log(user);
+    if (data.status === 400 || !data) {
+      window.alert("Invalid Credentials");
+      console.log("Invalid Credentials");
+    } else {
+      window.alert("LogIn Successfully");
+      console.log("LogIn  Successfully");
+    }
+    navigate("/");
   };
 
   return (
@@ -50,8 +62,8 @@ const SignIn = () => {
                     type="email"
                     autoComplete="off"
                     required
-                    value={user.name}
-                    onChange={handleSubmit}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
                 </div>
@@ -71,8 +83,8 @@ const SignIn = () => {
                     type="password"
                     autoComplete="current-password"
                     required
-                    value={user.password}
-                    onChange={handleSubmit}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
                 </div>
@@ -99,6 +111,7 @@ const SignIn = () => {
 
               <div>
                 <button
+                  onClick={userLogin}
                   id="signin"
                   name="signin"
                   type="submit"

@@ -3,8 +3,12 @@ const router = express.Router();
 const User = require("../schema/schema");
 const bcrypt = require("bcrypt");
 
+router.get("/", (req, res) => {
+  res.json("Hi");
+});
+
 // its for / page routing
-router.post("/register", async (req, res) => {
+router.post("/reg", async (req, res) => {
   try {
     const { name, phone, email, password, cpassword } = req.body;
 

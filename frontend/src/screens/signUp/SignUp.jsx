@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import logo from "../../assets/logoo.png";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
+  const navigate = useNavigate();
   const [user, setUser] = useState({
     name: "",
+    phone: "",
     email: "",
     password: "",
     cpassword: "",
@@ -12,8 +15,6 @@ const SignUp = () => {
 
   let name, value;
   const handleSubmit = (e) => {
-    e.preventDefault();
-
     name = e.target.name;
     value = e.target.value;
     // Perform form submission logic here
@@ -23,8 +24,35 @@ const SignUp = () => {
     setUser({ ...user, [name]: value });
   };
 
-  const Print = () => {
-    console.log(user);
+  const PostData = async (e) => {
+    e.preventDefault();
+
+    const { name, phone, email, password, cpassword } = user;
+
+    const res = await fetch("/reg", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        phone,
+        email,
+        password,
+        cpassword,
+      }),
+    });
+
+    const data = await res.json();
+
+    if (data.status === 422 || !data) {
+      window.alert("Invalid Credentials");
+      console.log("Invalid Credentials");
+    } else {
+      window.alert("Registration Successfully");
+      console.log("Registration Successfully");
+    }
+    navigate("/signin");
   };
 
   return (
@@ -41,7 +69,7 @@ const SignUp = () => {
                 Sign Up
               </h2>
             </div>
-            <form className="space-y-6">
+            <form method="POST" className="space-y-6">
               <div>
                 <label
                   htmlFor="name"
@@ -56,6 +84,27 @@ const SignUp = () => {
                     type="text"
                     required
                     value={user.name}
+                    autoComplete="off"
+                    onChange={handleSubmit}
+                    className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-gray-700"
+                >
+                  Phone
+                </label>
+                <div className="mt-1">
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="text"
+                    autoComplete="off"
+                    required
+                    value={user.phone}
                     onChange={handleSubmit}
                     className="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
@@ -66,7 +115,7 @@ const SignUp = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-700"
                 >
-                  Email address
+                  Email
                 </label>
                 <div className="mt-1">
                   <input
@@ -143,7 +192,7 @@ const SignUp = () => {
                   id="signup"
                   name="signup"
                   type="submit"
-                  onClick={Print}
+                  onClick={PostData}
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                 >
                   Sign Up

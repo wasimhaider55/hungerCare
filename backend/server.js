@@ -17,6 +17,6 @@ app.use(require("./routing/route"));
 const PORT = process.env.PORT;
 
 // listening on port
-app.listen(PORT, () => {
+app.listen(PORT || 3000, () => {
   console.log(`backend is running on ${PORT}`);
 });

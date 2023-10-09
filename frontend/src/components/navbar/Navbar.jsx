@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "./Button";
 import { Dropdown, Drop } from "./Dropdown";
 import logoo from "../../assets/logoo.png";
+import tahir from "../../assets/teamPics/tahirfida.jpg";
 import { NavMenu } from "./NavMenu";
 
 const Navbar = () => {
@@ -152,11 +153,21 @@ const Navbar = () => {
               Contact Us
             </NavLink>
           </li>
+          <Button />
         </ul>
         {/* navBar Links ended */}
 
         {/* button components is render here */}
-        <Button />
+        <div className="hidden md:flex justify-center items-center space-x-3 font-semibold">
+          <Link to="/signup">
+            <button>SignUp</button>
+          </Link>
+          <img
+            className="w-[40px] h-[40px] rounded-full"
+            src={tahir}
+            alt="tahir"
+          />
+        </div>
 
         {/* For Mobile screen  navBar */}
 
