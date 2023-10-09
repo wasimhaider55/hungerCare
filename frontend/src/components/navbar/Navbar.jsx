@@ -7,6 +7,7 @@ import { Dropdown, Drop } from "./Dropdown";
 import logoo from "../../assets/logoo.png";
 import tahir from "../../assets/teamPics/tahirfida.jpg";
 import { NavMenu } from "./NavMenu";
+import AccountPopUp from "./AccountPopUp";
 
 const Navbar = () => {
   // React Hooks
@@ -163,6 +164,9 @@ const Navbar = () => {
             <button>SignUp</button>
           </Link>
           <img
+            onClick={() => {
+              <AccountPopUp />;
+            }}
             className="w-[40px] h-[40px] rounded-full"
             src={tahir}
             alt="tahir"
