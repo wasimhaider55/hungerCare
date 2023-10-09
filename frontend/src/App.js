@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/home/Home";
+import Header from "./components/header/Header"
 
 import ContactUs from "./components/contact/ContactUs";
 
@@ -43,6 +44,7 @@ import SignUp from "./screens/signUp/SignUp";
 function App() {
   return (
     <Router>
+      <Header/>
       <Navbar />
       <ScrollToTop />
       <Routes>
