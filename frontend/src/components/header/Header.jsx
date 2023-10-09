@@ -1,13 +1,20 @@
 import React from 'react';
 import { AiFillHeart, AiFillFacebook, AiFillYoutube, AiFillTwitterSquare } from "react-icons/ai";
+import { MdOutgoingMail } from "react-icons/md"
+import { IoCall } from "react-icons/io5"
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className='  md:flex justify-around items-center w-full h-10 bg-fuchsia-300'>
+    <div className='  md:flex justify-around items-center w-full h-10 bg-[#89e9f9]'>
       <div className='hidden md:flex'>
-        <p className='px-2'>wasimhaider@gmail.com</p>
-        <p className='px-2'>03360574327</p>
+        <p className=' flex px-2'>
+          <MdOutgoingMail size={20} className=' pt-1' />
+          wasimhaider@gmail.com
+        </p>
+        <p className='flex px-2'> 
+        <IoCall className='pt-1'/>
+        +923360574327</p>
         <ul className='flex'>
           <li> Follow Us : </li>
           <li className=' px-1 pt-1'> <AiFillFacebook size={20} /></li>
