@@ -154,7 +154,7 @@ const Navbar = () => {
               Contact Us
             </NavLink>
           </li>
-        {/* button components is render here */}
+          {/* button components is render here */}
           <Button />
         </ul>
         {/* navBar Links ended */}
