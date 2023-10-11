@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+
 import IntroSection from "./IntroSection";
 import Charity from "./Charity";
 import Causes from "./Causes";
