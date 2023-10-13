@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="  md:flex justify-around items-center w-full h-10 z-50 bg-[#89e9f9]">
+    <div className="  md:flex justify-around items-center w-full h-10  bg-[#89e9f9]">
       <div className="hidden md:flex">
         <p className=" flex px-2">
           <MdOutgoingMail size={20} className=" pt-1" />
