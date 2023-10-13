@@ -5,7 +5,9 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "./Button";
 import { Dropdown, Drop } from "./Dropdown";
 import logoo from "../../assets/logoo.png";
+import tahir from "../../assets/teamPics/tahirfida.jpg";
 import { NavMenu } from "./NavMenu";
+import AccountPopUp from "./AccountPopUp";
 
 const Navbar = () => {
   // React Hooks
@@ -41,10 +43,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className=" flex justify-between items-center fixed top-0 px-4 w-full h-24 text-white bg-[#004d73] z-10">
+      <nav className=" flex justify-between items-center fixed  px-4 w-full h-24 text-white bg-[#004d73] z-10">
         {/* navBar brand or logo */}
         <div>
-          <img src={logoo} alt="LogoImage" className="h-[9rem] pb-3 md:ml-5" />
+          <img src={logoo} alt="LogoImage" className="h-[8rem] pb-3 md:ml-5" />
         </div>
 
         {/* navBar Links started */}
@@ -152,11 +154,24 @@ const Navbar = () => {
               Contact Us
             </NavLink>
           </li>
+          {/* button components is render here */}
+          <Button />
         </ul>
         {/* navBar Links ended */}
 
-        {/* button components is render here */}
-        <Button />
+        <div className="hidden md:flex justify-center items-center space-x-3 font-semibold">
+          <Link to="/signup">
+            <button>SignUp</button>
+          </Link>
+          <img
+            onClick={() => {
+              <AccountPopUp />;
+            }}
+            className="w-[40px] h-[40px] rounded-full"
+            src={tahir}
+            alt="tahir"
+          />
+        </div>
 
         {/* For Mobile screen  navBar */}
 
