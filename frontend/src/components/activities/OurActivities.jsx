@@ -8,7 +8,7 @@ import ES1 from "../../assets/freeFoodDis/ES1.png"
 
 const OurActivities = () => {
   return (
-    <main className="pt-28 mb-20 px-2">
+    <main className=" mb-20 px-2">
       <h1 className="lg:text-4xl text-4xl font-bold  text-center  py-10">
         Our Causes
       </h1>
