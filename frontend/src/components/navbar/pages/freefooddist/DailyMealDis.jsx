@@ -32,7 +32,7 @@ const DailyMealDis = () => {
       {/*Monthly Ration Packages section Open */}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">1. MONTHLY RATION PACKAGES</h1>
+          <h1 className="sm:pl-8 pl-2">1. MONTHLY RATION PACKAGES</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
@@ -105,7 +105,7 @@ const DailyMealDis = () => {
       {/*Ramazan Ration Packages section open*/}
       <section className=" text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">2. Ramazan RATION PACKAGES</h1>
+          <h1 className="sm:pl-8 pl-2 ">2. Ramazan RATION PACKAGES</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
@@ -170,12 +170,12 @@ const DailyMealDis = () => {
 
       {/* Help us Section open */}
       <Link to="/donateNow">
-        <div className="md:flex md:justify-around md:items-center py-10 my-5 px-14 h-56 bg-blue-400 ">
-          <h1 className="text-white font-bold sm:text-3xl text-2xl">
+        <div className="md:flex md:justify-around md:items-center py-10 my-5 sm:px-14 px-5 h-56 bg-blue-400 ">
+          <h1 className="text-white font-bold md:text-3xl text-2xl">
             Help Us So We Can Kill The Hunger
           </h1>
-          <button className=" border-2 border-white rounded-2xl p-3 ml-24 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500">
-            Donate Now{" "}
+          <button className=" border-2 border-white rounded-2xl p-3 ml-16 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500">
+            Donate Now
           </button>
         </div>
       </Link>
