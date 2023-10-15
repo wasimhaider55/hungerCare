@@ -27,8 +27,8 @@ const SuccessStory = () => {
     return (
         <div>
             {/*Our Success Stories section open*/}
-            <section className="text-black my-10">
-                <div className=" lg:text-4xl text-4xl font-bold  text-center text-black py-8 my-10">
+            <section className="my-10">
+                <div className=" lg:text-4xl sm:text-3xl text-2xl font-bold  text-center text-black sm:py-8 pt-5 sm:my-10 my-5">
                     <h1 className="text-center ">Our Success Stories</h1>
                 </div>
 
@@ -69,12 +69,12 @@ const SuccessStory = () => {
 
             {/* Help us Section */}
             <Link to="/donateNow">
-                <div className="md:flex md:justify-around md:items-center py-10 px-14 h-56 bg-blue-400 ">
-                    <h1 className="text-white font-bold sm:text-3xl text-2xl">
+                <div className="md:flex md:justify-around md:items-center py-10 sm:px-14 px-5 h-48 bg-blue-400 ">
+                    <h1 className="text-white font-bold md:text-3xl sm:text-2xl text-xl">
                         Help Us So We Can Help Others
                     </h1>
-                    <button className=" border-2 border-white rounded-2xl p-3 ml-24 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500">
-                        Donate Now{" "}
+                    <button className=" border-2 border-white rounded-2xl p-3 ml-20 sm:ml-40 md:mt-0 sm:mt-10 mt-6 text-white font-bold hover:bg-blue-500">
+                        Donate Now
                     </button>
                 </div>
             </Link>

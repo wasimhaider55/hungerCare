@@ -8,8 +8,8 @@ import ES1 from "../../assets/freeFoodDis/ES1.png"
 
 const OurActivities = () => {
   return (
-    <main className="pt-28 mb-20 px-2">
-      <h1 className="lg:text-4xl text-4xl font-bold  text-center  py-10">
+    <main className="mb-20 sm:px-2">
+      <h1 className="lg:text-4xl text-3xl font-bold text-center py-10">
         Our Causes
       </h1>
 
@@ -18,7 +18,7 @@ const OurActivities = () => {
           <Card
             title="Free Food Distribution"
             image={ffd2}
-            link="/ourcauses/freefooddistribution"
+            link="/ourcauses/freerationdistribution"
           />
           <Card
             title="Poor Family Support"

@@ -43,7 +43,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className=" flex justify-between items-center fixed  px-4 w-full h-24 text-white bg-[#004d73] z-10">
+      <nav className="flex justify-between items-center sticky top-0 px-4 w-full h-24 text-white bg-[#004d73] z-10">
+
         {/* navBar brand or logo */}
         <div>
           <img src={logoo} alt="LogoImage" className="h-[8rem] pb-3 md:ml-5" />
