@@ -39,6 +39,7 @@ import DonateFood from "./components/donate/DonateFood";
 import DonateMoney from "./components/donate/donateMoney/DonateMoney";
 import SignIn from "./screens/signIn/SignIn";
 import SignUp from "./screens/signUp/SignUp";
+import AccountPopUp from "./components/navbar/AccountPopUp";
 //  Donate Now End
 
 function App() {
@@ -48,6 +49,7 @@ function App() {
       <Header />
       <Navbar />
       <Routes>
+        <Route path="/pop" exatc element={<AccountPopUp />} />
         <Route path="/signin" exact element={<SignIn />} />
         <Route path="/signup" exact element={<SignUp />} />
 

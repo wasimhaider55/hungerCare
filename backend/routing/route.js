@@ -2,9 +2,11 @@ const express = require("express");
 const router = express.Router();
 const User = require("../schema/schema");
 const bcrypt = require("bcrypt");
+const cookieParser = require("cookie-parser");
 const authenticate = require("../middleware/authenticate");
 
-router.get("/", authenticate, (req, res) => {
+router.use(cookieParser());
+router.get("/pop", authenticate, (req, res) => {
   res.json("Hi");
   res.send("from server");
 });
@@ -48,8 +50,9 @@ router.post("/LogIn", async (req, res) => {
       const isMatch = await bcrypt.compare(password, userLogin.password);
 
       const token = await userLogin.generateAuthToken();
-      res.cookie("jwttoken", token, {
+      res.cookie("jwtoken", token, {
         expires: new Date(Date.now() + 25892000000),
+        withCredentials: true,
         httpOnly: true,
       });
 
