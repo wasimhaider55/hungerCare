@@ -2,9 +2,11 @@ const express = require("express");
 const router = express.Router();
 const User = require("../schema/schema");
 const bcrypt = require("bcrypt");
+const authenticate = require("../middleware/authenticate");
 
-router.get("/", (req, res) => {
+router.get("/", authenticate, (req, res) => {
   res.json("Hi");
+  res.send("from server");
 });
 
 // its for / page routing
