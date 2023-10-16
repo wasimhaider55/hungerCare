@@ -29,7 +29,7 @@ const SuccessStory = () => {
             {/*Our Success Stories section open*/}
             <section className="my-10">
                 <div className=" lg:text-4xl sm:text-3xl text-2xl font-bold  text-center text-black sm:py-8 pt-5 sm:my-10 my-5">
-                    <h1 className="text-center ">Our Success Stories</h1>
+                    <h1 className="text-center ">Our <span className=' text-[#73e0f3]'>Success</span>  Stories</h1>
                 </div>
 
                 <Carousel
