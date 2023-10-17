@@ -66,7 +66,7 @@ const Home = () => {
   }, [currentIndex, nextSlide]); // Include nextSlide in the dependency array
   return (
     <main>
-      <section className="max-w-[1400px] sm:h-[730px] h-[400px] w-full m-auto  group sm:mb-0 mb-7 ">
+      <section className="max-w-[1400px] sm:h-[590px] h-[400px] w-full m-auto  group sm:mb-0 mb-7 ">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className="w-full h-full  bg-center bg-cover duration-500"
