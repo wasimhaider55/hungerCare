@@ -15,7 +15,7 @@ const Header = () => {
       <div className="hidden md:flex">
         <p className=" flex px-2 pr-14">
           <MdOutgoingMail size={20} className=" pt-1" />
-          wasimhaider@gmail.com
+          wasimhaider2022@gmail.com
         </p>
         <p className="flex px-2 pr-14">
           <IoCall size={20} className="pt-1" />
