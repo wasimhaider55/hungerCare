@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import {
   Home,
-  Header,
   ContactUs,
   Navbar,
   AboutUs,
@@ -28,82 +27,87 @@ import {
   DonateMoney,
   SignIn,
   SignUp,
-  AccountPopUp,
 } from "./components";
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Header />
-      <Navbar />
       <Routes>
-        <Route path="/pop" exatc element={<AccountPopUp />} />
         <Route path="/signin" exact element={<SignIn />} />
         <Route path="/signup" exact element={<SignUp />} />
 
-        <Route path="/" exact element={<Home />} />
-        <Route path="/aboutus" exact element={<AboutUs />} />
-        <Route path="/contactus" element={<ContactUs />} />
+        <Route element={<Navbar />}>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/aboutus" exact element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs />} />
 
-        <Route path="/OurActivities" exact element={<OurActivities />} />
-        <Route
-          path="/ourcauses/orphanfamilysupport"
-          exact
-          element={<OrphanFamilySupport />}
-        />
-        <Route
-          path="/ourcauses/freerationdistribution"
-          exact
-          element={<FreeRationDis />}
-        />
-        <Route
-          path="/ourcauses/poorfamilysupport"
-          exact
-          element={<PoorFamilySupport />}
-        />
-        <Route
-          path="/ourcauses/disablepeoplesupport"
-          exact
-          element={<DisabledPeopleSupport />}
-        />
-        <Route
-          path="/ourcauses/educationsupport"
-          exact
-          element={<Education />}
-        />
-        {/* Gallery Components Routing */}
-        <Route path="/gallery" exact element={<Gallery />} />
-        <Route
-          path="/gallery/picturegallery"
-          exact
-          element={<PictureGallery />}
-        />
-        <Route path="/gallery/videogallery" exact element={<VideoGallery />} />
-        <Route
-          path="/gallery/freerationdistribution"
-          exact
-          element={<FRDAlbum />}
-        />
-        <Route
-          path="/gallery/orphanfamilysupport"
-          exact
-          element={<OFSAlbum />}
-        />
-        <Route path="/gallery/poorfamilysupport" exact element={<PFSAlbum />} />
-        <Route
-          path="/gallery/disablepeopleusupport"
-          exact
-          element={<DPSAlbum />}
-        />
-        <Route path="/gallery/educationsupport" exact element={<ESAlbum />} />
-        {/* Gallery components Rounting end */}
+          <Route path="/OurActivities" exact element={<OurActivities />} />
+          <Route
+            path="/ourcauses/orphanfamilysupport"
+            exact
+            element={<OrphanFamilySupport />}
+          />
+          <Route
+            path="/ourcauses/freerationdistribution"
+            exact
+            element={<FreeRationDis />}
+          />
+          <Route
+            path="/ourcauses/poorfamilysupport"
+            exact
+            element={<PoorFamilySupport />}
+          />
+          <Route
+            path="/ourcauses/disablepeoplesupport"
+            exact
+            element={<DisabledPeopleSupport />}
+          />
+          <Route
+            path="/ourcauses/educationsupport"
+            exact
+            element={<Education />}
+          />
+          {/* Gallery Components Routing */}
+          <Route path="/gallery" exact element={<Gallery />} />
+          <Route
+            path="/gallery/picturegallery"
+            exact
+            element={<PictureGallery />}
+          />
+          <Route
+            path="/gallery/videogallery"
+            exact
+            element={<VideoGallery />}
+          />
+          <Route
+            path="/gallery/freerationdistribution"
+            exact
+            element={<FRDAlbum />}
+          />
+          <Route
+            path="/gallery/orphanfamilysupport"
+            exact
+            element={<OFSAlbum />}
+          />
+          <Route
+            path="/gallery/poorfamilysupport"
+            exact
+            element={<PFSAlbum />}
+          />
+          <Route
+            path="/gallery/disablepeopleusupport"
+            exact
+            element={<DPSAlbum />}
+          />
+          <Route path="/gallery/educationsupport" exact element={<ESAlbum />} />
+          {/* Gallery components Rounting end */}
 
-        {/* Donate Now  */}
-        <Route path="/DonateNow" exact element={<DonateNow />} />
-        <Route path="/DonateFood" exact element={<DonateFood />} />
-        <Route path="/DonateMoney" exact element={<DonateMoney />} />
-
+          {/* Donate Now  */}
+          <Route path="/DonateNow" exact element={<DonateNow />} />
+          <Route path="/DonateFood" exact element={<DonateFood />} />
+          <Route path="/DonateMoney" exact element={<DonateMoney />} />
+        </Route>
         {/* Donate Now End */}
       </Routes>
 

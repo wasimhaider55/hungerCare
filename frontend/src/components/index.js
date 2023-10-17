@@ -37,5 +37,5 @@ export { default as DonateFood } from "./donate/DonateFood";
 export { default as DonateMoney } from "./donate/donateMoney/DonateMoney";
 export { default as SignIn } from "../screens/signIn/SignIn";
 export { default as SignUp } from "../screens/signUp/SignUp";
-export { default as AccountPopUp } from "./navbar/AccountPopUp";
+
 //  Donate Now End
