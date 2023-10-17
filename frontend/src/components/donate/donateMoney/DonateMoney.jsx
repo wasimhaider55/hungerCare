@@ -13,10 +13,10 @@ const DonateMoney = () => {
             {/* Donate Money section open */}
             <div className='relative w-full h-52 bg-cover bg-center bg-[url("https://image.khaleejtimes.com/?uuid=9d530cb1-b2d2-5933-b804-fabeb18997de&function=cropresize&type=preview&source=false&q=75&crop_w=0.99999&crop_h=0.85188&x=0&y=0&width=1200&height=675")]'>
                 <div className=" absolute inset-0 bg-gray-900 opacity-60"></div>
-                <div className=' absolute pt-20 md:pl-20 pl-10 '>
-                    <h1 className=' text-white text-4xl font-bold'> Donate Money Now </h1>
+                <div className=' absolute pt-8 sm:pt-20 md:pl-20 pl-10 '>
+                    <h1 className=' text-white text-2xl sm:text-4xl font-bold'> Donate Money Now </h1>
                     <div className=' w-24 h-1 bg-red-500 rounded-full mt-3'></div>
-                    <p className='text-2xl text-white pt-5'>Help Us So We Can Feed Needy People</p>
+                    <p className='text-xl sm:text-2xl text-white pt-5'>Help Us So We Can Feed Needy People</p>
                 </div>
             </div>
             {/* Donate Money section Closed */}
@@ -42,7 +42,7 @@ const DonateMoney = () => {
 
 
             {/* Donation in different ways  section open*/}
-            <section className='sm:mx-20 mx-5 my-10 border-2 border-gray-300 rounded-lg'>
+            <section className='sm:mx-20 mx-2 my-10 border-2 border-gray-400 rounded-lg'>
 
                 {/* Direct Bank Transfer sections */}
                 <div
@@ -61,8 +61,8 @@ const DonateMoney = () => {
                         You can donate to Spogmai at any “Bank of UBL” Branch in Pakistan:
                     </p>
                     <h1> <strong>Account Title:</strong> Spogmai Fundation </h1>
-                    <h1> <strong>Account Number:</strong> 200609810056361002</h1>
-                    <h1> <strong>Iban Number:</strong> PK56BAHL20060981563601</h1>
+                    <h1> <strong>Account Number:</strong> <span className='text-md'>200609810056361002</span> </h1>
+                    <h1> <strong>Iban Number:</strong> <span className='text-[15px]'>PK56BAHL20060981563601</span></h1>
                     <h1> <strong>Bank Name:</strong> United Bank Limited</h1>
                     <h1> <strong>Branch Name:</strong> University Road Branch, Peshawar, PAKISTAN.</h1>
                     <h1> <strong>Branch Code:</strong> 2006</h1>
@@ -109,9 +109,10 @@ const DonateMoney = () => {
                     </p>
                     <h1>  Spogmai </h1>
                     <h1> Office # 1, First Floor,STH Plaza,,</h1>
-                    <h1> Main Forest Bazar Agriculture University ,</h1>
-                    <h1> Peshawar 27800, PAKISTAN</h1>
-                    <h1 className='pb-3'> Contact: 0092336-0574327</h1>
+                    <h1> Main Kacha Pakh , Hangu</h1>
+                    <h1> KPK , PAKISTAN</h1>
+                    <h1> Contact: 0092336-0574327</h1>
+                    <h1 className='pb-3'> Email : wasimhaider2022@gmail.com</h1>
                 </div>
                 }
 
@@ -134,9 +135,10 @@ const DonateMoney = () => {
                     </p>
                     <h1>  Spogmai </h1>
                     <h1> Office # 1, First Floor,STH Plaza,,</h1>
-                    <h1> Main Forest Bazar Agriculture University ,</h1>
-                    <h1> Peshawar 27800, PAKISTAN</h1>
+                    <h1> Main Kacha Pakh , Hangu </h1>
+                    <h1> KPK , PAKISTAN</h1>
                     <h1> Contact: 0092336-0574327</h1>
+                    <h1> Email : wasimhaider2022@gmail.com</h1>
                     <p className='py-2'>
                         We also have the facility to come to you for donation collection if you live in Peshawar, Pakistan. Please contact us on our mobile/Whatsapp <strong>0092336-0574327</strong> and we will be happy to help.
                     </p>

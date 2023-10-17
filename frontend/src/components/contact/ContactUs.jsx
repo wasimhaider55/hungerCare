@@ -11,9 +11,9 @@ const ContactUs = () => {
   return (
     <div>
       {/* Contact Us section open */}
-      <div style={{ backgroundImage: `url(${kachaPakh})` }} className="relative w-full h-52 bg-cover bg-center">
+      <div style={{ backgroundImage: `url(${kachaPakh})` }} className="relative w-full h-32 sm:h-52 bg-cover bg-center">
         <div className="absolute inset-0 bg-gray-900 opacity-60"></div>
-        <div className=" absolute text-white text-4xl font-bold  pt-20 md:pl-20 pl-10 ">
+        <div className=" absolute text-white text-4xl font-bold  pt-10 sm:pt-20 md:pl-20 pl-10 ">
           <h1 className=""> Contact Us </h1>
           <div className=" w-24 h-1 bg-red-500 rounded-full mt-3 "></div>
         </div>
