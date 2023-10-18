@@ -64,7 +64,7 @@ const SignIn = () => {
                     id="email"
                     name="email"
                     type="email"
-                    autoComplete="email"
+                    autoComplete="off"
                     placeholder="Email"
                     required
                     value={email}
@@ -78,7 +78,7 @@ const SignIn = () => {
                     id="password"
                     name="password"
                     type="password"
-                    autoComplete="current-password"
+                    autoComplete="off"
                     placeholder="Password"
                     required
                     value={password}
