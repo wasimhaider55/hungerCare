@@ -6,7 +6,7 @@ import BottomToTop from "../BottomToTop";
 
 const Footer = () => {
   return (
-    <footer className="  left-0 right-0 w-full bg-[#004d73] pl-2   pt-10 ">
+    <footer className=" left-0 right-0 w-full bg-[#004d73] pl-2   pt-10 ">
       <div className="container mx-auto">
         <div className="grid grid-col-1 md:grid-cols-4 gap-8  content-center ">
           {/* Column 1 */}
@@ -84,7 +84,7 @@ const Footer = () => {
                   <i className="text-gray-300">
                     <FaPhone />
                   </i>
-                  <span>00923322178822</span>
+                  <span>+923135653685</span>
                 </li>
                 <li className="flex gap-3 my-[.5rem]">
                   <i className="text-gray-300">

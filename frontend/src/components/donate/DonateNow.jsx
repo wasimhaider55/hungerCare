@@ -40,7 +40,7 @@ const DonateNow = () => {
             contact us either on our email{" "}
             <strong>wasimhaider2022@gmail.com</strong> or contact our Founder &
             President Mr. Wasim Haider on his official Contact / WhatsApp number{" "}
-            <strong>0092 336 0574327</strong>.
+            <strong>+923135653685</strong>.
           </p>
         </div>
       </div>
