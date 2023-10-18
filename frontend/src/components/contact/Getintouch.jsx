@@ -34,7 +34,7 @@ const Getintouch = () => {
             <i className="text-blue-500">
               <FaPhone />
             </i>
-            <span>00923322178822</span>
+            <span>+923135653685</span>
           </li>
           <li className="flex gap-3 my-[.5rem]">
             <i className="text-blue-500">

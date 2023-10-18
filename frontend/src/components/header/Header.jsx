@@ -19,7 +19,7 @@ const Header = () => {
         </p>
         <p className="flex px-2 pr-14">
           <IoCall size={20} className="pt-1" />
-          +923360574327
+          +923135653685
         </p>
         <ul className="flex">
           <li> Follow Us : </li>
