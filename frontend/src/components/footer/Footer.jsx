@@ -47,6 +47,7 @@ const Footer = () => {
             </ul>
           </div>
           {/* End of Menu  */}
+          
           {/* Column 3 */}
 
           <div className="text-white">
@@ -54,12 +55,14 @@ const Footer = () => {
             <ul className="flex gap-4 text-2xl text-gray-300 p-5 ">
               {FooterIcon.map((icon, index) => {
                 return (
+                  <Link key={index} to={icon.path}>
                   <li
                     key={index}
                     className="cursor-pointer border border-gray-300  hover:border-blue-500 p-2"
                   >
                     <i>{icon.icon}</i>
                   </li>
+                  </Link>
                 );
               })}
             </ul>

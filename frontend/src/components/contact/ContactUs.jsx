@@ -54,7 +54,7 @@ const ContactUs = () => {
                         placeholder="Name"
                         required
                         value={name}
-                        className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
+                        className="w-full px-3 py-2 placeholder-gray-400 focus:outline-none sm:text-sm"
                         onChange={(e) => setName(e.target.value)}
                       />
                       <IoIosContact className="text-gray-400 m-2" />
