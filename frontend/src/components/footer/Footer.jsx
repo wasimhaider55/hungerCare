@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="grid grid-col-1 md:grid-cols-4 gap-8  content-center ">
           {/* Column 1 */}
           <div className="text-white">
-            <h1 className="font-bold text-lg">HungerCare</h1>
+            <h1 className="font-bold text-lg sm:pl-0 pl-2">Spogmai Foundation </h1>
             <div>
               <p className="p-5 text-gray-300">
                 Spogmai Foundation is a registered non-governmental,
@@ -25,7 +25,7 @@ const Footer = () => {
           {/* Column 2 */}
           {/* Start of Menu  */}
           <div className="text-white">
-            <h1 className="font-bold text-lg">Useful Links</h1>
+            <h1 className="font-bold text-lg sm:pl-0 pl-2">Useful Links</h1>
             <ul className="  p-5  justify-center text-gray-300 ">
               {FooterMenu.map((menu, index) => {
                 return (
@@ -47,19 +47,22 @@ const Footer = () => {
             </ul>
           </div>
           {/* End of Menu  */}
+          
           {/* Column 3 */}
 
           <div className="text-white">
-            <h1 className="font-bold text-lg">Our Social Media Links</h1>
+            <h1 className="font-bold text-lg sm:pl-0 pl-2">Our Social Media Links</h1>
             <ul className="flex gap-4 text-2xl text-gray-300 p-5 ">
               {FooterIcon.map((icon, index) => {
                 return (
+                  <Link key={index} to={icon.path}>
                   <li
                     key={index}
                     className="cursor-pointer border border-gray-300  hover:border-blue-500 p-2"
                   >
                     <i>{icon.icon}</i>
                   </li>
+                  </Link>
                 );
               })}
             </ul>
@@ -67,27 +70,27 @@ const Footer = () => {
 
           {/* Column 4 */}
           <div className="text-white">
-            <h1 className="font-bold text-lg">Contact Info</h1>
+            <h1 className="font-bold text-lg sm:pl-0 pl-2">Contact Info</h1>
             <div className="p-5">
               <ul className="text-gray-300">
                 <li className="flex gap-3 my-[.5rem]">
-                  <i className="text-gray-300">
+                  <i className="text-gray-300 pt-[5px]">
                     <FaMapMarkerAlt />
                   </i>
                   <span>
                     Office , First Floor, STH Plaza,
                     <br /> Kacha Pakha, Hangu,
-                    <br /> PAKISTAN
+                    <br /> Pakistan
                   </span>
                 </li>
                 <li className="flex gap-3 my-[.5rem]">
-                  <i className="text-gray-300">
+                  <i className="text-gray-300 pt-[6px]">
                     <FaPhone />
                   </i>
-                  <span>00923322178822</span>
+                  <span>+923135653685</span>
                 </li>
                 <li className="flex gap-3 my-[.5rem]">
-                  <i className="text-gray-300">
+                  <i className="text-gray-300 pt-[7px]">
                     <MdEmail />
                   </i>
                   <span>spogmai11@gmail.com</span>
@@ -100,7 +103,7 @@ const Footer = () => {
       <hr className="border-1  border-gray-600" />
       <div className="flex justify-end items-end bg-[#004d73] p-6 ">
         <p className="text-white xl:pr-96 lg:pr-72 md:pr-48 sm:pr-16 pr-2  opacity-50">
-          Copyright ©2015 All Rights Reserved by spogmai Foundation pakistan
+          Copyright ©2015 All Rights Reserved By Spogmai Foundation Pakistan
         </p>
         {/* Bottom To Top components render */}
         <BottomToTop />

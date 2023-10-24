@@ -7,6 +7,7 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Getintouch = () => {
   return (
@@ -21,7 +22,7 @@ const Getintouch = () => {
       <div className="mt-[2rem]">
         <ul className="text-gray-500">
           <li className="flex gap-3 my-[.5rem]">
-            <i className="text-blue-500">
+            <i className="text-blue-500 pt-[5px]">
               <FaMapMarkerAlt />
             </i>
             <span>
@@ -31,13 +32,13 @@ const Getintouch = () => {
             </span>
           </li>
           <li className="flex gap-3 my-[.5rem]">
-            <i className="text-blue-500">
+            <i className="text-blue-500 pt-[4px]">
               <FaPhone />
             </i>
-            <span>00923322178822</span>
+            <span>+923135653685</span>
           </li>
           <li className="flex gap-3 my-[.5rem]">
-            <i className="text-blue-500">
+            <i className="text-blue-500 pt-[6px]">
               <MdEmail />
             </i>
             <span>spogmai11@gmail.com</span>
@@ -49,21 +50,21 @@ const Getintouch = () => {
           Our Social Media Links
         </h1>
         <ul className="flex gap-4 text-2xl text-blue-500 my-[1rem] ">
+          <Link to="https://www.facebook.com/spogmaifoundation">
           <li className="border border-blue-300 hover:border-blue-500 p-2">
-            <i>
               <FaFacebookSquare />
-            </i>
           </li>
+          </Link>
+          <Link>
           <li className="border border-blue-300 hover:border-blue-500 p-2">
-            <i>
               <FaTwitterSquare />
-            </i>
           </li>
+          </Link>
+          <Link to="https://www.youtube.com/@tahirfidaofficial1497">
           <li className="border border-blue-300 hover:border-blue-500 p-2">
-            <i>
               <FaYoutubeSquare />
-            </i>
           </li>
+          </Link>
         </ul>
       </div>
     </div>
