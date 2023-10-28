@@ -6,9 +6,9 @@ const cookieParser = require("cookie-parser");
 const authenticate = require("../middleware/authenticate");
 
 router.use(cookieParser());
-router.get("/pop", authenticate, (req, res) => {
+router.get("/contact", authenticate, (req, res) => {
   res.json("Hi");
-  res.send("from server");
+  res.send(req.rootUser);
 });
 
 // its for / page routing
