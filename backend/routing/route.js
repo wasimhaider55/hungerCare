@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const User = require("../schema/schema");
+const Contact = require("../schema/schema");
 const bcrypt = require("bcrypt");
 const cookieParser = require("cookie-parser");
 const authenticate = require("../middleware/authenticate");
@@ -68,6 +69,17 @@ router.post("/LogIn", async (req, res) => {
   } catch (err) {
     console.error(err); // Log the error for debugging
     res.status(500).json({ error: "Failed to log in" });
+  }
+});
+
+router.post("/contact", async (req, res) => {
+  try {
+    const newItem = new Contact(req.body);
+    await newItem.save();
+    res.status(201).json(newItem);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Failed to create item" });
   }
 });
 

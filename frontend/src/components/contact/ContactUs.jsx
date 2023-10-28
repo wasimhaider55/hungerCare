@@ -3,12 +3,26 @@ import Getintouch from "./Getintouch";
 import kachaPakh from "../../assets/kachaPakh.png";
 import { IoIosContact } from "react-icons/io";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import axios from "axios";
 
 const ContactUs = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [text, setText] = useState("");
+
+  const PostData = async () => {
+    try {
+      await axios.post("http://localhost:3000/contact", {
+        name,
+        phone,
+        email,
+        text,
+      });
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div>
@@ -36,11 +50,7 @@ const ContactUs = () => {
           <div className="  flex flex-col  ">
             <div className=" sm:mx-auto sm:w-full sm:max-w-md">
               <div className="bg-gray-50 pt-6 px-4 drop-shadow-xl sm:rounded-lg sm:px-10">
-                <form
-                  className="space-y-6 py-4"
-                  action="https://getform.io/f/c3f8e7f4-7a2e-453b-a3e9-e76833c37731"
-                  method="POST"
-                >
+                <form onSubmit={PostData} className="space-y-6 py-4">
                   <h1 className="text-2xl font-semibold text-gray-700 text-center">
                     Contact Us
                   </h1>
@@ -102,7 +112,6 @@ const ContactUs = () => {
                         rows="5"
                         autoComplete="message"
                         required
-                        value={text}
                         onChange={(e) => setText(e.target.value)}
                         placeholder="Enter your message"
                       ></textarea>
