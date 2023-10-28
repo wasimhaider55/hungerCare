@@ -34,7 +34,7 @@ export const FooterMenu = [
 export const FooterIcon = [
   {
     icon: <FaFacebookSquare />,
-    path: "",
+    path: "https://www.facebook.com/spogmaifoundation",
   },
   {
     icon: <FaTwitterSquare />,
@@ -42,6 +42,6 @@ export const FooterIcon = [
   },
   {
     icon: <FaYoutubeSquare />,
-    path: "",
+    path: "https://www.youtube.com/@tahirfidaofficial1497",
   },
 ];
