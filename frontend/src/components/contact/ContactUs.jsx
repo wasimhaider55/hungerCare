@@ -9,19 +9,24 @@ const ContactUs = () => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
+  const [message, setMessage] = useState("");
 
-  const PostData = async () => {
+  const PostData = async (e) => {
     try {
-      await axios.post("http://localhost:3000/contact", {
+      console.log(name, phone, email, message);
+      await axios.post("/contact", {
         name,
         phone,
         email,
-        text,
+        message,
       });
     } catch (err) {
       console.log(err);
     }
+    setName("");
+    setPhone("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -63,7 +68,6 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Name"
                         required
-                        value={name}
                         className="w-full px-3 py-2 placeholder-gray-400 focus:outline-none sm:text-sm"
                         onChange={(e) => setName(e.target.value)}
                       />
@@ -79,7 +83,6 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Phone"
                         required
-                        value={phone}
                         onChange={(e) => setPhone(e.target.value)}
                         className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
                       />
@@ -95,7 +98,6 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Email"
                         required
-                        value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
                       />
@@ -112,7 +114,7 @@ const ContactUs = () => {
                         rows="5"
                         autoComplete="message"
                         required
-                        onChange={(e) => setText(e.target.value)}
+                        onChange={(e) => setMessage(e.target.value)}
                         placeholder="Enter your message"
                       ></textarea>
                     </div>
