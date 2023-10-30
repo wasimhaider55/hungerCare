@@ -46,6 +46,62 @@ const Navbar = () => {
 
       <nav className="flex justify-between items-center sticky top-0 px-4 w-full h-14 sm:h-24 text-white bg-[#004d73] z-10">
         {/* navBar brand or logo */}
+
+        <div onClick={handleClick} className="hidden sm:block z-10">
+          {!nav ? <FaBars size={30} /> : <FaTimes size={30} />}
+        </div>
+
+        <ul
+          className={
+            !nav
+              ? "hidden"
+              : "hidden sm:block  fixed  left-0    w-[30%]  mt-[18rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
+          }
+        >
+          <Link>
+            <li
+              onClick={() => {
+                setNav(!nav);
+              }}
+              activeclass="active"
+              spy={"true"}
+              smooth={"true"}
+              duration={400}
+              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
+            >
+              Food
+            </li>
+          </Link>
+          <Link>
+            <li
+              onClick={() => {
+                setNav(!nav);
+              }}
+              activeclass="active"
+              spy={"true"}
+              smooth={"true"}
+              duration={400}
+              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
+            >
+              message
+            </li>
+          </Link>
+          <Link>
+            <li
+              onClick={() => {
+                setNav(!nav);
+              }}
+              activeclass="active"
+              spy={"true"}
+              smooth={"true"}
+              duration={400}
+              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
+            >
+              Money
+            </li>
+          </Link>
+        </ul>
+
         <div>
           <img
             src={logoo}
