@@ -72,7 +72,7 @@ const Navbar = () => {
               Food
             </li>
           </Link>
-          <Link>
+          <Link to="/messages">
             <li
               onClick={() => {
                 setNav(!nav);

@@ -83,4 +83,45 @@ router.post("/contact", async (req, res) => {
   }
 });
 
+router.get("/getMessage", async (req, res) => {
+  try {
+    const message = await Contact.find();
+    if (!message) {
+      return res.status(404).json({ msg: "message not available" });
+    } else {
+      res.status(200).json(message);
+    }
+  } catch (err) {
+    res.status(400).json({ msg: "Server Error" });
+  }
+});
+
+router.get("/getOneMessage/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const oneMessage = await Contact.findById(id);
+    if (!oneMessage) {
+      return res.status(400).json({ msg: "Message not found" });
+    } else {
+      res.status(200).json(oneMessage);
+    }
+  } catch (error) {
+    res.status(400).json({ msg: "Server Error" });
+  }
+});
+
+router.delete("/delete/:id", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const deleteOne = await Contact.findByIdAndDelete(id);
+    if (!deleteOne) {
+      return res.status(400).json({ msg: "Message not found" });
+    } else {
+      res.status(200).json({ msg: "user deleted successfully" });
+    }
+  } catch (error) {
+    res.status(400).json({ msg: "Server Error" });
+  }
+});
+
 module.exports = router;

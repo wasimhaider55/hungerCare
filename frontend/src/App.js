@@ -29,6 +29,9 @@ import {
   SignUp,
 } from "./components";
 
+import Messages from "./components/sideBar/contactMessage/Messages";
+import Message from "./components/sideBar/contactMessage/Message";
+
 function App() {
   return (
     <Router>
@@ -36,6 +39,8 @@ function App() {
       <Routes>
         <Route path="/signin" exact element={<SignIn />} />
         <Route path="/signup" exact element={<SignUp />} />
+        <Route path="/messages" exact element={<Messages />} />
+        <Route path="/message/:id" exact element={<Message />} />
 
         <Route element={<Navbar />}>
           <Route path="/" exact element={<Home />} />
