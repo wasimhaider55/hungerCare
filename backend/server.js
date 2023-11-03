@@ -1,6 +1,8 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const { default: mongoose } = require("mongoose");
+const cookieParser = require("cookie-parser");
+
+const cors = require("cors");
 const app = express();
 
 // the path of config env file
@@ -9,8 +11,9 @@ dotenv.config({ path: "./config.env" });
 // import the file conn
 require("./database/dbconnection");
 
+app.use(cookieParser());
 // router import
-
+app.use(cors());
 app.use(express.json());
 app.use(require("./routing/route"));
 

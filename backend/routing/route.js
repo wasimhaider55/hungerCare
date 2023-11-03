@@ -3,10 +3,8 @@ const router = express.Router();
 const User = require("../schema/schema");
 const Contact = require("../schema/schema");
 const bcrypt = require("bcrypt");
-const cookieParser = require("cookie-parser");
 const authenticate = require("../middleware/authenticate");
 
-router.use(cookieParser());
 router.get("/contact", authenticate, (req, res) => {
   res.json("Hi");
   res.send(req.rootUser);
