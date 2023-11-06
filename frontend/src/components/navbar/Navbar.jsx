@@ -58,7 +58,7 @@ const Navbar = () => {
               : "hidden sm:block  fixed  left-0    w-[30%]  mt-[18rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
           }
         >
-          <Link>
+          <Link to="/foodMessages">
             <li
               onClick={() => {
                 setNav(!nav);

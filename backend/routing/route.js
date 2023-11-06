@@ -136,18 +136,27 @@ router.delete("/delete/:id", async (req, res) => {
 // first post api in food contact
 router.post("/food", async (req, res) => {
   try {
-    const { orgName, orgType, name, phone, coll } = req.body;
+    const {
+      organizationName,
+      organizationType,
+      name,
+      phoneNumber,
+      collectOrDeliver,
+      deliveryAddress,
+    } = req.body;
 
-    if (!orgName || !orgType || !name || !phone || !coll) {
+    if (!organizationName || !organizationType || !name || !phoneNumber) {
       return res.status(422).json({ err: "Please fill in all fields" });
     } else {
       const food = new Food({
-        orgName,
-        orgType,
+        organizationName,
+        organizationType,
         name,
-        phone,
-        coll,
+        phoneNumber,
+        collectOrDeliver,
+        deliveryAddress,
       });
+      console.log(food);
 
       await food.save();
       res.status(201).json({ message: "Send Succesfully" });

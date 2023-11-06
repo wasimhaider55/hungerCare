@@ -1,11 +1,11 @@
 const mongoose = require("mongoose");
 
 const foodSchema = new mongoose.Schema({
-  orgName: {
+  organizationName: {
     type: String,
     required: true,
   },
-  orgType: {
+  organizationType: {
     type: String,
     required: true,
   },
@@ -13,13 +13,16 @@ const foodSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  phone: {
+  phoneNumber: {
     type: String,
     required: true,
   },
-  coll: {
+
+  collectOrDeliver: {
     type: String,
-    required: true,
+  },
+  deliveryAddress: {
+    type: String,
   },
 });
 
