@@ -3,12 +3,43 @@ import Getintouch from "./Getintouch";
 import kachaPakh from "../../assets/kachaPakh.png";
 import { IoIosContact } from "react-icons/io";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const ContactUs = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [text, setText] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const PostData = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await axios.post("/contact", formData);
+      if (res.status === 201) {
+        // Check the response status, not the response itself
+        toast.success("Sent successfully");
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+      }
+    } catch (err) {
+      toast.error("An error occurred while sending the data"); // Display an error message
+    }
+  };
 
   return (
     <div>
@@ -36,11 +67,7 @@ const ContactUs = () => {
           <div className="  flex flex-col  ">
             <div className=" sm:mx-auto sm:w-full sm:max-w-md">
               <div className="bg-gray-50 pt-6 px-4 drop-shadow-xl sm:rounded-lg sm:px-10">
-                <form
-                  className="space-y-6 py-4"
-                  action="https://getform.io/f/c3f8e7f4-7a2e-453b-a3e9-e76833c37731"
-                  method="POST"
-                >
+                <form onSubmit={PostData} className="space-y-6 py-4">
                   <h1 className="text-2xl font-semibold text-gray-700 text-center">
                     Contact Us
                   </h1>
@@ -53,9 +80,9 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Name"
                         required
-                        value={name}
+                        value={formData.name}
+                        onChange={handleChange}
                         className="w-full px-3 py-2 placeholder-gray-400 focus:outline-none sm:text-sm"
-                        onChange={(e) => setName(e.target.value)}
                       />
                       <IoIosContact className="text-gray-400 m-2" />
                     </div>
@@ -69,8 +96,8 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Phone"
                         required
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
+                        value={formData.phone}
+                        onChange={handleChange}
                         className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
                       />
                       <AiOutlinePhone className="text-gray-400 m-2" />
@@ -85,8 +112,8 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Email"
                         required
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
+                        value={formData.email}
+                        onChange={handleChange}
                         className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
                       />
                       <AiOutlineMail className="text-gray-400 m-2" />
@@ -102,8 +129,8 @@ const ContactUs = () => {
                         rows="5"
                         autoComplete="message"
                         required
-                        value={text}
-                        onChange={(e) => setText(e.target.value)}
+                        value={formData.message}
+                        onChange={handleChange}
                         placeholder="Enter your message"
                       ></textarea>
                     </div>

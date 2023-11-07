@@ -29,6 +29,11 @@ import {
   SignUp,
 } from "./components";
 
+import Messages from "./components/sideBar/contactMessage/Messages";
+import Message from "./components/sideBar/contactMessage/Message";
+import FoodMessages from "./components/sideBar/foodMessage/FoodMssgs";
+import FoodMessage from "./components/sideBar/foodMessage/FoodMssg";
+
 function App() {
   return (
     <Router>
@@ -36,6 +41,10 @@ function App() {
       <Routes>
         <Route path="/signin" exact element={<SignIn />} />
         <Route path="/signup" exact element={<SignUp />} />
+        <Route path="/messages" exact element={<Messages />} />
+        <Route path="/message/:id" exact element={<Message />} />
+        <Route path="/foodMessages" exact element={<FoodMessages />} />
+        <Route path="/foodMessage/:id" exact element={<FoodMessage />} />
 
         <Route element={<Navbar />}>
           <Route path="/" exact element={<Home />} />

@@ -1,7 +1,62 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
+import axios from "axios";
 
 const DonateFood = () => {
+  const [formData, setFormData] = useState({
+    organizationName: "",
+    organizationType: "",
+    name: "",
+    phoneNumber: "",
+    foodKG: "",
+  });
+
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleRadioChange = (event) => {
+    const { value } = event.target;
+    if (value === "show") {
+      setFormData({
+        ...formData,
+        collectOrDeliver: value,
+      });
+    } else {
+      setFormData({
+        ...formData,
+        collectOrDeliver: value,
+        deliveryAddress: "", // Clear the delivery address when selecting "Delivery"
+      });
+    }
+  };
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    try {
+      const response = await axios.post("/food", formData);
+      if (response.status === 201) {
+        toast.success("Data posted successfully"); // Display a success message
+        setFormData({
+          organizationName: "",
+          organizationType: "",
+          name: "",
+          phoneNumber: "",
+          foodKG: "",
+          collectOrDeliver: "",
+          deliveryAddress: "",
+        }); // Clear the form data
+      }
+    } catch (error) {
+      console.error(error);
+      toast.error("An error occurred while posting data"); // Display an error message
+    }
+  };
+
   return (
     <main id="DonateFood" className="w-full pb-20  bg-gray-200">
       {/* Donate Food section open */}
@@ -78,25 +133,27 @@ const DonateFood = () => {
           </div>
           {/* form section  */}
           <div className="w-full min-h-screen bg-gray-50   py-[2rem] text-gray-800 rounded-b-lg">
-            <form className="w-[85%] mx-auto  space-y-10  ">
-              <div className="flex gap-1">
-                <span className="text-red-500 ">*</span>
-                <span>Required</span>
-              </div>
+            <form
+              onSubmit={handleSubmit}
+              className="w-[85%] mx-auto space-y-10"
+            >
+              {/* Organization Name */}
               <div>
                 <h1 htmlFor="organizationName" className="text-lg">
                   1. Enter Organization Name
                 </h1>
-
                 <input
                   type="text"
                   id="organizationName"
                   name="organizationName"
+                  value={formData.organizationName}
+                  onChange={handleInputChange}
                   placeholder="Enter your answer"
-                  className="w-full bg-white  py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+                  className="w-full bg-white py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 />
               </div>
-              {/* Organization  */}
+
+              {/* Organization Type */}
               <div>
                 <h1 className="text-lg" htmlFor="organizationtype">
                   2. Organisation Type
@@ -105,119 +162,139 @@ const DonateFood = () => {
                   <div className="flex gap-2">
                     <input
                       type="radio"
-                      name="organizationtype"
-                      id="organizationtype"
+                      name="organizationType"
+                      value="Events/Catering"
+                      checked={formData.organizationType === "Events/Catering"}
+                      onChange={handleInputChange}
                     />
                     <h1>Events/Catering</h1>
                   </div>
                   <div className="flex gap-2">
                     <input
                       type="radio"
-                      name="organizationtype"
-                      id="organizationtype"
+                      name="organizationType"
+                      value="Home"
+                      checked={formData.organizationType === "Home"}
+                      onChange={handleInputChange}
                     />
-                    <h1>Farm</h1>
+                    <h1>Home</h1>
                   </div>
                   <div className="flex gap-2">
                     <input
                       type="radio"
-                      name="organizationtype"
-                      id="organizationtype"
-                    />
-                    <h1>Manufacturer/Producer</h1>
-                  </div>
-                  <div className="flex gap-2">
-                    <input
-                      type="radio"
-                      name="organizationtype"
-                      id="organizationtype"
-                    />
-                    <h1>Wholesaler</h1>
-                  </div>
-                  <div className="flex gap-2">
-                    <input
-                      type="radio"
-                      name="organizationtype"
-                      id="organizationtype"
+                      name="organizationType"
+                      value="Distributor"
+                      checked={formData.organizationType === "Distributor"}
+                      onChange={handleInputChange}
                     />
                     <h1>Distributor</h1>
                   </div>
                   <div className="flex gap-2">
                     <input
                       type="radio"
-                      name="organizationtype"
-                      id="organizationtype"
+                      name="organizationType"
+                      value="Restaurant"
+                      checked={formData.organizationType === "Restaurant"}
+                      onChange={handleInputChange}
                     />
                     <h1>Restaurant</h1>
                   </div>
-
                   <div className="flex gap-2">
                     <input
                       type="radio"
-                      name="organizationtype"
-                      id="organizationtype"
+                      name="organizationType"
+                      value="Other"
+                      checked={formData.organizationType === "Other"}
+                      onChange={handleInputChange}
                     />
                     <h1>Other</h1>
                   </div>
+                  {/* Radio buttons for organization type */}
+                  {/* You can add checked={formData.organizationType === "Events/Catering"} to each radio input */}
                 </div>
               </div>
+
+              {/* Name */}
               <div>
                 <h1 htmlFor="name" className="text-lg">
                   3. Enter Name
                 </h1>
-
                 <input
                   type="text"
                   id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
                   placeholder="Enter your answer"
-                  className="w-full bg-white  py-2 px-5 ml-[1rem] mt-[2rem]  rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1  "
+                  className="w-full bg-white py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 />
-              </div>{" "}
+              </div>
+
+              {/* Phone Number */}
               <div>
-                <h1 htmlFor="organizationName" className="text-lg">
+                <h1 htmlFor="phoneNumber" className="text-lg">
                   4. Please provide your phone number
                 </h1>
-
                 <input
                   type="text"
-                  id="organizationName"
-                  name="organizationName"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleInputChange}
                   placeholder="Enter your answer"
-                  className="w-full bg-white  py-2 px-5 ml-[1rem] mt-[2rem]  rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+                  className="w-full bg-white py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 />
-              </div>{" "}
+              </div>
               <div>
-                <h1 htmlFor="organizationName" className="text-lg">
-                  5. Please provide your email
+                <h1 htmlFor="phoneNumber" className="text-lg">
+                  5. Food in KG
                 </h1>
-
                 <input
                   type="text"
-                  id="organizationName"
-                  name="organizationName"
-                  placeholder="Enter your answer"
-                  className="w-full bg-white  py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+                  id="foodKG"
+                  name="foodKG"
+                  value={formData.foodKG}
+                  onChange={handleInputChange}
+                  placeholder="e.g: 10KG"
+                  className="w-full bg-white py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 />
-              </div>{" "}
+              </div>
+
+              {/* Collect/Deliver */}
               <div>
                 <h1 htmlFor="collect/deliver" className="text-lg">
-                  6. Do you need us to collect or can you deliver to us?
+                  5. Do you need us to collect or can you deliver to us?
                 </h1>
                 <div className="pl-[1rem] flex flex-col gap-6 mt-6 text-sm">
-                  <div className="flex gap-2">
-                    <input
-                      type="radio"
-                      name="collect/deliver"
-                      id="collect/deliver"
-                    />
-                    <h1>Collection</h1>
+                  <div>
+                    <div className="flex gap-2">
+                      <input
+                        type="radio"
+                        name="collectOrDeliver"
+                        value="show"
+                        checked={formData.collectOrDeliver === "show"}
+                        onChange={handleRadioChange}
+                      />
+                      <h1>Collection</h1>
+                    </div>
+                    {formData.collectOrDeliver === "show" && (
+                      <input
+                        type="text"
+                        className="w-full bg-white py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+                        placeholder="Enter your address"
+                        name="deliveryAddress"
+                        value={formData.deliveryAddress}
+                        onChange={handleInputChange}
+                      />
+                    )}
                   </div>
                   <div className="flex gap-2">
                     <input
                       type="radio"
-                      name="collect/deliver"
-                      id="collect/deliver"
+                      name="collectOrDeliver"
+                      value="Delivery: Unit 8, Acton Park Industrial Estate, Kahi, W3 7YG"
+                      checked={formData.collectOrDeliver !== "show"}
+                      onChange={handleRadioChange}
                     />
                     <h1>
                       Delivery: Unit 8, Acton Park Industrial Estate, Kahi, W3
@@ -226,40 +303,16 @@ const DonateFood = () => {
                   </div>
                 </div>
               </div>
+
               <h1 className="text-lg">
                 You can print a copy of your answer after you submit
               </h1>
               <button
                 type="submit"
-                className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black w-full  md:w-[12%] 
-                rounded px-4 py-3 hover:bg-gradient-to-b hover:from-[#89e9f9] hover:via-[#d8f6e7] hover:to-[#8ebf9b] "
+                className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black w-full md:w-[12%] rounded px-4 py-3 hover:bg-gradient-to-b hover:from-[#89e9f9] hover:via-[#d8f6e7] hover:to-[#8ebf9b]"
               >
                 Submit
               </button>
-              <div className="text-xs">
-                <span>Never give out your password. </span>
-                <Link to="https://www.youtube.com/">
-                  <span className="text-blue-800 underline">Report abuse</span>
-                </Link>
-              </div>
-              <p className="text-xs">
-                This content is created by the owner of the form. The data you
-                submit will be sent to the form owner. Microsoft is not
-                responsible for the privacy or security practices of its
-                customers, including those of this form owner. Never give out
-                your password.
-              </p>
-              <div className="text-xs">
-                <span>
-                  Powered by Microsoft Forms | The owner of this form has not
-                  provided a privacy statement as to how they will use your
-                  response data. Do not provide personal or sensitive
-                  information. |
-                </span>
-                <Link to="https://www.youtube.com">
-                  <span className="text-blue-800 underline">Terms of use</span>
-                </Link>
-              </div>
             </form>
           </div>
         </div>
