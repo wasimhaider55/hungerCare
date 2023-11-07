@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { toast } from "react-toastify";
 import axios from "axios";
 
 const DonateFood = () => {
@@ -7,6 +8,7 @@ const DonateFood = () => {
     organizationType: "",
     name: "",
     phoneNumber: "",
+    foodKG: "",
   });
 
   const handleInputChange = (event) => {
@@ -34,21 +36,24 @@ const DonateFood = () => {
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const toSend = {
-      organizationName: formData.organizationName,
-      organizationType: formData.organizationType,
-      name: formData.name,
-      phoneNumber: formData.phoneNumber,
-      collectOrDeliver: formData.collectOrDeliver,
-      deliveryAddress: formData.deliveryAddress,
-    };
-    console.log("Submitting formData:", toSend); // Log the form data
 
     try {
-      // Ensure that the field names match the expected names on the server
-      await axios.post("/food", toSend);
+      const response = await axios.post("/food", formData);
+      if (response.status === 201) {
+        toast.success("Data posted successfully"); // Display a success message
+        setFormData({
+          organizationName: "",
+          organizationType: "",
+          name: "",
+          phoneNumber: "",
+          foodKG: "",
+          collectOrDeliver: "",
+          deliveryAddress: "",
+        }); // Clear the form data
+      }
     } catch (error) {
-      console.log(error);
+      console.error(error);
+      toast.error("An error occurred while posting data"); // Display an error message
     }
   };
 
@@ -237,6 +242,20 @@ const DonateFood = () => {
                   value={formData.phoneNumber}
                   onChange={handleInputChange}
                   placeholder="Enter your answer"
+                  className="w-full bg-white py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
+                />
+              </div>
+              <div>
+                <h1 htmlFor="phoneNumber" className="text-lg">
+                  5. Food in KG
+                </h1>
+                <input
+                  type="text"
+                  id="foodKG"
+                  name="foodKG"
+                  value={formData.foodKG}
+                  onChange={handleInputChange}
+                  placeholder="e.g: 10KG"
                   className="w-full bg-white py-2 px-5 ml-[1rem] mt-[2rem] rounded-lg border border-slate-300 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
                 />
               </div>

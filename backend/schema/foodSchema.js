@@ -17,6 +17,10 @@ const foodSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  foodKG: {
+    type: String,
+    required: true,
+  },
 
   collectOrDeliver: {
     type: String,

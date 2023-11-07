@@ -5,6 +5,7 @@ import axios from "axios";
 
 const FoodMssg = () => {
   const [user, setUser] = useState([]);
+
   const { id } = useParams();
 
   const getMessage = async () => {
@@ -16,7 +17,7 @@ const FoodMssg = () => {
 
   useEffect(() => {
     getMessage();
-  }, []);
+  });
 
   return (
     <div className="w-full h-screen bg-slate-200 flex justify-center items-center">
@@ -38,11 +39,18 @@ const FoodMssg = () => {
         <h1 className="border border-gray-200 mb-1 p-2">
           Phone : {user.phoneNumber}
         </h1>
+        {user.collectOrDeliver ===
+        "Delivery: Unit 8, Acton Park Industrial Estate, Kahi, W3 7YG" ? (
+          <h1 className="border border-gray-200 mb-1 p-2">
+            collectOrDeliver : {user.collectOrDeliver}
+          </h1>
+        ) : (
+          <h1 className="border border-gray-200 mb-1 p-2">
+            deliveryAddress : {user.deliveryAddress}
+          </h1>
+        )}
         <h1 className="border border-gray-200 mb-1 p-2">
-          collectOrDeliver : {user.collectOrDeliver}
-        </h1>
-        <h1 className="border border-gray-200 mb-1 p-2">
-          deliveryAddress : {user.deliveryAddress}
+          foodKG : {user.foodKG}
         </h1>
       </div>
     </div>

@@ -4,29 +4,41 @@ import kachaPakh from "../../assets/kachaPakh.png";
 import { IoIosContact } from "react-icons/io";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
 import axios from "axios";
+import { toast } from "react-toastify";
 
 const ContactUs = () => {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
   const PostData = async (e) => {
+    e.preventDefault();
     try {
-      console.log(name, phone, email, message);
-      await axios.post("/contact", {
-        name,
-        phone,
-        email,
-        message,
-      });
+      const res = await axios.post("/contact", formData);
+      if (res.status === 201) {
+        // Check the response status, not the response itself
+        toast.success("Sent successfully");
+        setFormData({
+          name: "",
+          phone: "",
+          email: "",
+          message: "",
+        });
+      }
     } catch (err) {
-      console.log(err);
+      toast.error("An error occurred while sending the data"); // Display an error message
     }
-    setName("");
-    setPhone("");
-    setEmail("");
-    setMessage("");
   };
 
   return (
@@ -68,8 +80,9 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Name"
                         required
+                        value={formData.name}
+                        onChange={handleChange}
                         className="w-full px-3 py-2 placeholder-gray-400 focus:outline-none sm:text-sm"
-                        onChange={(e) => setName(e.target.value)}
                       />
                       <IoIosContact className="text-gray-400 m-2" />
                     </div>
@@ -83,7 +96,8 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Phone"
                         required
-                        onChange={(e) => setPhone(e.target.value)}
+                        value={formData.phone}
+                        onChange={handleChange}
                         className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
                       />
                       <AiOutlinePhone className="text-gray-400 m-2" />
@@ -98,7 +112,8 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Email"
                         required
-                        onChange={(e) => setEmail(e.target.value)}
+                        value={formData.email}
+                        onChange={handleChange}
                         className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
                       />
                       <AiOutlineMail className="text-gray-400 m-2" />
@@ -114,7 +129,8 @@ const ContactUs = () => {
                         rows="5"
                         autoComplete="message"
                         required
-                        onChange={(e) => setMessage(e.target.value)}
+                        value={formData.message}
+                        onChange={handleChange}
                         placeholder="Enter your message"
                       ></textarea>
                     </div>

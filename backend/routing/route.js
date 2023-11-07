@@ -141,11 +141,18 @@ router.post("/food", async (req, res) => {
       organizationType,
       name,
       phoneNumber,
+      foodKG,
       collectOrDeliver,
       deliveryAddress,
     } = req.body;
 
-    if (!organizationName || !organizationType || !name || !phoneNumber) {
+    if (
+      !organizationName ||
+      !organizationType ||
+      !name ||
+      !phoneNumber ||
+      !foodKG
+    ) {
       return res.status(422).json({ err: "Please fill in all fields" });
     } else {
       const food = new Food({
@@ -153,6 +160,7 @@ router.post("/food", async (req, res) => {
         organizationType,
         name,
         phoneNumber,
+        foodKG,
         collectOrDeliver,
         deliveryAddress,
       });

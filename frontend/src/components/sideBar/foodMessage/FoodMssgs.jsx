@@ -32,7 +32,7 @@ const FoodMessages = () => {
   };
 
   return (
-    <div className="  w-full h-screen bg-slate-200 flex justify-center items-center ">
+    <div className="  w-full min-h-screen bg-[#004d73] flex justify-center items-center ">
       <div className="w-[60%] bg-white p-2 rounded-md border-2 border-gray-600">
         <Link to="/">
           <button className="p-2">
@@ -47,7 +47,7 @@ const FoodMessages = () => {
             <Link to={`/foodMessage/${use._id}`}>
               <div>
                 <h3 className="font-semibold text-gray-800">{use.name}</h3>
-                <p className="font-sm text-gray-400">{use.email}</p>
+                <p className="font-sm text-gray-400">{use.phoneNumber}</p>
               </div>
             </Link>
             <button onClick={() => Delete(use._id)} className="text-red-600">
