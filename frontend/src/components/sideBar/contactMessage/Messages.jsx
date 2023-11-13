@@ -32,29 +32,31 @@ const Messages = () => {
   };
 
   return (
-    <div className="  w-full h-screen bg-slate-200 flex justify-center items-center ">
-      <div className="w-[60%] bg-white p-2 rounded-md border-2 border-gray-600">
-        <Link to="/">
-          <button className="p-2">
-            <AiOutlineArrowLeft size={24} />
-          </button>
-        </Link>
-        {user.map((use, index) => (
-          <div
-            key={index}
-            className="flex justify-between border border-gray-200 rounded-md my-1 p-1 px-2"
-          >
-            <Link to={`/message/${use._id}`}>
-              <div>
-                <h3 className="font-semibold text-gray-800">{use.name}</h3>
-                <p className="font-sm text-gray-400">{use.email}</p>
-              </div>
-            </Link>
-            <button onClick={() => Delete(use._id)} className="text-red-600">
-              <BiTrash />
+    <div className="w-full min-h-screen  bg-[#004d73] ">
+      <div className="flex justify-center items-center  py-5 w-full ">
+        <div className="w-[60%] bg-white p-2 rounded-md border-2 border-gray-600">
+          <Link to="/">
+            <button className="p-2">
+              <AiOutlineArrowLeft size={24} />
             </button>
-          </div>
-        ))}
+          </Link>
+          {user.map((use, index) => (
+            <div
+              key={index}
+              className="flex justify-between border border-gray-200 rounded-md my-1 p-1 px-2"
+            >
+              <Link to={`/message/${use._id}`}>
+                <div>
+                  <h3 className="font-semibold text-gray-800">{use.name}</h3>
+                  <p className="font-sm text-gray-400">{use.email}</p>
+                </div>
+              </Link>
+              <button onClick={() => Delete(use._id)} className="text-red-600">
+                <BiTrash />
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -57,6 +57,12 @@ const DonateFood = () => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSubmit(e);
+    }
+  };
+
   return (
     <main id="DonateFood" className="w-full pb-20  bg-gray-200">
       {/* Donate Food section open */}
@@ -135,6 +141,7 @@ const DonateFood = () => {
           <div className="w-full min-h-screen bg-gray-50   py-[2rem] text-gray-800 rounded-b-lg">
             <form
               onSubmit={handleSubmit}
+              onKeyDown={handleKeyDown}
               className="w-[85%] mx-auto space-y-10"
             >
               {/* Organization Name */}
@@ -293,7 +300,7 @@ const DonateFood = () => {
                       type="radio"
                       name="collectOrDeliver"
                       value="Delivery: Unit 8, Acton Park Industrial Estate, Kahi, W3 7YG"
-                      checked={formData.collectOrDeliver !== "show"}
+                      checked={formData.collectOrDeliver}
                       onChange={handleRadioChange}
                     />
                     <h1>

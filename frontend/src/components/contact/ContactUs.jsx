@@ -41,6 +41,12 @@ const ContactUs = () => {
     }
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      PostData(e);
+    }
+  };
+
   return (
     <div>
       {/* Contact Us section open */}
@@ -67,7 +73,11 @@ const ContactUs = () => {
           <div className="  flex flex-col  ">
             <div className=" sm:mx-auto sm:w-full sm:max-w-md">
               <div className="bg-gray-50 pt-6 px-4 drop-shadow-xl sm:rounded-lg sm:px-10">
-                <form onSubmit={PostData} className="space-y-6 py-4">
+                <form
+                  onSubmit={PostData}
+                  onKeyDown={handleKeyDown}
+                  className="space-y-6 py-4"
+                >
                   <h1 className="text-2xl font-semibold text-gray-700 text-center">
                     Contact Us
                   </h1>
