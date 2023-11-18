@@ -7,9 +7,8 @@ import { Dropdown, Drop } from "./Dropdown";
 import logoo from "../../assets/logoo.png";
 import { NavMenu } from "./NavMenu";
 import { Header } from "../../components";
-import { PiBowlFoodBold } from "react-icons/pi";
-import { RiMessage2Line } from "react-icons/ri";
-import { GiPayMoney } from "react-icons/gi";
+import SideBar from "../sideBar/SideBar";
+
 
 const Navbar = () => {
   // React Hooks
@@ -50,63 +49,8 @@ const Navbar = () => {
       <nav className="flex justify-between items-center sticky top-0 px-4 w-full h-14 sm:h-24 text-white bg-[#004d73] z-10">
         {/* navBar brand or logo */}
 
-        <div onClick={handleClick} className="hidden sm:block z-10">
-          {!nav ? <FaBars size={30} /> :  <ul
-          className={
-            !nav
-            ? "hidden"
-            : "hidden sm:block absolute left-0 w-[24rem] top-0  bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
-          }
-        >
-          <h1 className="px-4 cursor-pointer capitalize py-4 text-xl font-semibold"> Sopgmai Foundation </h1>
-          <FaTimes size={30} className=" absolute top-10 right-10" />
-          <Link to="/foodMessages" className="flex">
-          <PiBowlFoodBold size={30} />
-            <li
-              onClick={() => {
-                setNav(!nav);
-              }}
-              activeclass="active"
-              spy={"true"}
-              smooth={"true"}
-              duration={400}
-              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
-            >
-              Food
-            </li>
-          </Link>
-          <Link to="/messages" className="flex">
-          <RiMessage2Line size={30} />
-            <li
-              onClick={() => {
-                setNav(!nav);
-              }}
-              activeclass="active"
-              spy={"true"}
-              smooth={"true"}
-              duration={400}
-              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
-            >
-              message
-            </li>
-          </Link>
-          <Link className="flex">
-          <GiPayMoney size={30}  />
-            <li
-              onClick={() => {
-                setNav(!nav);
-              }}
-              activeclass="active"
-              spy={"true"}
-              smooth={"true"}
-              duration={400}
-              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
-            >
-              Money
-            </li>
-          </Link>
-        </ul>}
-        </div>
+       {/* side bar components import here  */}
+       <SideBar/>
 
        
 
