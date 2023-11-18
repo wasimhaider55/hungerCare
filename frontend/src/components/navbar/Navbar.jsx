@@ -183,7 +183,7 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "md:hidden  fixed  right-0    w-[60%]  mt-[20rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
+              : "md:hidden fixed right-0 sm:w-[50%] w-[60%] mt-[21.5rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
           }
         >
           {NavMenu.map((menu, indx) => {
