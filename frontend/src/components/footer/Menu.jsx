@@ -1,6 +1,5 @@
 import {
   FaFacebookSquare,
-  FaTwitterSquare,
   FaYoutubeSquare,
 } from "react-icons/fa";
 
@@ -37,11 +36,7 @@ export const FooterIcon = [
     path: "https://www.facebook.com/spogmaifoundation",
   },
   {
-    icon: <FaTwitterSquare />,
-    path: "",
-  },
-  {
     icon: <FaYoutubeSquare />,
     path: "https://www.youtube.com/@tahirfidaofficial1497",
-  },
+  }
 ];

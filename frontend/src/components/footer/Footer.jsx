@@ -87,13 +87,13 @@ const Footer = () => {
                   <i className="text-gray-300 pt-[6px]">
                     <FaPhone />
                   </i>
-                  <span>+923135653685</span>
+                  <span>+923360574327</span>
                 </li>
                 <li className="flex gap-3 my-[.5rem]">
                   <i className="text-gray-300 pt-[7px]">
                     <MdEmail />
                   </i>
-                  <span>spogmai11@gmail.com</span>
+                  <span>wasim.dev55@gmail.com</span>
                 </li>
               </ul>
             </div>
