@@ -1,8 +1,10 @@
 import React from "react";
 import {
+  FaFacebookSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
+import {
   AiFillHeart,
-  AiFillFacebook,
-  AiFillYoutube,
 } from "react-icons/ai";
 import { MdOutgoingMail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
@@ -24,12 +26,12 @@ const Header = () => {
           <li> Follow Us : </li>
           <Link to="https://www.facebook.com/spogmaifoundation">
             <li className=" px-1 pt-[1.75px]">
-              <AiFillFacebook size={20} className=" hover:scale-110" />
+              <FaFacebookSquare size={20} className=" hover:scale-110" />
             </li>
           </Link>
           <Link to="https://www.youtube.com/@tahirfidaofficial1497">
             <li className=" px-1 pt-[1.75px]">
-              <AiFillYoutube size={22} className=" hover:scale-110" />
+              <FaYoutubeSquare size={22} className=" hover:scale-110" />
             </li>
           </Link>
         </ul>
