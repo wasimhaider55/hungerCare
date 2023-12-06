@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { BiTrash } from "react-icons/bi";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import Swal from 'sweetalert2'
 
 const FoodMessages = () => {
   const [user, setUser] = useState([]);
@@ -20,15 +21,33 @@ const FoodMessages = () => {
     getMessage();
   }, []);
 
-  const Delete = async (userId) => {
-    await axios
-      .delete(`/deleteFood/${userId}`)
-      .then((response) => {
-        setUser((prevUser) => prevUser.filter((user) => user._id !== userId));
-      })
-      .catch((err) => {
-        console.log(err);
-      });
+  const handleDelete = async (userId) => {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: 'You will not be able to recover this Record!',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Yes, delete it!',
+      cancelButtonText: 'No, keep it',
+      // changes the color of the confirm button to red
+      confirmButtonColor: '#004d73',
+      cancelButtonColor: '#FF0032',
+    }).then(async (result) => {
+      if (result.isConfirmed) {
+        try {
+          axios.delete(`/deleteFood/${userId}`)
+            .then((response) => {
+              setUser((prevUser) => prevUser.filter((user) => user._id !== userId));
+            })
+
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+
+    })
+
   };
 
   return (
@@ -43,16 +62,18 @@ const FoodMessages = () => {
           {user.map((use, index) => (
             <div
               key={index}
-              className="flex justify-between border border-gray-200 rounded-md my-1 p-1 px-2"
+              className="flex justify-between cursp border border-gray-200 rounded-md my-1 p-1 px-2 "
             >
-              <Link to={`/foodMessage/${use._id}`}>
+              <Link className="w-full" to={`/foodMessage/${use._id}`}>
                 <div>
                   <h3 className="font-semibold text-gray-800">{use.name}</h3>
                   <p className="font-sm text-gray-400">{use.phoneNumber}</p>
                 </div>
               </Link>
-              <button onClick={() => Delete(use._id)} className="text-red-600">
-                <BiTrash />
+
+              <button
+                onClick={() => handleDelete(use._id)} className="text-[#FF0032]">
+                <BiTrash size={22} className=" hover:scale-110" />
               </button>
             </div>
           ))}

@@ -45,14 +45,16 @@ const Messages = () => {
               key={index}
               className="flex justify-between border border-gray-200 rounded-md my-1 p-1 px-2"
             >
-              <Link to={`/message/${use._id}`}>
+              <Link to={`/message/${use._id}`} 
+              className="w-full"
+              >
                 <div>
                   <h3 className="font-semibold text-gray-800">{use.name}</h3>
                   <p className="font-sm text-gray-400">{use.email}</p>
                 </div>
               </Link>
               <button onClick={() => Delete(use._id)} className="text-red-600">
-                <BiTrash />
+                <BiTrash size={22} className=" hover:scale-110" />
               </button>
             </div>
           ))}
