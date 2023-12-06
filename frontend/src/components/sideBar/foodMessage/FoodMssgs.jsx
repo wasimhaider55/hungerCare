@@ -29,17 +29,16 @@ const FoodMessages = () => {
       showCancelButton: true,
       confirmButtonText: 'Yes, delete it!',
       cancelButtonText: 'No, keep it',
-      // changes the color of the confirm button to red
+      // changes the color is you want 
       confirmButtonColor: '#004d73',
       cancelButtonColor: '#FF0032',
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          axios.delete(`/deleteFood/${userId}`)
+         await axios.delete(`/deleteFood/${userId}`)
             .then((response) => {
               setUser((prevUser) => prevUser.filter((user) => user._id !== userId));
             })
-
         } catch (err) {
           console.log(err);
         }

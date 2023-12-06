@@ -1,11 +1,11 @@
 import React from "react";
 import Getintouch from "./Getintouch";
 import kachaPakh from "../../assets/kachaPakh.png";
+import axios from "axios";
 import { IoIosContact } from "react-icons/io";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
-import axios from "axios";
 import { toast } from "react-toastify";
-import validationSchema from "./Schema";
+import {validationSchema} from "./Schema";
 import { useFormik } from "formik";
 
 const ContactUs = () => {
