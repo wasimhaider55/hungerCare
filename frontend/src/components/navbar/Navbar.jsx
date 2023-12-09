@@ -49,17 +49,17 @@ const Navbar = () => {
       <nav className="flex justify-between items-center sticky top-0 px-4 w-full h-14 sm:h-24 text-white bg-[#004d73] z-10">
         {/* navBar brand or logo */}
 
-       {/* side bar components import here  */}
-       <SideBar/>
+        <div className="lg:flex gap-5 items-center w-80">
+          {/* side bar components import here  */}
+          <SideBar />
 
-       
-
-        <div>
-          <img
-            src={logoo}
-            alt="LogoImage"
-            className=" h-[5rem] sm:h-[8rem] pb-3 md:ml-5"
-          />
+          <div>
+            <img
+              src={logoo}
+              alt="LogoImage"
+              className=" h-[5rem] sm:h-[8rem] pb-3 md:ml-5"
+            />
+          </div>
         </div>
 
         {/* navBar Links started */}
