@@ -1,60 +1,33 @@
-import React, { useState } from "react";
-import { FcGoogle } from "react-icons/fc";
 import logo from "../../assets/logoo.png";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useFormik } from "formik";
+import axios from "axios";
+import { toast } from "react-toastify";
+import { registrationSchema } from "../Schema";
 
 const SignUp = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    password: "",
-    cpassword: "",
-  });
 
-  let name, value;
-  const handleSubmit = (e) => {
-    name = e.target.name;
-    value = e.target.value;
-    // Perform form submission logic here
-
-    // Reset form fields
-
-    setUser({ ...user, [name]: value });
-  };
-
-  const PostData = async (e) => {
-    e.preventDefault();
-
-    const { name, phone, email, password, cpassword } = user;
-
-    const res = await fetch("/reg", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+    useFormik({
+      initialValues: {
+        name: "",
+        phone: "",
+        email: "",
+        password: "",
+        cpassword: "",
       },
-      body: JSON.stringify({
-        name,
-        phone,
-        email,
-        password,
-        cpassword,
-      }),
+      validationSchema: registrationSchema,
+      onSubmit: async (values, action) => {
+        console.log(values);
+        const reg = await axios.post("/registration", values);
+        if (reg.status === 201) {
+          toast.success("register successfully");
+          navigate("/signin");
+        }
+      },
     });
-
-    const data = await res.json();
-
-    if (data.status === 422 || !data) {
-      window.alert("Invalid Credentials");
-      console.log("Invalid Credentials");
-    } else {
-      window.alert("Registration Successfully");
-      console.log("Registration Successfully");
-    }
-    navigate("/signin");
-  };
 
   return (
     <div className="flex justify-center items-center p-1 h-screen ">
@@ -80,7 +53,7 @@ const SignUp = () => {
                   </Link>
                 </p>
               </div>
-              <form method="POST" className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="mt-1">
                   <input
                     id="name"
@@ -88,11 +61,13 @@ const SignUp = () => {
                     type="text"
                     placeholder="Name"
                     required
-                    value={user.name}
+                    value={values.name}
                     autoComplete="off"
-                    onChange={handleSubmit}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                     className="appearance-none block w-full px-3 py-2 border-b border-blue-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
+                  {touched.name && errors.name ? <p>{errors.name}</p> : null}
                 </div>
 
                 <div className="mt-1">
@@ -103,10 +78,12 @@ const SignUp = () => {
                     autoComplete="off"
                     placeholder="Phone"
                     required
-                    value={user.phone}
-                    onChange={handleSubmit}
+                    value={values.phone}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                     className="appearance-none block w-full px-3 py-2 border-b border-blue-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
+                  {touched.phone && errors.phone ? <p>{errors.phone}</p> : null}
                 </div>
 
                 <div className="mt-1">
@@ -117,10 +94,12 @@ const SignUp = () => {
                     autoComplete="email"
                     placeholder="Email"
                     required
-                    value={user.email}
-                    onChange={handleSubmit}
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                     className="appearance-none block w-full px-3 py-2 border-b border-blue-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
+                  {touched.email && errors.email ? <p>{errors.email}</p> : null}
                 </div>
 
                 <div className="mt-1">
@@ -131,10 +110,14 @@ const SignUp = () => {
                     autoComplete="current-password"
                     placeholder="Password"
                     required
-                    value={user.password}
-                    onChange={handleSubmit}
+                    value={values.password}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                     className="appearance-none block w-full px-3 py-2 border-b border-blue-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
+                  {touched.password && errors.password ? (
+                    <p>{errors.password}</p>
+                  ) : null}
                 </div>
 
                 <div className="mt-1">
@@ -145,10 +128,14 @@ const SignUp = () => {
                     autoComplete="off"
                     placeholder="Confirm Password"
                     required
-                    value={user.cpassword}
-                    onChange={handleSubmit}
+                    value={values.cpassword}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                     className="appearance-none block w-full px-3 py-2 border-b border-blue-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   />
+                  {touched.cpassword && errors.cpassword ? (
+                    <p>{errors.cpassword}</p>
+                  ) : null}
                 </div>
 
                 <div className="pt-5">
@@ -156,23 +143,10 @@ const SignUp = () => {
                     id="signup"
                     name="signup"
                     type="submit"
-                    onClick={PostData}
                     className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
                   >
                     Sign Up
                   </button>
-                  <div className=" w-full text-center border-b-2 border-text-primary  my-4">
-                    <span className=" px-4 py-3 text-slate-500  bg-slate-100 ">
-                      or
-                    </span>
-                  </div>
-
-                  <div className=" justify-center ">
-                    <button className="w-full flex  justify-center py-2 border-b border-blue-300 rounded-md shadow-md placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm  ">
-                      <FcGoogle className="text-2xl" />
-                      <span>SignUp with Google</span>
-                    </button>
-                  </div>
                 </div>
               </form>
             </div>

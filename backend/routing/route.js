@@ -1,33 +1,28 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../schema/schema");
-const Contact = require("../schema/schema");
+const SignIn = require("../schema/logInSchema");
+const Contact = require("../schema/contactSchema");
 const Food = require("../schema/foodSchema");
 const bcrypt = require("bcrypt");
-const authenticate = require("../middleware/authenticate");
-
-router.get("/contact", authenticate, (req, res) => {
-  res.json("Hi");
-  res.send(req.rootUser);
-});
 
 // Registration LogIn API
 // its for / page routing
-router.post("/reg", async (req, res) => {
+router.post("/registration", async (req, res) => {
   try {
-    const { orgName, orgType, name, phone, coll } = req.body;
+    const { name, phone, email, password, cpassword } = req.body;
+    console.log(name, phone, email, password, cpassword);
 
-    if (!orgName || !orgType || !name || !phone || !coll) {
+    if (!name || !phone || !email || !password || !cpassword) {
       return res.status(422).json({ err: "Please fill in all fields" });
     }
-    const userExist = await User.findOne({ name: name });
+    const userExist = await SignIn.findOne({ email: email });
 
     if (userExist) {
       return res.status(422).json({ err: "Email already exists" });
-    } else if (phone != coll) {
+    } else if (password != cpassword) {
       return res.status(422).json({ err: "Password are not Matching" });
     } else {
-      const user = new User({ orgName, orgType, name, phone, coll });
+      const user = new SignIn({ name, phone, email, password, cpassword });
       await user.save();
 
       res.status(201).json({ message: "User registered successfully" });
@@ -41,14 +36,14 @@ router.post("/reg", async (req, res) => {
 // its for Login page routing
 router.post("/LogIn", async (req, res) => {
   try {
-    const { name, phone } = req.body;
-    if (!name || !phone) {
+    const { email, password } = req.body;
+    if (!email || !password) {
       return res.status(400).json({ err: "Fill in all fields" });
     }
 
-    const userLogin = await User.findOne({ name: name });
+    const userLogin = await SignIn.findOne({ email: email });
     if (userLogin) {
-      const isMatch = await bcrypt.compare(phone, userLogin.phone);
+      const isMatch = await bcrypt.compare(password, userLogin.password);
 
       const token = await userLogin.generateAuthToken();
       res.cookie("jwtoken", token, {
