@@ -12,7 +12,7 @@ const SideBar = () => {
     return (
         <>
 
-            <div onClick={() => setNav(!nav)} className='hidden lg:block cursor-pointer'> 
+            <div onClick={() => setNav(!nav)} className='hidden lg:block cursor-pointer'>
                 <AiOutlineMenu size={40} />
             </div>
 

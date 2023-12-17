@@ -3,8 +3,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 
-dotenv.config({ path: "../config.env" });
-
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -57,29 +55,5 @@ userSchema.methods.generateAuthToken = async function () {
   }
 };
 
-const User = mongoose.model("USER", userSchema);
-module.exports = User;
-
-const contactSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    minlength: 3,
-    maxlength: 30,
-  },
-  phone: {
-    type: String,
-    required: true,
-  },
-  email: {
-    type: String,
-    required: true,
-  },
-  message: {
-    type: String,
-    required: true,
-  },
-});
-
-const Contact = mongoose.model("contact", contactSchema);
-module.exports = Contact;
+const SignIn = mongoose.model("SignIn", userSchema);
+module.exports = SignIn;
