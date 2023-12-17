@@ -1,43 +1,35 @@
-import React, { useState } from "react";
+import React from "react";
 import Getintouch from "./Getintouch";
 import kachaPakh from "../../assets/kachaPakh.png";
+import axios from "axios";
 import { IoIosContact } from "react-icons/io";
 import { AiOutlinePhone, AiOutlineMail } from "react-icons/ai";
-import axios from "axios";
 import { toast } from "react-toastify";
+import { validationSchema } from "./Schema";
+import { useFormik } from "formik";
 
 const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
+  const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+    useFormik({
+      initialValues: {
+        name: "",
+        phone: "",
+        email: "",
+        message: "",
+      },
+      validationSchema: validationSchema,
+      onSubmit: async (values, action) => {
+        const res = await axios.post("/contact", values);
+        if (res.status === 201) {
+          toast.success("Sent successfully");
+          action.resetForm();
+        }
+      },
     });
-  };
 
-  const PostData = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await axios.post("/contact", formData);
-      if (res.status === 201) {
-        // Check the response status, not the response itself
-        toast.success("Sent successfully");
-        setFormData({
-          name: "",
-          phone: "",
-          email: "",
-          message: "",
-        });
-      }
-    } catch (err) {
-      toast.error("An error occurred while sending the data"); // Display an error message
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSubmit(e);
     }
   };
 
@@ -67,10 +59,17 @@ const ContactUs = () => {
           <div className="  flex flex-col  ">
             <div className=" sm:mx-auto sm:w-full sm:max-w-md">
               <div className="bg-gray-50 pt-6 px-4 drop-shadow-xl sm:rounded-lg sm:px-10">
-                <form onSubmit={PostData} className="space-y-6 py-4">
+                <form
+                  onSubmit={handleSubmit}
+                  onKeyDown={handleKeyDown}
+                  className="space-y-6 py-4"
+                >
                   <h1 className="text-2xl font-semibold text-gray-700 text-center">
                     Contact Us
                   </h1>
+
+                  {/* Input for Name */}
+
                   <div>
                     <div className="flex justify-center items-center shadow-md overflow-hidden bg-white border-b border-blue-200 rounded-md    mt-1">
                       <input
@@ -80,29 +79,43 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Name"
                         required
-                        value={formData.name}
+                        value={values.name}
                         onChange={handleChange}
+                        onBlur={handleBlur}
                         className="w-full px-3 py-2 placeholder-gray-400 focus:outline-none sm:text-sm"
                       />
                       <IoIosContact className="text-gray-400 m-2" />
                     </div>
+                    {touched.name && errors.name ? (
+                      <p className="text-red-500 text-sm">{errors.name}</p>
+                    ) : null}
                   </div>
+
+                  {/* Input for Phone */}
+
                   <div>
                     <div className="flex justify-center items-center shadow-md overflow-hidden bg-white border-b border-blue-200 rounded-md    mt-1">
                       <input
                         id="phone"
                         name="phone"
-                        type="textj"
+                        type="text"
                         autoComplete="off"
                         placeholder="Phone"
                         required
-                        value={formData.phone}
+                        value={values.phone}
                         onChange={handleChange}
-                        className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
+                        onBlur={handleBlur}
+                        className="w-full px-3 py-2 placeholder-gray-400 focus:outline-none   sm:text-sm"
                       />
                       <AiOutlinePhone className="text-gray-400 m-2" />
                     </div>
+                    {touched.phone && errors.phone ? (
+                      <p className="text-red-500 text-sm">{errors.phone}</p>
+                    ) : null}
                   </div>
+
+                  {/* Input for Email */}
+
                   <div>
                     <div className="flex justify-center items-center shadow-md overflow-hidden bg-white border-b border-blue-200 rounded-md    mt-1">
                       <input
@@ -112,13 +125,19 @@ const ContactUs = () => {
                         autoComplete="off"
                         placeholder="Email"
                         required
-                        value={formData.email}
+                        value={values.email}
                         onChange={handleChange}
+                        onBlur={handleBlur}
                         className="w-full px-3 py-2     placeholder-gray-400 focus:outline-none   sm:text-sm"
                       />
                       <AiOutlineMail className="text-gray-400 m-2" />
                     </div>
+                    {touched.email && values.email ? (
+                      <p className="text-red-500 text-sm">{errors.email}</p>
+                    ) : null}
                   </div>
+
+                  {/* Input for Message */}
 
                   <div>
                     <div className="mt-1 shadow-md">
@@ -129,11 +148,15 @@ const ContactUs = () => {
                         rows="5"
                         autoComplete="message"
                         required
-                        value={formData.message}
+                        value={values.message}
                         onChange={handleChange}
+                        onBlur={handleBlur}
                         placeholder="Enter your message"
                       ></textarea>
                     </div>
+                    {touched.message && errors.message ? (
+                      <p className="text-red-500 text-sm">{errors.message}</p>
+                    ) : null}
                   </div>
 
                   <div className="my-5">

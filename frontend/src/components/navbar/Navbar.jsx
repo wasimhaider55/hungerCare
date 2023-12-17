@@ -7,6 +7,8 @@ import { Dropdown, Drop } from "./Dropdown";
 import logoo from "../../assets/logoo.png";
 import { NavMenu } from "./NavMenu";
 import { Header } from "../../components";
+import SideBar from "../sideBar/SideBar";
+
 
 const Navbar = () => {
   // React Hooks
@@ -44,70 +46,20 @@ const Navbar = () => {
     <>
       <Header />
 
-      <nav className="flex justify-between items-center sticky top-0 px-4 w-full h-14 sm:h-24 text-white bg-[#004d73] z-10">
+      <nav className="flex justify-between items-center sticky top-0 px-4 w-full h-14 sm:h-20 text-white bg-[#004d73] z-10">
         {/* navBar brand or logo */}
 
-        <div onClick={handleClick} className="hidden sm:block z-10">
-          {!nav ? <FaBars size={30} /> : <FaTimes size={30} />}
-        </div>
+        <div className="lg:flex gap-5 items-center w-80">
+          {/* side bar components import here  */}
+          <SideBar />
 
-        <ul
-          className={
-            !nav
-              ? "hidden"
-              : "hidden sm:block  fixed  left-0    w-[30%]  mt-[18rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
-          }
-        >
-          <Link to="/foodMessages">
-            <li
-              onClick={() => {
-                setNav(!nav);
-              }}
-              activeclass="active"
-              spy={"true"}
-              smooth={"true"}
-              duration={400}
-              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
-            >
-              Food
-            </li>
-          </Link>
-          <Link to="/messages">
-            <li
-              onClick={() => {
-                setNav(!nav);
-              }}
-              activeclass="active"
-              spy={"true"}
-              smooth={"true"}
-              duration={400}
-              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
-            >
-              message
-            </li>
-          </Link>
-          <Link>
-            <li
-              onClick={() => {
-                setNav(!nav);
-              }}
-              activeclass="active"
-              spy={"true"}
-              smooth={"true"}
-              duration={400}
-              className=" px-4 cursor-pointer capitalize py-4 text-xl font-semibold"
-            >
-              Money
-            </li>
-          </Link>
-        </ul>
-
-        <div>
-          <img
-            src={logoo}
-            alt="LogoImage"
-            className=" h-[5rem] sm:h-[8rem] pb-3 md:ml-5"
-          />
+          <div>
+            <img
+              src={logoo}
+              alt="LogoImage"
+              className=" h-[7rem] pb-3 md:ml-5 mt-2"
+            />
+          </div>
         </div>
 
         {/* navBar Links started */}
@@ -231,7 +183,7 @@ const Navbar = () => {
           className={
             !nav
               ? "hidden"
-              : "md:hidden  fixed  right-0    w-[60%]  mt-[20rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
+              : "md:hidden fixed right-0 sm:w-[50%] w-[60%] mt-[21.5rem] bg-[#004d73] rounded-br-3xl text-gray-300 py-5"
           }
         >
           {NavMenu.map((menu, indx) => {
