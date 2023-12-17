@@ -63,7 +63,7 @@ const Navbar = () => {
             <img
               src={logoo}
               alt="LogoImage"
-              className=" h-[7rem] pb-3 md:ml-5 mt-2"
+              className=" h-[6rem] sm:h-[7rem] pb-2 md:ml-5 mt-2"
             />
           </div>
         </div>
