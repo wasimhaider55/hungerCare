@@ -8,9 +8,12 @@ import logoo from "../../assets/logoo.png";
 import { NavMenu } from "./NavMenu";
 import { Header } from "../../components";
 import SideBar from "../sideBar/SideBar";
-
+import Cookies from "js-cookie"
 
 const Navbar = () => {
+
+  const token = Cookies.get('token');
+  console.log("is testing token available: ", token)
   // React Hooks
   const [nav, setNav] = useState(false);
   const [dropdown, setDropdown] = useState(false);
@@ -42,6 +45,8 @@ const Navbar = () => {
     setDrop(false);
   };
 
+
+
   return (
     <>
       <Header />
@@ -51,7 +56,8 @@ const Navbar = () => {
 
         <div className="lg:flex gap-5 items-center w-80">
           {/* side bar components import here  */}
-          <SideBar />
+
+          {token && <SideBar />}
 
           <div>
             <img
