@@ -4,6 +4,7 @@ import { validationSchema } from "../Schema";
 import axios from "axios";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
+import Cookies from "js-cookie"
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -16,14 +17,23 @@ const SignIn = () => {
       },
       validationSchema: validationSchema,
       onSubmit: async (values, action) => {
-        // await console.log(values);
-        const res = await axios.post("/LogIn", values);
-        if (res.status === 201) {
-          toast.success("LogIn successfully");
-          action.resetForm();
-          navigate("/");
-          console.log(res);
+        try {
+          // await console.log(values);
+          const res = await axios.post("/LogIn", values);
+          if (res.status === 201) {
+            Cookies.set('token', 'thisisspogmaifoundationcookies')
+
+            toast.success("LogIn successfully");
+            action.resetForm();
+            navigate("/");
+            console.log(res);
+          }
+        } catch (error) {
+          toast.error("Something went wrong");
+          console.log("the error is : ", error)
+
         }
+
       },
     });
 
