@@ -34,7 +34,7 @@ const OurTeam = () => {
       <h1 className="lg:text-4xl text-4xl font-bold  text-center text-black py-8">
         Our Core Team Members
       </h1>
-      <Carousel responsive={responsive} className="py-10 lg:mx-10 text-white ">
+      <Carousel responsive={responsive} className=" z-0 py-10 lg:mx-10 text-white ">
         <Card
           image={tahirfida}
           title="Tahir Fida"
