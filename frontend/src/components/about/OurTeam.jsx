@@ -7,6 +7,7 @@ import jamshidRehman from "../../assets/teamPics/jamshidRehman.jpg";
 import nabiMukhles from "../../assets/teamPics/nabiMukhles.jpg";
 import arifHussain from "../../assets/teamPics/arifHussain.jpg";
 import amjidKhan from "../../assets/teamPics/amjidKhan.jpg";
+import hikmatBangash from "../../assets/teamPics/hikmatBangash.jpg";
 import Card from "./Card";
 const OurTeam = () => {
   const responsive = {
@@ -55,9 +56,9 @@ const OurTeam = () => {
           description="General Secretary"
         />
         <Card
-          image={wasimhaider}
-          title="WasimHaider"
-          description="Joint Secretary"
+          image={hikmatBangash}
+          title="Hikmat Bangash"
+          description="Manager"
         />
         <Card
           image={jamshidRehman}
