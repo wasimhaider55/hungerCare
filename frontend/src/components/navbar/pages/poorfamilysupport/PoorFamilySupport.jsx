@@ -118,7 +118,8 @@ const PoorFamilySupport = () => {
             />
           </div>
         </div>
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+        <Carousel responsive={responsive}
+         className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/U2TgIZ-3KPM?si=U1GMGDypd5TKM445"
             title="Spogmai foundation support poor family in village naryab district Hangu"

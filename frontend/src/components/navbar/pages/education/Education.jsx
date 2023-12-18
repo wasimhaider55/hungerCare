@@ -124,7 +124,8 @@ const Education = () => {
         </div>
         {/* Slum school section end */}
 
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+        <Carousel responsive={responsive}
+         className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/-i70DZH0tUU"
             title="spogmai foundation support different  school children's in district Hangu"

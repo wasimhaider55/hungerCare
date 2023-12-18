@@ -33,7 +33,7 @@ const Causes = () => {
       <h1 className="lg:text-4xl text-4xl font-bold  text-center">
         Our Causes
       </h1>
-      <Carousel responsive={responsive} className="py-14 lg:mx-5 text-black">
+      <Carousel responsive={responsive} className="z-0 py-14 lg:mx-5 text-black">
         <CausesCard
           image={FFD}
           title="Free Food Distribution"

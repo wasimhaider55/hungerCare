@@ -130,7 +130,8 @@ const DisabledPeopleSupport = () => {
           </div>
         </div>
 
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+        <Carousel responsive={responsive}
+         className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/QeWNYe-ZULk?si=x2YQxE9CP146mebv"
             title="spogmai foundation support disabled person who's from dawaba Hangu"

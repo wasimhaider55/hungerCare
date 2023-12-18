@@ -140,7 +140,8 @@ const OrphanFamilySupport = () => {
           </div>
         </div>
 
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+        <Carousel responsive={responsive}
+         className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/fAJrKq-_leU?si=aiWseLW9-9CJlC1D"
             title="Spogmai foundation support orphan family in village Kahi district Hangu"

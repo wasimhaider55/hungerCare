@@ -97,8 +97,8 @@ const Footer = () => {
                         </span>
                       </li>
                       <li className="flex gap-3 my-[.5rem]">
-                        <i className="text-gray-300 pt-[6px]">
-                          <FaPhone />
+                        <i className="text-gray-300 pt-[6px] rotate-90">
+                          <FaPhone  />
                         </i>
                         <span>+923360574327</span>
                       </li>
