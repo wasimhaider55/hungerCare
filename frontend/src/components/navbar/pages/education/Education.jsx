@@ -85,7 +85,7 @@ const Education = () => {
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black my-10">
         {/* Slum school section start */}
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20  uppercase">
-          <h1 className="sm:pl-8 ">ORPHAN EDUCATION SUPPORT</h1>
+          <h1 className="sm:pl-8 pl-3 ">ORPHAN EDUCATION SUPPORT</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
