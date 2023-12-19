@@ -8,16 +8,21 @@ import logoo from "../../assets/logoo.png";
 import { NavMenu } from "./NavMenu";
 import { Header } from "../../components";
 import SideBar from "../sideBar/SideBar";
-import Cookies from "js-cookie"
+import Cookies from "js-cookie";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
-
-  const token = Cookies.get('token');
-  console.log("is testing token available: ", token)
+  const token = Cookies.get("token");
+  console.log("is testing token available: ", token);
   // React Hooks
   const [nav, setNav] = useState(false);
   const [dropdown, setDropdown] = useState(false);
   const [drop, setDrop] = useState(false);
+
+  const handleLogout = () => {
+    Cookies.remove("token");
+    toast.success("logout successfully", { autoClose: 1000 });
+  };
 
   const handleClick = () => {
     setNav(!nav);
@@ -44,8 +49,6 @@ const Navbar = () => {
   const click1 = () => {
     setDrop(false);
   };
-
-
 
   return (
     <>
@@ -175,7 +178,18 @@ const Navbar = () => {
           </li>
           {/* button components is render here */}
         </ul>
-        <Button />
+        <div className="flex space-x-2">
+          {token && (
+            <button
+              className="hidden lg:block  bg-blue-500 px-2 py-[2px] rounded-full"
+              onClick={handleLogout}
+            >
+              LogOut
+            </button>
+          )}
+
+          <Button />
+        </div>
 
         {/* navBar Links ended */}
 
