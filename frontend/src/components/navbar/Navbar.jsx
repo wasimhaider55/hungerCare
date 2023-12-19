@@ -182,10 +182,10 @@ const Navbar = () => {
         <div className="flex space-x-2">
           {token && (
             <button
-              className="hidden lg:block  bg-blue-500 px-2 py-[2px] rounded-full"
+              className="hidden lg:block  bg-gray-100 text-[#004d73] px-2 py-[2px] rounded-full"
               onClick={handleLogout}
             >
-              LogOut
+              logout
             </button>
           )}
 
