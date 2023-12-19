@@ -28,7 +28,7 @@ const DonateMoney = () => {
                     <h1 className='text-2xl font-bold'>IMPORTANT NOTE</h1>
                     <p className=' font-bold py-5'>We accept all types of charity including Zakat, Sadaqah, Fitrana, Kafarah, General Charity, and we make sure to utilize these charities in the relevant sectors according to Islamic Shariah.</p>
                     <p className='pb-5'>You can either donate towards anyone of our specific causes, or you may leave the choice of utilizing your charity on our discretion and we will make the best use of your charity in the most needed causes. For list of our help sectors, please visit Our Causes link.</p>
-                    <p>If you would like to inform us after donating, or if you would like to discuss with us about your charity or if you have any question before making donation to our Foundation, please feel free to contact us either on our email <strong>wasimhaider2022@gmail.com</strong> or contact our Founder & President Mr. Tahir Fida on his official Contact / WhatsApp number <strong>+923135653685</strong>.</p>
+                    <p>If you would like to inform us after donating, or if you would like to discuss with us about your charity or if you have any question before making donation to our Foundation, please feel free to contact us either on our email <strong>wasim.dev55@gmail.com</strong> or contact our Founder & President Mr. Tahir Fida on his official Contact / WhatsApp number <strong>+923135653685</strong>.</p>
                 </div>
             </div>
 
@@ -113,7 +113,7 @@ const DonateMoney = () => {
                     <h1> Main Kacha Pakh , Hangu</h1>
                     <h1> KPK , PAKISTAN</h1>
                     <h1> Contact: +923135653685 </h1>
-                    <h1 className='pb-3'> Email : wasimhaider2022@gmail.com</h1>
+                    <h1 className='pb-3'> Email : wasim.dev55@gmail.com</h1>
                 </div>
                 }
 
@@ -139,7 +139,7 @@ const DonateMoney = () => {
                     <h1> Main Kacha Pakh , Hangu </h1>
                     <h1> KPK , PAKISTAN</h1>
                     <h1> Contact: +923135653685</h1>
-                    <h1> Email : wasimhaider2022@gmail.com</h1>
+                    <h1> Email : wasim.dev55@gmail.com</h1>
                     <p className='py-2'>
                         We also have the facility to come to you for donation collection if you live in Peshawar, Pakistan. Please contact us on our mobile/Whatsapp <strong>0092336-0574327</strong> and we will be happy to help.
                     </p>

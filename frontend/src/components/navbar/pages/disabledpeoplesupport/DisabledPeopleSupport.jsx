@@ -79,7 +79,7 @@ const DisabledPeopleSupport = () => {
       {/* Disabled People Support section Open */}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 capitalize">
-          <h1 className="sm:pl-8 ">Disabled People Support</h1>
+          <h1 className="sm:pl-8 pl-3 ">Disabled People Support</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
