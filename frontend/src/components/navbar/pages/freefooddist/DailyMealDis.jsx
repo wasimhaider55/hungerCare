@@ -81,7 +81,7 @@ const DailyMealDis = () => {
           </div>
         </div>
 
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+        <Carousel responsive={responsive} className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/KcMlMPsy7fU"
             title="Spogami Foundation Distribute Monthly Ration packages"
@@ -147,7 +147,8 @@ const DailyMealDis = () => {
           </div>
         </div>
 
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+        <Carousel responsive={responsive}
+         className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/5RX1enG0DrM"
             title="Ration packages distribution Spogmai foundation district Hangu in tehsil Tall"

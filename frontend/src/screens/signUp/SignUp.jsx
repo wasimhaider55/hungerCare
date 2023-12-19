@@ -21,10 +21,14 @@ const SignUp = () => {
       validationSchema: registrationSchema,
       onSubmit: async (values, action) => {
         console.log(values);
-        const reg = await axios.post("/registration", values);
-        if (reg.status === 201) {
-          toast.success("register successfully");
-          navigate("/signin");
+        try {
+          const reg = await axios.post("/registration", values);
+          if (reg.status === 201) {
+            toast.success("register successfully");
+            navigate("/signin");
+          }
+        } catch (error) {
+          toast.error("something went wrong!");
         }
       },
     });

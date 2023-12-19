@@ -37,10 +37,10 @@ const VideoGallery = () => {
       {/* Gallery section Closed */}
 
       {/* Introduction section open */}
-      <section className="    pt-20 px-5  md:px-20 ">
+      <section className="pt-20 px-5  md:px-20 ">
         <div>
           <h1 className="text-4xl font-bold"> INTRODUCTION </h1>
-          <div className=" w-24 h-1 bg-blue-500 rounded-full mt-3 "></div>
+          <div className="w-24 h-1 bg-blue-500 rounded-full mt-3 "></div>
 
           <p className="py-10 text-gray-500">
             Welcome to our video gallery! Here you can find video of our various
@@ -62,7 +62,7 @@ const VideoGallery = () => {
 
         <Carousel
           responsive={responsive}
-          className=" lg:mx-20 text-white py-10"
+          className="z-0 lg:mx-20 text-white py-10"
         >
           <VideoCard
             link="https://www.youtube.com/embed/5RX1enG0DrM"
@@ -92,7 +92,7 @@ const VideoGallery = () => {
 
         <Carousel
           responsive={responsive}
-          className=" lg:mx-20 text-white py-10"
+          className="z-0 lg:mx-20 text-white py-10"
         >
           <VideoCard
             link="https://www.youtube.com/embed/KcMlMPsy7fU"
@@ -122,7 +122,7 @@ const VideoGallery = () => {
 
         <Carousel
           responsive={responsive}
-          className=" lg:mx-20 text-white py-10"
+          className="z-0 lg:mx-20 text-white py-10"
         >
           <VideoCard
             link="https://www.youtube.com/embed/AZfqTCb2yJY"
@@ -152,7 +152,7 @@ const VideoGallery = () => {
 
         <Carousel
           responsive={responsive}
-          className=" lg:mx-20 text-white py-10"
+          className="z-0 lg:mx-20 text-white py-10"
         >
           <VideoCard
             link="https://www.youtube.com/embed/OTKUTfAhd-g"

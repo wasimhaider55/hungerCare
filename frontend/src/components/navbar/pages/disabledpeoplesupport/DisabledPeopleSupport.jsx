@@ -79,7 +79,7 @@ const DisabledPeopleSupport = () => {
       {/* Disabled People Support section Open */}
       <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 capitalize">
-          <h1 className="sm:pl-8 ">Disabled People Support</h1>
+          <h1 className="sm:pl-8 pl-3 ">Disabled People Support</h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
@@ -130,7 +130,8 @@ const DisabledPeopleSupport = () => {
           </div>
         </div>
 
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+        <Carousel responsive={responsive}
+          className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/QeWNYe-ZULk?si=x2YQxE9CP146mebv"
             title="spogmai foundation support disabled person who's from dawaba Hangu"
@@ -173,16 +174,17 @@ const DisabledPeopleSupport = () => {
 
       {/* Help us Section open */}
       <Link to="/donateNow">
-        <div className="md:flex md:justify-around md:items-center py-10 my-5 px-14 h-56 bg-blue-400 ">
-          <h1 className="text-white font-bold sm:text-3xl text-2xl">
+        <div className="md:flex md:justify-around md:items-center py-10 my-5 sm:px-14 px-5 h-56 bg-blue-400 ">
+          <h1 className="text-white font-bold md:text-3xl text-2xl">
             Help Us So We Can help many more disabled people
           </h1>
-          <button className=" border-2 border-white rounded-2xl p-3 ml-24 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500">
-            Donate Now{" "}
+          <button className=" border-2 border-white rounded-2xl p-3 ml-16 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500">
+            Donate Now
           </button>
         </div>
       </Link>
       {/* Help us Section closed */}
+
     </main>
   );
 };

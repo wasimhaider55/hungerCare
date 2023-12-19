@@ -9,7 +9,7 @@ const Card = () => {
     {
       title: "Who we are",
       description:
-        " We are a Pakistani charity organisation dedicated to assisting the needy people of society.",
+        " We are a Pakistani charity organization dedicated to assisting the needy people of society.",
       icon: <FaRegHandshake size={50} />,
       path: "/AboutUs#whoWeAre",
     },

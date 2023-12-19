@@ -86,9 +86,9 @@ const OrphanFamilySupport = () => {
       {/* Overview section Closed */}
 
       {/* orphan family support section components open */}
-      <section className="bg-gradient-to-b from-[#8ebf9b] via-[#d8f6e7] to-[#89e9f9] text-black">
+      <section className="bg-gradient-to-b from-[rgb(142,191,155)] via-[#d8f6e7] to-[#89e9f9] text-black">
         <div className=" lg:text-4xl text-3xl font-bold pt-16 lg:pl-24 md:pl-20 capitalize">
-          <h1 className="sm:pl-8 "> Orphan Familie's Support </h1>
+          <h1 className="sm:pl-8 pl-2 "> Orphan Familie's Support </h1>
         </div>
 
         <div className="lg:flex lg:pl-24  mb-24 px-4 md:px-20">
@@ -140,7 +140,8 @@ const OrphanFamilySupport = () => {
           </div>
         </div>
 
-        <Carousel responsive={responsive} className=" lg:mx-20 text-white">
+        <Carousel responsive={responsive}
+         className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/fAJrKq-_leU?si=aiWseLW9-9CJlC1D"
             title="Spogmai foundation support orphan family in village Kahi district Hangu"
@@ -167,16 +168,17 @@ const OrphanFamilySupport = () => {
 
       {/* Help us Section open */}
       <Link to="/donateNow">
-        <div className="md:flex md:justify-around md:items-center py-10 my-5 px-14 h-56 bg-blue-400 ">
-          <h1 className="text-white font-bold sm:text-3xl text-2xl">
-            Help Us So We Can help many more orphans families
+        <div className="md:flex md:justify-around md:items-center py-10 my-5 sm:px-14 px-5 h-56 bg-blue-400 ">
+          <h1 className="text-white font-bold md:text-3xl text-2xl">
+          Help Us So We Can help many more orphans families
           </h1>
-          <button className=" border-2 border-white rounded-2xl p-3 ml-24 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500">
-            Donate Now{" "}
+          <button className=" border-2 border-white rounded-2xl p-3 ml-16 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500">
+            Donate Now
           </button>
         </div>
       </Link>
       {/* Help us Section closed */}
+            
     </main>
   );
 };

@@ -34,7 +34,7 @@ const SuccessStory = () => {
 
                 <Carousel
                     responsive={responsive}
-                    className=" lg:mx-20 text-white py-10"
+                    className=" z-0 lg:mx-20 text-white py-10"
                 >
                     <SuccessCard
                         link="https://www.youtube.com/embed/KZT7Hug9OQQ"
