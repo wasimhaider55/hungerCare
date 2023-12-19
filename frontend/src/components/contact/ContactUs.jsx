@@ -19,10 +19,14 @@ const ContactUs = () => {
       },
       validationSchema: validationSchema,
       onSubmit: async (values, action) => {
-        const res = await axios.post("/contact", values);
-        if (res.status === 201) {
-          toast.success("Sent successfully");
-          action.resetForm();
+        try {
+          const res = await axios.post("/contact", values);
+          if (res.status === 201) {
+            toast.success("Sent successfully", { autoClose: 1000 });
+            action.resetForm();
+          }
+        } catch (error) {
+          toast.error(error, { autoClose: 1000 });
         }
       },
     });

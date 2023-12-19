@@ -40,7 +40,7 @@ const DonateFood = () => {
     try {
       const response = await axios.post("/food", formData);
       if (response.status === 201) {
-        toast.success("Data posted successfully"); // Display a success message
+        toast.success("Data posted successfully", { autoClose: 1000 }); // Display a success message
         setFormData({
           organizationName: "",
           organizationType: "",
@@ -53,7 +53,7 @@ const DonateFood = () => {
       }
     } catch (error) {
       console.error(error);
-      toast.error("An error occurred while posting data"); // Display an error message
+      toast.error("An error occurred while posting data", { autoClose: 1000 }); // Display an error message
     }
   };
 

@@ -21,7 +21,7 @@ const Navbar = () => {
 
   const handleLogout = () => {
     Cookies.remove("token");
-    window.location.reload()
+    window.location.reload();
     toast.success("logout successfully", { autoClose: 1000 });
   };
 

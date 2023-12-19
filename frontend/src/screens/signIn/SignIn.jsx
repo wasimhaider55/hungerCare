@@ -4,7 +4,7 @@ import { validationSchema } from "../Schema";
 import axios from "axios";
 import { useFormik } from "formik";
 import { toast } from "react-toastify";
-import Cookies from "js-cookie"
+import Cookies from "js-cookie";
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -21,21 +21,24 @@ const SignIn = () => {
           // await console.log(values);
           const res = await axios.post("/LogIn", values);
           if (res.status === 201) {
-            Cookies.set('token', 'thisisspogmaifoundationcookies')
+            Cookies.set("token", "thisisspogmaifoundationcookies");
 
-            toast.success("LogIn successfully");
+            toast.success("LogIn successfully", { autoClose: 1000 });
             action.resetForm();
             navigate("/");
             console.log(res);
           }
         } catch (error) {
-          toast.error("Something went wrong");
-          console.log("the error is : ", error)
-
+          toast.error("Something went wrong", { autoClose: 1000 });
+          console.log("the error is : ", error);
         }
-
       },
     });
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSubmit(e);
+    }
+  };
 
   return (
     <div className="flex justify-center items-center p-1 h-screen  ">
@@ -55,7 +58,11 @@ const SignIn = () => {
                   SignIn
                 </h2>
               </div>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                onSubmit={handleSubmit}
+                handleKeyDown={handleKeyDown}
+                className="space-y-6"
+              >
                 <div className="mt-1">
                   <input
                     id="email"

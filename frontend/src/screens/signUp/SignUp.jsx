@@ -24,14 +24,20 @@ const SignUp = () => {
         try {
           const reg = await axios.post("/registration", values);
           if (reg.status === 201) {
-            toast.success("register successfully");
+            toast.success("register successfully", { autoClose: 1000 });
             navigate("/signin");
           }
         } catch (error) {
-          toast.error("something went wrong!");
+          toast.error("something went wrong!", { autoClose: 1000 });
         }
       },
     });
+
+  const handleKeyDown = (e) => {
+    if (e.key === "Enter") {
+      handleSubmit(e);
+    }
+  };
 
   return (
     <div className="flex justify-center items-center p-1 h-screen ">
@@ -57,7 +63,11 @@ const SignUp = () => {
                   </Link>
                 </p>
               </div>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                onSubmit={handleSubmit}
+                handleKeyDown={handleKeyDown}
+                className="space-y-6"
+              >
                 <div className="mt-1">
                   <input
                     id="name"
