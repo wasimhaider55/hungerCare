@@ -141,7 +141,7 @@ const OrphanFamilySupport = () => {
         </div>
 
         <Carousel responsive={responsive}
-         className="z-0 lg:mx-20 text-white">
+          className="z-0 lg:mx-20 text-white">
           <VideoCard
             link="https://www.youtube.com/embed/fAJrKq-_leU?si=aiWseLW9-9CJlC1D"
             title="Spogmai foundation support orphan family in village Kahi district Hangu"
@@ -170,7 +170,7 @@ const OrphanFamilySupport = () => {
       <Link to="/donateNow">
         <div className="md:flex md:justify-around md:items-center py-10 my-5 sm:px-14 px-5 h-56 bg-blue-400 ">
           <h1 className="text-white font-bold md:text-3xl text-2xl">
-          Help Us So We Can help many more orphans families
+            Help Us So We Can help many more orphans families
           </h1>
           <button className=" border-2 border-white rounded-2xl p-3 ml-16 sm:ml-40 md:mt-0 mt-10 text-white font-bold hover:bg-blue-500">
             Donate Now
@@ -178,7 +178,8 @@ const OrphanFamilySupport = () => {
         </div>
       </Link>
       {/* Help us Section closed */}
-            
+
+
     </main>
   );
 };
