@@ -1,22 +1,24 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const mongoose = require("mongoose");
-const cookieParser = require("cookie-parser");
+import express from "express";
+import dotenv from "dotenv";
+import cookieParser from "cookie-parser";
+import cors from "cors";
+import route from "./routing/route.js";
 
-const cors = require("cors");
 const app = express();
 
 // the path of config env file
-dotenv.config({ path: "./config.env" });
+dotenv.config({
+  path: "../.env",
+});
 
 // import the file conn
-require("./database/dbconnection");
+import("./DB/dbconnection.js");
 
 app.use(cookieParser());
-// router import
 app.use(cors());
 app.use(express.json());
-app.use(require("./routing/route"));
+// router import
+app.use(route);
 
 // import the port value from env file
 const PORT = process.env.PORT;

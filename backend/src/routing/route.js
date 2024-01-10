@@ -1,10 +1,10 @@
-const express = require("express");
-const router = express.Router();
-const SignIn = require("../schema/logInSchema");
-const Contact = require("../schema/contactSchema");
-const Food = require("../schema/foodSchema");
-const bcrypt = require("bcrypt");
+import express from "express";
+import logIn from "../models/login.models.js";
+import Contact from "../models/contact.models.js";
+import Food from "../models/food.models.js";
+import bcrypt from "bcrypt";
 
+const router = express.Router();
 // Registration LogIn API
 // its for / page routing
 router.post("/registration", async (req, res) => {
@@ -15,14 +15,14 @@ router.post("/registration", async (req, res) => {
     if (!name || !phone || !email || !password || !cpassword) {
       return res.status(422).json({ err: "Please fill in all fields" });
     }
-    const userExist = await SignIn.findOne({ email: email });
+    const userExist = await logIn.findOne({ email: email });
 
     if (userExist) {
       return res.status(422).json({ err: "Email already exists" });
     } else if (password != cpassword) {
       return res.status(422).json({ err: "Password are not Matching" });
     } else {
-      const user = new SignIn({ name, phone, email, password, cpassword });
+      const user = new logIn({ name, phone, email, password, cpassword });
       await user.save();
 
       res.status(201).json({ message: "User registered successfully" });
@@ -41,7 +41,7 @@ router.post("/LogIn", async (req, res) => {
       return res.status(400).json({ err: "Fill in all fields" });
     }
 
-    const userLogin = await SignIn.findOne({ email: email });
+    const userLogin = await logIn.findOne({ email: email });
     if (userLogin) {
       const isMatch = await bcrypt.compare(password, userLogin.password);
 
@@ -215,4 +215,4 @@ router.delete("/deleteFood/:id", async (req, res) => {
 });
 // delete api for food message complete
 
-module.exports = router;
+export default router;

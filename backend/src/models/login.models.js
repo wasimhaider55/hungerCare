@@ -1,7 +1,7 @@
-const mongoose = require("mongoose");
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-const dotenv = require("dotenv");
+import mongoose from "mongoose";
+import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
+import dotenv from "dotenv";
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -56,4 +56,4 @@ userSchema.methods.generateAuthToken = async function () {
 };
 
 const SignIn = mongoose.model("SignIn", userSchema);
-module.exports = SignIn;
+export default SignIn;
