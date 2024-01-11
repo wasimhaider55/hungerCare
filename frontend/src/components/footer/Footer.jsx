@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <>
       {(
-        pathname === "/signin" || pathname === "/signup" ||
+        pathname === "/Signin" || pathname === "/Signup" ||
           pathname === "/foodMessages" || pathname.startsWith("/foodMessage/")
           || pathname === "/messages" || pathname.startsWith("/message") ? null : (
           <footer className=" left-0 right-0 w-full bg-[#004d73] pl-2   pt-10 ">
