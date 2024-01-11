@@ -7,7 +7,7 @@ import { Dropdown, Drop } from "./Dropdown";
 import logoo from "../../assets/logoo.png";
 import { NavMenu } from "./NavMenu";
 import { Header } from "../../components";
-import SideBar from "../sideBar/SideBar";
+import SideBar from "../dashboard/SideBar";
 import Cookies from "js-cookie";
 import { toast } from "react-toastify";
 

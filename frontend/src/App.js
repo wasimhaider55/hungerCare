@@ -29,10 +29,10 @@ import {
   SignUp,
 } from "./components";
 
-import Messages from "./components/sideBar/contactMessage/Messages";
-import Message from "./components/sideBar/contactMessage/Message";
-import FoodMessages from "./components/sideBar/foodMessage/FoodMssgs";
-import FoodMessage from "./components/sideBar/foodMessage/FoodMssg";
+import Messages from "./components/dashboard/contactMessage/Messages";
+import Message from "./components/dashboard/contactMessage/Message";
+import FoodMessages from "./components/dashboard/foodMessage/FoodMssgs";
+import FoodMessage from "./components/dashboard/foodMessage/FoodMssg";
 
 function App() {
   return (
