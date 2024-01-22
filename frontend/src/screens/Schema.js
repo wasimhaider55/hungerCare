@@ -12,8 +12,8 @@ export const validationSchema = Yup.object({
 
 // SignUp Schema
 export const registrationSchema = Yup.object({
-  name: Yup.string().required("Name is required"),
-  phone: Yup.string(),
+  name: Yup.string().min(3).max(30).required("Name is required"),
+  phone: Yup.string().min(11).max(15).required("phone number is required"),
   email: Yup.string()
     .email("Invalid email address")
     .required("Email is required"),
